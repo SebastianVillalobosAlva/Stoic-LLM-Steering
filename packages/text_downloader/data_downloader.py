@@ -16,8 +16,8 @@ class TextDownloader:
         raw_author_dir.mkdir(parents=True, exist_ok=True)
         processed_author_dir.mkdir(parents=True, exist_ok=True)
 
-        self.raw_filename = raw_author_dir / source_config.get("raw_filename")
-        self.clean_filename = processed_author_dir / source_config.get("clean_filename")
+        self.raw_filename = raw_author_dir / source_config.get("filename")
+        self.clean_filename = processed_author_dir / source_config.get("filename")
 
     def download(self):
         """Download the file from URL"""
