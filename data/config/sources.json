@@ -3,7 +3,6 @@
     "url": "https://www.gutenberg.org/files/2680/2680-0.txt",
     "author": "Marcus Aurelius",
     "author_folder": "marcus_aurelius",
-    "raw_filename": "meditations_raw.txt",
-    "clean_filename": "meditations_clean.txt"
+    "filename": "meditations.txt"
   }
 }
