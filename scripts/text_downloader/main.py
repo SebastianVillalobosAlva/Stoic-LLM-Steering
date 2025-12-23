@@ -7,6 +7,7 @@ sys.path.insert(0, str(project_root))
 
 from packages.text_downloader.config import SOURCES_CONFIG
 from packages.text_downloader.data_downloader import TextDownloader
+from packages.text_downloader.data_processer import TextProcessor
 
 
 def main():
@@ -18,6 +19,9 @@ def main():
         downloader = TextDownloader(book_config)
         downloader.download()
         downloader.clean_gutenberg()
+
+    processor = TextProcessor()
+    processor.chunk_by_paragraph()
 
 
 if __name__ == "__main__":
