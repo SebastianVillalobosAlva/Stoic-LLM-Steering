@@ -1,4 +1,5 @@
 import json
+import random
 import time
 import anthropic
 from pathlib import Path
@@ -18,12 +19,32 @@ class NeutralPairCreator:
             chunks = json.load(f)
         return chunks
 
-    def filter_chunks_by_length(self, chunks, min_chars=100, max_chars=1000):
+    def _is_bibliography(self, text):
+        """Check if chunk is likely a citation or bibliography"""
+        biblio_markers = [
+            "pp.",
+            "Vol.",
+            "ed.",
+            "Trans.",
+            "Chapter",
+            "Chap.",
+            "ISBN",
+            "Published",
+            "Editor",
+            "Reprinted",
+        ]
+        # Check if it's very citation-heavy (multiple markers)
+        marker_count = sum(1 for marker in biblio_markers if marker in text)
+        return marker_count >= 2
+
+    def filter_chunks_by_length(self, chunks, min_chars=300, max_chars=1000):
         """Keep chunks within character count range"""
         filtered = []
         for chunk in chunks:
             char_count = len(chunk["text"])
-            if min_chars <= char_count <= max_chars:
+            if min_chars <= char_count <= max_chars and not self._is_bibliography(
+                chunk["text"]
+            ):
                 filtered.append(chunk)
         return filtered
 
@@ -57,7 +78,10 @@ class NeutralPairCreator:
         """Generate N pairs and save to file"""
         chunks = self.read_chunks()
         filtered_chunks = self.filter_chunks_by_length(chunks["chunks"])
-        chunks_to_process = filtered_chunks[:num_pairs]
+        if len(filtered_chunks) > num_pairs:
+            chunks_to_process = random.sample(filtered_chunks, num_pairs)
+        else:
+            chunks_to_process = filtered_chunks
         pairs = []
 
         print(f"Found {len(filtered_chunks)} filtered chunks")
