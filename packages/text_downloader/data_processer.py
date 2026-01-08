@@ -51,5 +51,3 @@ class TextProcessor:
             json.dump(chunks_data, f, indent=2, ensure_ascii=False)
 
         print(f"✓ Saved {len(paragraphs)} chunks to {chunked_file_path}")
-
-        pass
