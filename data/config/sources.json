@@ -1,8 +1,20 @@
 {
-  "meditations": {
-    "url": "https://www.gutenberg.org/files/2680/2680-0.txt",
-    "author": "Marcus Aurelius",
-    "author_folder": "marcus_aurelius",
-    "filename": "meditations.txt"
-  }
+    "meditations": {
+        "url": "https://www.gutenberg.org/files/2680/2680-0.txt",
+        "author": "Marcus Aurelius",
+        "author_folder": "marcus_aurelius",
+        "filename": "meditations.txt"
+    },
+    "moral_letters": {
+        "url": "https://www.gutenberg.org/cache/epub/56075/pg56075.txt",
+        "author": "Seneca",
+        "author_folder": "seneca",
+        "filename": "moral_letters.txt"
+    },
+    "enchiridion": {
+        "url": "https://www.gutenberg.org/cache/epub/45109/pg45109.txt",
+        "author": "Epictetus",
+        "author_folder": "epictetus",
+        "filename": "enchiridion.txt"
+    }
 }
