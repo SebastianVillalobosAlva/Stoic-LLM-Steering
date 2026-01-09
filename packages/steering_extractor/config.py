@@ -2,7 +2,7 @@ from pathlib import Path
 
 # Model config
 MODEL_NAME = "meta-llama/Llama-3.2-1B"  # Base model, not Instruct
-DEVICE = "mps"  # Apple Silicon
+DEVICE = "cpu"  # Apple Silicon
 
 # Data paths
 PROJECT_ROOT = Path(__file__).parent.parent.parent

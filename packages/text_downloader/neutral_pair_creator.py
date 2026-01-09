@@ -19,7 +19,7 @@ class NeutralPairCreator:
             chunks = json.load(f)
         return chunks
 
-    def _is_bibliography(self, text):
+    def _is_bibliography_religious(self, text):
         """Check if chunk is likely a citation or bibliography"""
         biblio_markers = [
             "pp.",
@@ -33,17 +33,35 @@ class NeutralPairCreator:
             "Editor",
             "Reprinted",
         ]
+        religious_markers = [
+            "God",
+            "gods",
+            "divine",
+            "Providence",
+            "Lord",
+            "Allah",
+            "Prophet",
+            "Holy",
+            "Qur'an",
+            "Bible",
+            "scripture",
+            "prayer",
+            "worship",
+            "salvation",
+        ]
         # Check if it's very citation-heavy (multiple markers)
         marker_count = sum(1 for marker in biblio_markers if marker in text)
-        return marker_count >= 2
+        religious_count = sum(1 for marker in religious_markers if marker in text)
+        return marker_count >= 2 or religious_count >= 2
 
     def filter_chunks_by_length(self, chunks, min_chars=300, max_chars=1000):
         """Keep chunks within character count range"""
         filtered = []
         for chunk in chunks:
             char_count = len(chunk["text"])
-            if min_chars <= char_count <= max_chars and not self._is_bibliography(
-                chunk["text"]
+            if (
+                min_chars <= char_count <= max_chars
+                and not self._is_bibliography_religious(chunk["text"])
             ):
                 filtered.append(chunk)
         return filtered

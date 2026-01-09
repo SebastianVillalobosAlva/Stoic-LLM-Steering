@@ -16,7 +16,7 @@ class ModelLoader:
 
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.model_name, torch_dtype=torch.float16, device_map=self.device
+            self.model_name, device_map=self.device
         )
 
         # Set padding token if not set
