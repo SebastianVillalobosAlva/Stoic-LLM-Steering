@@ -51,15 +51,17 @@ class SteeringRunner:
             self._steering_hook
         )
 
-    def run_model_with_hook(self):
+    def run_model_with_hook(self, return_output=False):
         if not self.hook_setup:
             self._load_steering_vector()
             self._register_hook()
             self.hook_setup = True
 
+        results = []
         for prompt in self.prompts:
-            print(f"\nPrompt: {prompt}")
-            print("-" * 70)
+            if not return_output:
+                print(f"\nPrompt: {prompt}")
+                print("-" * 70)
 
             inputs = self.tokenizer(prompt, return_tensors="pt")
             outputs = self.model.generate(
@@ -68,4 +70,11 @@ class SteeringRunner:
                 do_sample=self.do_sample,
                 temperature=self.temperature,
             )
-            print(self.tokenizer.decode(outputs[0], skip_special_tokens=True))
+            generated = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+            if return_output:
+                results.append(generated)
+            else:
+                print(generated)
+
+        return results if return_output else None
