@@ -126,13 +126,6 @@ output = mlp_output + coefficient * steering_vector # Apply at layer 12 during g
 
 ### 3. LoRA Fine-tuning
 
-**Configuration**
-- **Rank (r):** 8
-- **Alpha:** 32
-- **Target modules:** q_proj, v_proj
-- **Trainable parameters:** 851,968 (0.07% of model)
-- **Training epochs:** 3
-
 **Results**
 - More stable generation than CAA
 - Better preservation of philosophical concepts
@@ -238,14 +231,6 @@ python -m scripts.steering_runner.main
 **Sebastian Villalobos**
 - GitHub: [@SebastianVillalobosAlva](https://github.com/SebastianVillalobosAlva)
 - LinkedIn: [Sebastian Villalobos Alva](https://www.linkedin.com/in/sebastian-villalobos-alva/])
-
----
-
-## 📧 Contact
-
-Questions or interested in discussing this project? Feel free to reach out!
-
-Built during Winter Break 2025 as an exploration of LLM steering techniques 🏛️
 
 ---
 
