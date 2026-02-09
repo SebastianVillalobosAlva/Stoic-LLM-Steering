@@ -237,7 +237,7 @@ python -m scripts.steering_runner.main
 
 **Sebastian Villalobos**
 - GitHub: [@SebastianVillalobosAlva](https://github.com/SebastianVillalobosAlva)
-- LinkedIn: [Linkedin](https://www.linkedin.com/in/sebastian-villalobos-alva/])
+- LinkedIn: [Sebastian Villalobos Alva](https://www.linkedin.com/in/sebastian-villalobos-alva/])
 
 ---
 
