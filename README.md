@@ -196,6 +196,33 @@ python -m scripts.steering_runner.main
 
 ---
 
+## 🎨 Demo
+
+### Interactive Streamlit Interface
+
+### CAA Steering Results
+
+![CAA Example](CAA.png)
+*Contrastive Activation Addition applies steering vectors at layer 12 during generation. While experimental, it shows philosophical influence with zero additional training. Results include introspective themes about weakness, honesty, and self-reflection - characteristic of Stoic thought.*
+
+---
+
+### LoRA Fine-tuned Results
+
+![LoRA Example](LoRA.png)
+*LoRA fine-tuning produces more stable and consistently philosophical output. The model captures Stoic themes of virtue, nature, and reason with greater reliability. Fine-tuning only 0.07% of model parameters (851k out of 1.2B) achieves better style transfer than zero-shot steering.*
+
+---
+
+## 📊 Comparison Summary
+
+| Approach | Training | Stability | Style Quality | Best For |
+|----------|----------|-----------|---------------|----------|
+| **CAA** | None | Moderate | Variable | Quick experiments |
+| **LoRA** | ~15 min | High | Consistent | Production use |
+
+---
+
 ## 📚 Technologies Used
 
 - **Transformers** - Model architecture and training
