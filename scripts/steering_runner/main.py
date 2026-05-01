@@ -14,11 +14,11 @@ def main():
     model, tokenizer = loader.load()
 
     all_steering_vectors = list(VECTORS_DIR.rglob("*.pt"))
-    for i, steering_vector_file in enumerate(all_steering_vectors):
+    for steering_vector_file in all_steering_vectors:
         steering_runner = SteeringRunner(steering_vector_file, model, tokenizer)
-
         print(f"\n🎉 Running model for {steering_runner.author}\n")
         steering_runner.run_model_with_hook()
+        steering_runner.cleanup()
 
 
 if __name__ == "__main__":
