@@ -35,8 +35,11 @@ class SteeringRunner:
         self.temperature = temperature
         self.max_tokens = max_tokens
         self.do_sample = do_sample
-        self.hook_setup = False
         self.author = str(self.file).split("/")[-1].split("_")[0]
+
+        # Hook state
+        self._hook_handle = None
+        self.steering_vector = None
 
     def _load_steering_vector(self):
         self.steering_vector = torch.load(
@@ -47,15 +50,43 @@ class SteeringRunner:
         return output + self.coefficient * self.steering_vector
 
     def _register_hook(self):
-        self.model.model.layers[self.layer_idx].mlp.register_forward_hook(
-            self._steering_hook
-        )
+        # Remove existing hook first to prevent stacking
+        self._remove_hook()
+
+        self._hook_handle = self.model.model.layers[
+            self.layer_idx
+        ].mlp.register_forward_hook(self._steering_hook)
+
+    def _remove_hook(self):
+        """Remove the current steering hook if one exists."""
+        if self._hook_handle is not None:
+            self._hook_handle.remove()
+            self._hook_handle = None
+
+    def set_coefficient(self, coefficient):
+        """Update steering strength. Re-registers hook with new coefficient."""
+        self.coefficient = coefficient
+        if self._hook_handle is not None:
+            self._register_hook()
+
+    def set_layer(self, layer_idx):
+        """Switch which layer the steering vector is applied to."""
+        self.layer_idx = layer_idx
+        if self._hook_handle is not None:
+            self._register_hook()
+
+    def load_author(self, file_path):
+        """Switch to a different author's steering vector."""
+        self.cleanup()
+        self.file = file_path
+        self.author = str(self.file).split("/")[-1].split("_")[0]
+        self.steering_vector = None
 
     def run_model_with_hook(self, return_output=False):
-        if not self.hook_setup:
+        if self.steering_vector is None:
             self._load_steering_vector()
+        if self._hook_handle is None:
             self._register_hook()
-            self.hook_setup = True
 
         results = []
         for prompt in self.prompts:
@@ -78,3 +109,11 @@ class SteeringRunner:
                 print(generated)
 
         return results if return_output else None
+
+    def cleanup(self):
+        """Remove hook and clear state. Call when done steering."""
+        self._remove_hook()
+        self.steering_vector = None
+
+    def __del__(self):
+        self.cleanup()
