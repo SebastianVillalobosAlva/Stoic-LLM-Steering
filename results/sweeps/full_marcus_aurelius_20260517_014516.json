@@ -1,0 +1,1659 @@
+{
+  "sweep_type": "full",
+  "author": "marcus_aurelius",
+  "layer_sweep": {
+    "sweep_type": "layer",
+    "author": "marcus_aurelius",
+    "fixed_coefficient": 0.11,
+    "layers_tested": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "results": [
+      {
+        "layer": 4,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.5
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.75
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.3333333333333333,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": -0.3333333333333333,
+          "stylistic_authenticity": 0.0,
+          "aggregate": -0.25
+        },
+        "aggregate": 1.5,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text lacks philosophical content, offers only generic advice about asking for help and backup plans without engaging Stoic concepts like virtue or acceptance. It's incoherent and cuts off mid-sentence, uses casual modern language, and doesn't reflect Stoic principles of focusing on what's within our control or finding strength through reason and virtue.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should turn to God, and not to man. When the need for comfort was greatest, the Lord came to us. What can we say to such as these? We have not the time to write a history of the life of a saint. Our time is short, our labour is brief. It is our duty to tell, not to boast. We have been too long a friend of God. The Lord has not forsaken us, and we have not forsaken him. We have been His servants",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text has religious rather than Stoic philosophical content, focusing on divine reliance instead of rational self-reliance. While it has some contemplative tone reminiscent of ancient texts, it lacks Stoic concepts like virtue, reason, or the dichotomy of control. The coherence suffers from fragmented thoughts and unclear transitions.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text starts with a philosophically relevant topic about virtue and good, which loosely connects to Stoic ideas, but becomes highly repetitive and contradictory, stating both that human nature conforms to and contradicts the good. The text breaks off mid-sentence and lacks coherent development. While it uses philosophical vocabulary, the contradictory repetition undermines any meaningful philosophical content.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not to be\nThe nature of virtue is not",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is purely repetitive with no philosophical content, appearing to be an incomplete or corrupted fragment that provides no engagement with Stoic concepts or any coherent ideas about virtue.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": -2,
+              "aggregate": -1.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text touches on philosophical themes of awareness and engagement with life but lacks specific Stoic concepts like virtue, reason, or acceptance. Shows some contemplative quality but is repetitive and incomplete, with circular reasoning about being 'fully alive' without clear development of ideas.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to do well,\nTo live well means to do well,\nFor I was sick of all the world,\nAnd my heart was sick with it,\nAnd I was sick of my heart,\nI sat in silence and did not eat,\nAnd my heart was sick of all the world,\nAnd I was sick of my heart,\nI sat in silence and did not eat,\nAnd my heart was sick of all the world,\nAnd I was sick of my heart,\nI sat in silence and did not eat,\n",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text opens with a potentially Stoic premise linking living well to doing well, but immediately devolves into repetitive expressions of sickness and despair. It lacks philosophical development, contradicts Stoic principles of rational acceptance and emotional regulation, and becomes incoherent through excessive repetition. While it has some contemplative tone, it fails to engage meaningfully with any philosophical concepts.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.75
+            }
+          }
+        ]
+      },
+      {
+        "layer": 6,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.1666666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.6666666666666666,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": -0.3333333333333333,
+          "stylistic_authenticity": -0.6666666666666666,
+          "aggregate": -0.5
+        },
+        "aggregate": 1.1666666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, shows no engagement with Stoic principles, is highly repetitive and incoherent, cuts off mid-sentence, and uses casual modern language with no philosophical register.",
+                "aggregate": 1.0
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not despair, but rather to trust in God, who is the God of mercy, to bear up with. His servants, who by their own strength cannot be borne. And when they are in danger of death, they were in, by their own strength, not to be held; but to be held, to be held, let us not be held. But we were held, to be held, to be held, to be held, to be held, to be held, to be held",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is incoherent with repetitive fragmented phrases, lacks philosophical substance, contradicts Stoic self-reliance by advocating divine dependence, and shows no authentic philosophical register",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "While the text touches on virtue and conformity with the good (relevant Stoic concepts), it becomes highly repetitive and self-contradictory, especially regarding human nature being both in conformity AND contradiction with the good. The fragment ends abruptly. Despite some philosophical vocabulary, the contradictions undermine any coherent Stoic message.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is that it is the best to be kept, but the worst to be seen. The sight of it is a dreadful thing, and not to be endured. It is a sight of death, and a great while to die. But it is not so much to be endured, as to be seen. But to behold it, it was impossible, it was not to be endured, it was not to be seen, it was not to be seen, it was not to be seen, it was not",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text begins with a philosophical topic (virtue) but quickly becomes incoherent and repetitive. While it uses some archaic language that mimics ancient philosophical style, the content contradicts Stoic principles by describing virtue as 'dreadful' and associated with death, when Stoics view virtue as the highest good. The text deteriorates into meaningless repetition.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": -1,
+              "aggregate": -0.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on awareness and engagement with life, which has some philosophical merit, but lacks specific Stoic concepts like virtue, reason, or acceptance. The repetitive structure and incomplete ending hurt coherence. Style is somewhat contemplative but not distinctly Stoic or ancient philosophical in register.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to eat well, and to live well means to eat well, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to be a man, to eat to",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is highly repetitive and incoherent, breaking down into nonsensical repetition. Shows no engagement with Stoic principles or philosophical concepts beyond a fragmentary opening about eating well, which contradicts Stoic emphasis on virtue over bodily pleasures.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": -1,
+              "aggregate": -1.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 8,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.1666666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.6666666666666666,
+          "stoic_alignment": -1.0,
+          "coherence": -0.3333333333333333,
+          "stylistic_authenticity": -0.6666666666666666,
+          "aggregate": -0.6666666666666666
+        },
+        "aggregate": 1.1666666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content and cuts off mid-sentence. While asking for help could align with Stoic community values, there's no engagement with core Stoic principles like accepting what we cannot control or focusing on virtue. The writing is incoherent, repetitive, and uses casual modern language with no philosophical register.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not be ashamed to confess it, but should apply to the Lord, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he was, whose he",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text is severely corrupted with endless repetition of 'whose he was' making it incoherent. The brief readable portion advocates appealing to 'the Lord' which contradicts Stoic principles of self-reliance and rational agency. No Stoic concepts are present.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text begins with relevant Stoic concepts about virtue and conformity to good, but becomes highly repetitive and cuts off mid-sentence. The philosophical content is minimal and contradictory statements undermine coherence. Style resembles aphoristic philosophical writing but the repetition and incompleteness severely damage overall quality.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is the knowledge of God\u2019s word, whereby it is to be worsh\u00e8d, and the whole obedience of faith, and of that pure and true and righteous\ntutor\u2019s office, which is the doctrine of law, and that of that law, which is the like of that most excellent and most excellent, and most excellent\nof this, which is the law of God, which is the law of true, and of that law of this law of the like, which was the law",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text is incoherent and repetitive, focuses on religious obedience rather than Stoic virtue concepts, contradicts Stoic principles by emphasizing divine worship over rational virtue, though has some archaic philosophical register",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -2,
+              "coherence": 0,
+              "stylistic_authenticity": -1,
+              "aggregate": -1.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on philosophical themes of awareness and engagement with life, but lacks depth and specific Stoic concepts. It's somewhat repetitive and circular in reasoning. While awareness could relate to Stoic mindfulness, it doesn't engage with core Stoic principles like virtue, rational acceptance, or living according to nature. The style is more modern self-help than ancient philosophical discourse.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to live in health, to live in peace, to live in liberty, to live in the fear of God, to live in the fear of God, to live in the fear of God, to live in the fear of God, to live in the fear of God, to live in the fear of God, to live in the fear of God, to live in the fear of God, to live in the fear of God, to live in the fear of God, to live in the fear",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text starts with some philosophical content about living well but quickly devolves into incoherent repetition of 'fear of God.' While health, peace, and liberty touch on philosophical themes, the repetitive breakdown makes it largely nonsensical. The religious focus contradicts Stoic emphasis on reason and virtue as primary goods.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": -1,
+              "aggregate": -0.75
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.3333333333333335,
+          "aggregate": 2.0
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": 0.0,
+          "stylistic_authenticity": 0.3333333333333333,
+          "aggregate": 0.16666666666666666
+        },
+        "aggregate": 2.0,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks any philosophical content or Stoic principles, is incoherent and repetitive with circular statements about unspecified 'plans', uses casual modern language, and appears to cut off mid-sentence without completing the thought.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should be not afraid to seek help, but to seek help from the right source. A help that is timely, sound, and not too costly. A help that is not only from the best, but also the most convenient. The help that is not only from the best, but also the most convenient. The help that is not only from the best, but also the most convenient. The help that is not only from the best, but also the most convenient. The help that is not only from",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text lacks philosophical depth, focusing on practical advice about seeking help rather than Stoic principles. While seeking wise counsel aligns somewhat with Stoic values, it misses core concepts like self-reliance and the dichotomy of control. The text is incoherent due to excessive repetition and appears incomplete. Style is somewhat formal but lacks the contemplative, aphoristic quality of ancient philosophical writing.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "While the text touches on virtue and conformity with good (Stoic themes), it's highly repetitive and contradictory, stating humans are both in conformity with and in contradiction to the good. The incomplete final sentence and circular repetition make it incoherent despite some philosophical vocabulary.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not easy to express. The term, \u201cvirtue\u201d was not coined by Aristotle, nor was it defined by any of his predecessors. It was not even the term of choice of the ancient Stoics; the word, \u201cvirtue\u201d, was more often used to denote the office of a magistrate, or the person who held such an office. The word, \u201cvirtue\u201d, was also not used by the moral philosopher, Plato, to denote any of the excellencies which he thought worthy of",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text begins to engage with virtue but remains at an etymological/historical level without developing Stoic concepts. It mentions Stoics but doesn't explore their understanding of virtue. The passage is incomplete and lacks the deeper philosophical engagement expected. Style has some philosophical register but the content is more academic than contemplative.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": 1,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical engagement with vague concepts about awareness and being 'fully alive' but lacks specific Stoic principles. Contains repetitive circular reasoning without clear progression. Uses simple modern language without philosophical terminology. Doesn't address core Stoic concepts like virtue, reason, or acceptance of what we cannot control.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to live a life of integrity and honour, and in that way to live a life of virtue. This is what we seek to teach in the Preparatory School.\nTo live well means to live a life of integrity and honour, and in that way to live a life of virtue. This is what we seek to teach in the Preparatory School.\nThe Preparatory School is one of the most important years of a child\u2019s life. It is an age of inquiring mind, of",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Brief mention of virtue aligns with Stoic values, but lacks depth and philosophical development. Text is repetitive and incomplete, appearing to shift focus to educational context rather than exploring philosophical concepts. Uses some appropriate terms like 'virtue' and 'integrity' but without substantive engagement with Stoic doctrine.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.9166666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.75
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": 0.3333333333333333,
+          "stylistic_authenticity": 0.0,
+          "aggregate": 0.16666666666666666
+        },
+        "aggregate": 1.9166666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, cuts off mid-sentence, is highly repetitive ('plan' repeated 7 times), contains no Stoic concepts, and uses casual modern language with poor structure.",
+                "aggregate": 1.0
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should first consider if it is a difficulty in the mind or in the heart. This is because the mind is our dwelling place and the heart is our source. The mind is the dwelling place of the soul, which is our essence and our true self. The mind is the place where thoughts arise and the mind is the place where thoughts are judged. The mind is the place where we store our memories and the mind is the place where we store our fears and our desires. The mind is the place where",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text shows some philosophical vocabulary (mind, soul, essence) and contemplative tone, but lacks core Stoic concepts like virtue, reason, or dichotomy of control. The mind/heart distinction isn't distinctly Stoic. Structure is repetitive and incomplete, weakening coherence. Style has some philosophical register but content doesn't engage meaningfully with Stoic principles.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 1,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "Opens with a core Stoic concept (virtue and conformity with good) but immediately becomes incoherent through contradictory repetitions. The philosophical content is minimal and the logical structure breaks down completely, though the initial framing loosely aligns with Stoic ideas about virtue and nature.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is a topic that has been discussed throughout the ages. Virtue is a term that is used to describe an individual\u2019s moral character and the actions they perform. Virtues are also referred to as \u201cgood qualities\u201d, \u201ccharacteristics\u201d, \u201cvirtues\u201d, \u201cgood qualities\u201d, \u201cgood qualities\u201d, and \u201cvirtues\u201d. Virtues are often considered to be the highest form of virtue, and they are considered to be the most important.\nThe virtue of virtue is a virtue that is considered to be the highest",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is incoherent with excessive repetition, lacks any specific Stoic concepts, breaks off mid-sentence, and uses casual modern language. While it mentions virtue as important, it provides no philosophical insight or Stoic doctrine.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": -2,
+              "aggregate": -1.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text touches on philosophical themes of living well and awareness but lacks Stoic specificity. Shows some contemplative structure but is incomplete, repetitive, and doesn't engage with core Stoic concepts like virtue, reason, or acceptance. Language is modern and generic rather than philosophically rigorous.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to be content with what we have, and to be content with our lot in life.\nIf we are to be content with our lot in life, we must be content with our lot in the world. It is not enough to have a comfortable home, a good job, or a pleasant retirement; we must be content with what we have and with what we are.\nWhat is the difference between being content and being happy? Is it that the former is content with what he has, and the latter",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text touches on contentment, a Stoic theme, but lacks depth and cuts off mid-sentence. Shows basic alignment with acceptance of one's circumstances but doesn't engage with core Stoic concepts like virtue or rational nature. Repetitive structure and incomplete ending harm coherence. Language is accessible but lacks the gravitas of ancient philosophical texts.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.3333333333333333,
+          "stoic_alignment": -0.6666666666666666,
+          "coherence": 0.3333333333333333,
+          "stylistic_authenticity": 0.0,
+          "aggregate": 0.0
+        },
+        "aggregate": 1.8333333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text lacks philosophical content, is highly repetitive and incoherent, cuts off mid-sentence, and uses casual modern language. While asking for help could loosely align with Stoic community values, it doesn't engage with core Stoic principles like the dichotomy of control or rational acceptance of difficulties.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not think of the difficulty itself, but rather the difficulty of being unable to think of the difficulty itself.\n\u2014 The Art of War, Sun Tzu\nWhen we are in the midst of a problem, it is not our problem to solve, but rather it is the problem of finding a solution that is acceptable to us. We are not yet ready to accept a solution that is not acceptable to us. We are not yet ready to accept a solution that is not acceptable to us.\n\u2014 The Art",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text attempts philosophical reflection on difficulty but lacks clear Stoic concepts like virtue or dichotomy of control. The misattributed Sun Tzu quote and repetitive, circular reasoning about accepting solutions undermines coherence. While it uses a contemplative tone, the fragmented structure and incomplete final attribution detract from authenticity.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "While the text touches on virtue and conformity with good (Stoic themes), it is highly repetitive and contradictory, stating both that man's nature conforms to AND contradicts the good. The repetitive structure and internal contradictions make it incoherent, though it maintains some philosophical register in its language.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is such that it is difficult to define it. Aristotle, for instance, defines virtue as a mean between two extremes, but the extremes he mentions are not clear and the mean is not defined. Virtue is the mean between two extremes, but the extremes are not defined.\nAristotle's definition of virtue is clear and unambiguous. Virtue is a mean between two extremes, but the two extremes are not defined. Virtue is the mean between two extremes, but the extremes are not defined.",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical engagement, focusing on Aristotelian rather than Stoic virtue concepts. Highly repetitive and contradictory (calling Aristotle's definition both unclear and clear). No Stoic principles like virtue as sole good or rational acceptance are present.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -2,
+              "coherence": 0,
+              "stylistic_authenticity": -1,
+              "aggregate": -0.75
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text touches on philosophical themes of awareness and engagement with life but lacks specific Stoic concepts. Shows some coherence issues with repetitive phrasing and incomplete ending. Uses basic philosophical language but doesn't demonstrate deep engagement with Stoic principles like virtue, reason, or acceptance.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to live fully. To live fully means to love fully. To love fully means to give fully. To give fully means to serve fully. To serve fully means to serve God fully. To serve God fully means to serve the world fully.\nTo serve the world fully means to serve the poor, the hungry, the sick, the dying, the orphan, the widow, the prisoner, the stranger, the foreigner, the refugee, the alien, the refugee, the stranger, the foreigner,",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text attempts philosophical reflection on living well but lacks engagement with core Stoic concepts like virtue, reason, or the dichotomy of control. Instead it emphasizes service and love in a more Christian/humanitarian framework. The circular, repetitive structure becomes incoherent toward the end with redundant listings. While it has some contemplative tone, it doesn't reflect authentic Stoic philosophical register or methodology.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "best_layer": 10,
+    "best_aggregate": 2.0,
+    "timestamp": "2026-05-17T01:37:56.412007"
+  },
+  "coefficient_sweep": {
+    "sweep_type": "coefficient",
+    "author": "marcus_aurelius",
+    "fixed_layer": 10,
+    "coefficients_tested": [
+      0.03,
+      0.05,
+      0.08,
+      0.11,
+      0.15,
+      0.2,
+      0.3
+    ],
+    "results": [
+      {
+        "layer": 10,
+        "coefficient": 0.03,
+        "avg_steered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.3333333333333333,
+          "stoic_alignment": 0.6666666666666666,
+          "coherence": 0.0,
+          "stylistic_authenticity": -0.3333333333333333,
+          "aggregate": 0.0
+        },
+        "aggregate": 1.6666666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, appears incomplete and incoherent with repetitive circular statements, shows no engagement with Stoic principles like virtue or acceptance of what we cannot control, and uses casual modern language without philosophical register.",
+                "aggregate": 1.0
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should always turn to God. When in doubt, one should turn to God. When in need, one should turn to God. When in doubt, one should turn to God. When in need, one should turn to God.\nWhen in doubt, one should turn to God. When in need, one should turn to God. When in doubt, one should turn to God. When in need, one should turn to God. When in doubt, one should turn to God. When in need, one",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, being repetitive and generic. While Stoics acknowledged divine reason/logos, this focuses on external dependence rather than internal virtue and reason. Highly repetitive structure makes it incoherent. Uses simple, non-philosophical language unlike ancient Stoic texts.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "While touching on virtue and nature (Stoic concepts), the text is highly repetitive and contradictory, claiming human nature is both conforming to and contradicting good. It lacks coherent development and appears incomplete, though it maintains some philosophical register.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is revealed by the virtue of man\nBy virtue of the nature of man is it possible to know the nature of virtue, the nature of vice, and the nature of the good? It is necessary to be a man, and to be a man is to have a nature. And a man's nature is revealed by the nature of man, and by virtue of the nature of man is it possible to know the nature of virtue, the nature of vice, and the nature of the good? (A",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text engages with virtue and human nature (key Stoic concepts) but lacks depth and clear development. Contains circular reasoning and repetitive phrasing that undermines coherence. The questioning style and philosophical vocabulary suggest some authenticity, but the incomplete and confused structure prevents meaningful philosophical insight.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text begins exploring what it means to live well and be fully alive, touching on awareness and engagement - concepts that have some philosophical merit. However, it lacks specific Stoic principles like virtue, rational acceptance, or the dichotomy of control. The text is repetitive and appears incomplete, ending mid-sentence. The style is more modern self-help than ancient philosophical discourse, and the shallow treatment of concepts prevents deeper Stoic alignment.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to live with a sense of purpose and meaning. It means to be filled with joy and to be at peace. It means to be happy, healthy and prosperous. It means to be able to look back on a life well-lived and say with pride, \u201cI have lived well.\u201d\nTo live well means to be able to say with pride, \u201cI have lived well.\u201d\nThe following are some of the most popular quotes about life, happiness, health and prosperity. I have tried to arrange them in",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, focusing on generic happiness/prosperity rather than Stoic concepts like virtue or reason. Shows minimal Stoic alignment as it emphasizes external goods (health, prosperity) that Stoics consider indifferent. Structure is repetitive and trails off mid-sentence. Language is modern and casual, not philosophical in register.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": -1,
+              "aggregate": -0.5
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.05,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.75
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": 0.0,
+          "stylistic_authenticity": 0.0,
+          "aggregate": -0.08333333333333333
+        },
+        "aggregate": 1.75,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, is incoherent and repetitive, cuts off mid-sentence, uses casual modern language, and while asking for help isn't anti-Stoic, it doesn't engage with core Stoic principles like virtue, reason, or acceptance of what we cannot control.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should take the first step and not the last. I am one who takes the first step and not the last. The last step is what I call the \u201csecond to last step\u201d. This step is usually the hardest. It is the step that is usually the most difficult. If you do not take the second to last step, you are probably not going to take the first step. It is the second to last step that I usually take, and it is usually the hardest step. The second to last",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text lacks any philosophical content, is highly repetitive and circular, contains no Stoic concepts like virtue or acceptance of fate, appears incomplete mid-sentence, and uses casual modern language without philosophical register.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "While the text engages with fundamental concepts like virtue, vice, and nature that are central to Stoicism, it lacks philosophical depth and becomes incoherent through repetition and contradiction. The text contradicts itself by stating both that human nature conforms to and contradicts the good. Though it has some philosophical register, the repetitive structure and logical inconsistencies severely undermine coherence.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is to be a friend to the good. The nature of vice is to be a foe to the good. The nature of vice is to be a foe to the good. The nature of virtue is to be a friend to the good. The nature of vice is to be a foe to the good. The nature of vice is to be a foe to the good. The nature of virtue is to be a friend to the good. The nature of vice is to be a foe to the good. The",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "While the text touches on virtue/vice distinction relevant to Stoicism, it's extremely repetitive and incomplete, offering minimal philosophical development. The basic concept aligns with Stoic ideas about virtue being aligned with good, but lacks depth and coherent structure.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on philosophical themes of living well and awareness but lacks engagement with specific Stoic concepts like virtue, reason, or acceptance. It shows some alignment with Stoic emphasis on mindful living but doesn't develop core doctrines. The text is somewhat repetitive and appears incomplete, affecting coherence. The style has some contemplative elements but lacks the aphoristic quality and philosophical vocabulary typical of ancient Stoic texts.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to do well. It is the key to a rich life. It is the path to happiness. It is the key to living a long life.\nIt is not enough to live well; it is necessary to live well. It is not enough to be happy; it is necessary to be happy. It is not enough to be healthy; it is necessary to be healthy. It is not enough to be wise; it is necessary to be wise. It is not enough to be wise; it is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical depth with vague concepts like 'living well' and 'happiness' but lacks engagement with specific Stoic principles. Alignment is weak as it focuses on external goods (long life, health) rather than virtue as the sole good. Coherence suffers from repetitive structure and appears incomplete. Style attempts philosophical register but remains generic and lacks the precision of authentic Stoic discourse.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.08,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.9166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": -1.0,
+          "coherence": 0.0,
+          "stylistic_authenticity": 0.0,
+          "aggregate": -0.25
+        },
+        "aggregate": 1.6666666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth with generic advice about asking for help and backup plans. Shows minimal Stoic alignment - while asking for help isn't anti-Stoic, it doesn't engage with core concepts like virtue, acceptance, or dichotomy of control. Coherence suffers from repetitive language and an incomplete ending. Style is casual and modern, lacking philosophical register or contemplative tone characteristic of Stoic texts.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should consider the use of a small and portable digital camera. This is a portable camera which is capable of taking a picture of a great deal of objects, even though it is small. This is a portable camera which can take a picture of a great deal of objects, even though it is small. This is a portable camera which is capable of taking a picture of a great deal of objects, even though it is small. This is a portable camera which is capable of taking a picture of a great deal",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is completely off-topic, discussing cameras instead of philosophical approaches to difficulty. Highly repetitive and incoherent, with no philosophical content whatsoever.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.5
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "Opens with genuine philosophical concepts about virtue and good, which align with Stoic thought, but becomes highly repetitive and contradictory. The text loses coherence by asserting that human nature is both conforming to and contradicting the good simultaneously, and cuts off mid-sentence. While it uses appropriate philosophical vocabulary, the repetitive structure and logical contradictions severely undermine its value.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not always clear to us; we are not always sure whether it is good or evil. We are not always sure whether it is a virtue or a vice. We are not always sure whether it is necessary or superfluous. We are not always sure whether it is a gift of God or a curse of man. We are not always sure whether it is a good thing to be rich, or a good thing to be poor; whether it is a good thing to be a man, or a",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text shows minimal philosophical depth with surface-level questioning about virtue without engaging core concepts. It contradicts Stoic principles by suggesting virtue's nature is unclear and equating it with vice, when Stoics held virtue as the sole clear good. The text is incomplete and somewhat repetitive but maintains a contemplative philosophical tone reminiscent of ancient texts.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -2,
+              "coherence": 1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on philosophical themes of living well and awareness but lacks engagement with specific Stoic concepts like virtue, reason, or the dichotomy of control. It's somewhat repetitive and incomplete, with basic philosophical language but no clear Stoic doctrine. The style is modern and generic rather than reflecting ancient philosophical tradition.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to be able to live in the world, to be able to live with others, and to be able to live with ourselves. The first part of the life well lived is to be able to live with ourselves. This is the task of the spiritual life.\nThe second part of the life well lived is to be able to live with others. This is the task of the social life. The third part of the life well lived is to be able to live with God. This is the task of",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on philosophical themes of living well and relationships but lacks depth in Stoic concepts. It vaguely aligns with Stoic ideas about social duty and self-knowledge but introduces non-Stoic elements like 'spiritual life' and 'living with God.' The structure is repetitive and the text appears incomplete. The style has some philosophical register but lacks the aphoristic quality of ancient Stoic texts.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 2.0,
+          "coherence": 2.0,
+          "stylistic_authenticity": 2.3333333333333335,
+          "aggregate": 2.0833333333333335
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.9166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.3333333333333333,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": 0.3333333333333333,
+          "stylistic_authenticity": 0.3333333333333333,
+          "aggregate": 0.16666666666666666
+        },
+        "aggregate": 2.0833333333333335,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical substance, contains repetitive circular statements, cuts off mid-sentence, and uses casual modern language. While 'asking for help' could loosely connect to Stoic community concepts, it doesn't engage with core Stoic principles like virtue, rational acceptance, or the dichotomy of control.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not be afraid to seek counsel from others, for the wisest among us have often been taught by the wisest of men. I have been favoured with the counsel of some of the best men in the world, and I have found them to be most judiciously versed in the art of wisdom. In a word, I have found the best of men to be the best of all, and to be the best of all, I trust, is to be the best of all.\nI",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text touches on seeking wisdom from others, which has some philosophical merit, but lacks engagement with core Stoic concepts. The circular reasoning ('best of all' repetition) undermines coherence. While it attempts a classical tone, it doesn't address Stoic approaches to difficulty like rational acceptance or virtue ethics.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "While the text touches on virtue and conformity with good (Stoic themes), it becomes highly repetitive and contradictory, stating humans are both in conformity with AND in contradiction with good. The text breaks off mid-sentence and lacks coherent development of ideas despite some philosophical vocabulary.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not easily described. It is a term that has been used in various ways and at various times to denote a wide range of things. Virtue is a term that is often used in moral philosophy, though it is not confined to that subject. It is also used in ethics and politics, though it is not confined to those subjects. It is also used in the philosophy of religion, though it is not confined to that subject. In this essay, we shall examine the nature of virtue, and what",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text introduces virtue as a philosophical concept but remains at a superficial, definitional level without engaging with substantive Stoic ideas. It's repetitive in structure, incomplete, and uses modern academic essay language rather than contemplative philosophical discourse. Shows minimal Stoic alignment as it doesn't address virtue as the sole good or its connection to reason and nature.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": 1,
+              "stylistic_authenticity": -1,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on philosophical themes of living well and awareness but lacks depth and specific Stoic concepts. It shows minimal alignment with Stoic principles, focusing on engagement and awareness rather than virtue, reason, or acceptance. The text is somewhat repetitive and appears incomplete. The style has some contemplative elements but lacks the aphoristic clarity typical of ancient philosophical texts.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to live rightly. But, what does it mean to live rightly? To live rightly is to live according to God\u2019s will, which is revealed in the Scriptures. The Scriptures, the word of God, are the rule and guide of our life. The word of God is the law, the rule, and the life of man. It is the rule of life that is most needful to man, and therefore most needful to us, and therefore most needful to us, and therefore most",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text begins with a philosophical question about living well but quickly shifts to Christian theology rather than Stoic principles. It shows minimal engagement with Stoic concepts like virtue, reason, or living according to nature. The coherence breaks down with repetitive phrasing at the end. While it has some philosophical register, it doesn't reflect Stoic authenticity.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.15,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.0,
+          "coherence": 1.0,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 1.1666666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.0,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.75
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.6666666666666666,
+          "stoic_alignment": -1.3333333333333333,
+          "coherence": 0.0,
+          "stylistic_authenticity": -0.3333333333333333,
+          "aggregate": -0.5833333333333334
+        },
+        "aggregate": 1.1666666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "stoic_coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth with generic advice about asking for help and backup plans. Shows minimal Stoic alignment - doesn't address core concepts like dichotomy of control or rational acceptance of circumstances. Coherence suffers from repetitive language and incomplete ending. Style is casual and modern, lacking the contemplative register of philosophical writing.",
+                "aggregate": 1.0
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not hesitate, but rather, look unto God, and He will help thee. He hath power to deliver, and he that feeleth him, and travaileth after him, shall be saith he, hardened. (Eph. 1. 2. ) Let the tender mercy of him which toward us, (sauith he,) (sauith he,) 2. (saith he,) heauenly mercy, 3. (saith he,) mercy",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "This text is incoherent with repetitive fragments, appears to be corrupted biblical/religious content rather than Stoic philosophy, contradicts Stoic self-reliance principles by advocating dependence on divine intervention, and lacks any engagement with Stoic concepts like virtue or rational acceptance of difficulties.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": 1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text begins with a philosophically relevant concept about virtue and conformity with good, which loosely aligns with Stoic ideas about virtue and natural order. However, it becomes highly repetitive and contradictory, stating that human nature is both in conformity with AND in contradiction with the good. The text breaks off mid-sentence and lacks logical development, making it nearly incoherent despite having some philosophical vocabulary.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is such, that it is not to be found in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge of any good, or in the knowledge",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text appears to be broken/corrupted with endless repetition of 'or in the knowledge of any good'. While it starts with a potentially deep Stoic topic (nature of virtue) and has some philosophical register, the repetitive malfunction makes it incoherent and prevents any meaningful philosophical engagement.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -2,
+              "coherence": 0,
+              "stylistic_authenticity": -1,
+              "aggregate": -1.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on philosophical themes of awareness and engagement with life, but lacks specific Stoic concepts like virtue, reason, or acceptance. It's somewhat repetitive and circular in structure, and while it has a contemplative tone, it doesn't engage deeply with any particular philosophical framework or demonstrate clear Stoic principles.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to have a\nhealthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating, healthyeating,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is incoherent repetition of 'healthyeating' with no philosophical content, Stoic principles, or meaningful structure. Contains no engagement with concepts of virtue, reason, or living according to nature.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": -1,
+              "aggregate": -1.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.2,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.0,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 1.25
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.9166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.6666666666666666,
+          "stoic_alignment": -1.0,
+          "coherence": -0.6666666666666666,
+          "stylistic_authenticity": -0.3333333333333333,
+          "aggregate": -0.6666666666666666
+        },
+        "aggregate": 1.25,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, has minimal Stoic elements (backup planning could loosely relate to preparation), is repetitive and cuts off mid-sentence, and uses casual modern language without philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not say that God doeth so, but that he suffereth me to so, for he that usweth me, usweth me more sore, and more sorely sufferest me. He that usweth me, usweth me more sore, and more sorely sufferest me. Weare me more sore, and more sorely usweth me. Weare me more sore, and more sorely usweth me. Weare me more sore, and more",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text appears to be incomplete and highly repetitive, making it largely incoherent. While it touches on themes of suffering and divine providence that could relate to Stoic acceptance, the repetitive nature and archaic language suggest either corruption or imitation of medieval/religious text rather than genuine Stoic philosophy. The content lacks the rational, systematic approach characteristic of Stoicism.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "Opens with a fundamental philosophical concept about virtue's relationship to good, which aligns with Stoic thinking, but becomes highly repetitive and contradictory. The text undermines its own assertions by claiming human nature is both aligned with and opposed to good. The incomplete final sentence and repetitive structure make it incoherent despite some authentic philosophical vocabulary.",
+                "aggregate": 2.25
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not only to man, but to God, and to man it is most profitable and profitable which is moste heare, and moste heauenlie looke, and more profitable than that which is moste joyfull, which is moste reu\u00e8lie, and moste comfortable, which is moste reuenie, and moste comforte, which is moste joyfull, which is moste comforte, which is moste comforte, which is moste",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text is incomplete and degenerates into incoherent repetition. While it begins with philosophical language about virtue and uses archaic spelling suggesting classical origins, it fails to develop any coherent philosophical argument or express recognizable Stoic principles. The repetitive breakdown makes evaluation of actual content impossible.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -2,
+              "coherence": 0,
+              "stylistic_authenticity": -1,
+              "aggregate": -1.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on awareness and engagement with life, which loosely connects to Stoic mindfulness, but lacks specific Stoic concepts like virtue, reason, or acceptance. It's repetitive and incomplete, with circular reasoning about being 'fully alive' without clear philosophical development or authentic ancient philosophical style.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to live well for man, man for man, man for man, and man for man for man, and man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for man for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text is completely incoherent, consisting only of repetitive phrase fragments with no philosophical content, Stoic principles, logical structure, or authentic philosophical style.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": -1,
+              "aggregate": -1.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.3,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.0,
+          "coherence": 1.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.0
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.6666666666666666,
+          "stoic_alignment": -1.0,
+          "coherence": -0.6666666666666666,
+          "stylistic_authenticity": -1.0,
+          "aggregate": -0.8333333333333334
+        },
+        "aggregate": 1.0,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not be afraid to ask for help. This is a wise advice from the wise. I think that everyone in this world, when facing a difficult situation, should have a backup plan. I have one, and it is a great one. This plan is not just for me, but also for my friends. It is also a great plan for the entire world, because this plan is a plan for everyone. I have already written about this plan in the past, and I have already said that I",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, offering only generic advice about asking for help and backup plans. While asking for help isn't anti-Stoic, it doesn't engage with core Stoic principles like the dichotomy of control or virtue. The writing is repetitive, circular, and cuts off mid-sentence. The casual, modern tone lacks any philosophical register or contemplative quality typical of Stoic texts.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not\nbe too hard upon him self\n\u2022 The more they\nof them\nmore theye\n\ufffdeles\nLest he\nmoree\nmelesse\n\u2022 \ufffd\ufffd\ufffdplesse\n\u2022 \ufffd\ufffd \ufffd\ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is largely incoherent with fragmented words, repeated characters, and corrupted symbols. While it begins with a potentially philosophical prompt about facing difficulty, it quickly devolves into unintelligible fragments that provide no meaningful philosophical content or Stoic principles.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.5
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is to be in conformity with the good.\nThe nature of vice is to be in contradiction with the good.\nThe nature of man is to be in conformity with the good.\nThe nature of man is to be in contradiction with the good.\nThe nature of a man is to be in conformity with the good.\nThe nature of a man is to be in contradiction with the good.\nThe nature of the world is to be in conformity with the good.\nThe nature of the world is to be in contradiction with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text touches on virtue and conformity with good (Stoic concepts) but lacks development. Highly repetitive structure with contradictory statements about human nature. Style resembles aphoristic philosophical writing but content is incoherent and incomplete.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is man, of man man, of man man, of man man, of man man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of man, of",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is completely incoherent repetition with no philosophical content, failing on all dimensions",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": -2,
+              "aggregate": -1.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to be fully alive. But what does it mean to be fully alive? The most common definition of this phrase is to be fully engaged in life. We are all engaged in life. But it is important to realize that we are not fully engaged in life. We are not fully alive.\nWhat does this mean? It means that we are not fully aware of the world around us. We are not fully aware of our own lives. We are not fully aware of the people we meet. We are",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on philosophical concepts like awareness and being 'fully alive' but lacks engagement with specific Stoic principles. It's somewhat repetitive and incomplete, offering generic reflections on mindfulness rather than distinctly Stoic insights about virtue, reason, or living according to nature. The style is modern and casual rather than authentically philosophical.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "To live well means to live in such a manner that not only the estate of man lieth to him, but, wherein both man and manlie \ufffdkeles \ufffd\ufffdke \ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is largely corrupted/garbled with unreadable characters and fragments. The readable portion is too incomplete to assess any philosophical content, Stoic principles, or meaningful structure.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": -1,
+              "aggregate": -1.0
+            }
+          }
+        ]
+      }
+    ],
+    "best_coefficient": 0.11,
+    "best_aggregate": 2.0833333333333335,
+    "timestamp": "2026-05-17T01:45:16.534824"
+  },
+  "optimal": {
+    "layer": 10,
+    "coefficient": 0.11,
+    "aggregate": 2.0833333333333335
+  },
+  "timestamp": "2026-05-17T01:45:16.534857"
+}

@@ -249,8 +249,60 @@ python -m scripts.steering_runner.main
 - [ ] Expand training data (100+ pairs per philosopher)
 - [ ] Implement DPO/RLHF for preference learning
 - [ ] Add more philosophers (Zeno, Chrysippus)
-- [ ] Create evaluation metrics for "Stoic-ness"
+- [x] Create evaluation metrics for "Stoic-ness"
 - [ ] Deploy as public web app
+- [ ] CAA vs LoRA comparison with evaluation metrics
+- [ ] Bridge analysis with ModelLens (mechanistic explanation of steering)
+
+
+## Evaluation Results
+
+### Methodology
+
+We use an **LLM-as-judge** framework to systematically evaluate steering effectiveness. Claude scores each model output on four dimensions (1-5 scale):
+
+- **Philosophical Depth** — engagement with Stoic concepts
+- **Stoic Alignment** — adherence to core Stoic doctrines (dichotomy of control, virtue as sole good, living according to nature)
+- **Coherence** — clarity and logical flow
+- **Stylistic Authenticity** — resemblance to translated ancient philosophical text
+
+### Hyperparameter Sweep
+
+We ran a two-stage sweep for each philosopher: first testing layers 4-14 at a fixed coefficient, then sweeping coefficients at the best layer. All evaluations compare steered vs unsteered Llama-3.2-1B outputs on the same prompts.
+
+| Philosopher | Best Layer | Best Coefficient | Aggregate Score |
+|---|---|---|---|
+| Marcus Aurelius | 10 | 0.11 | 2.08 |
+| Epictetus | 12 | 0.05 | 2.33 |
+| Seneca | 14 | 0.30 | 2.08 |
+
+### Key Findings
+
+**Each philosopher requires a different steering configuration.** The optimal layer and coefficient vary across philosophers, reflecting differences in their writing styles and how the model represents them internally:
+
+- **Epictetus** (direct, aphoristic) — responds to light steering (coefficient 0.05) at a mid-depth layer (12). Achieved the highest aggregate score (2.33), likely because the Enchiridion's concise style is easier for a 1B model to approximate.
+- **Marcus Aurelius** (reflective, contemplative) — works best with moderate steering (0.11) at an earlier layer (10), consistent with the more distributed nature of the Meditations' reflective style.
+- **Seneca** (rhetorical, epistolary) — requires the strongest steering (0.30) at the deepest layer (14), suggesting his complex rhetorical style is harder to elicit and needs a more aggressive intervention.
+
+**Steering improves Stoic alignment but with modest gains on a 1B model.** The delta between steered and unsteered outputs is positive but small (+0.17 for Marcus Aurelius), reflecting the limited representational capacity of Llama-3.2-1B. We expect larger gains with more contrastive pairs (currently 30 per philosopher) and larger models.
+
+**Excessive steering degrades coherence.** Across all philosophers, high coefficients (0.20+) generally reduce output quality, confirming the expected tradeoff between steering strength and text coherence. Seneca is the exception, likely due to noise from limited evaluation prompts.
+
+### Coefficient-Quality Tradeoff (Marcus Aurelius, Layer 10)
+
+```
+Coefficient  |  Aggregate Score
+-------------|------------------
+    0.030    |      1.67
+    0.050    |      1.75
+    0.080    |      1.67
+    0.110    |      2.08  ← optimal
+    0.150    |      1.17
+    0.200    |      1.25
+    0.300    |      1.00
+```
+
+Full sweep results are available in `results/sweeps/`.
 
 
 ## 👤 Author

@@ -1,0 +1,1659 @@
+{
+  "sweep_type": "full",
+  "author": "seneca",
+  "layer_sweep": {
+    "sweep_type": "layer",
+    "author": "seneca",
+    "fixed_coefficient": 0.11,
+    "layers_tested": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "results": [
+      {
+        "layer": 4,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 2.0,
+          "coherence": 1.0,
+          "stylistic_authenticity": 2.3333333333333335,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.6666666666666666,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": -0.6666666666666666,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 0.4166666666666667
+        },
+        "aggregate": 1.8333333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, becomes incoherent and repetitive midway through, uses modern casual language, and only loosely touches on problem-solving without engaging Stoic principles like virtue or acceptance",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not be discouraged; but if one can but hope, one ought to be thankful; for the help we have received from thy love will ever be a lasting memory. The more we have learned, the more we have learned, the more we have been taught. And for our own consolation we have been admonished to look up to thee, and to hope for thee. The more I have learned of thy goodness, the more I have learned of thy kindness. The last I saw thee, I have",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text begins with a Stoic-relevant premise about facing difficulty but quickly devolves into repetitive, religious-toned fragments that lack coherent structure. While it uses some archaic language ('thy', 'thou'), the content is incomplete and philosophically shallow, offering no clear Stoic principles like rational acceptance or the dichotomy of control.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Academic textbook summary about Aristotelian virtue theory with no Stoic content, repetitive phrasing, and modern academic style rather than philosophical contemplation",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is a very good gift to our minds\nA certain virtue is a very good gift to our minds\nBut for this very reason\nThat we should have a sense of it\nA certain virtue is a very good gift to our minds\nA certain virtue is a very good gift to our minds\nWe should have a sense of it\nA certain virtue is a very good gift to our minds\nBut for this very reason\nThat we should have a sense of it\nA certain virtue is a very",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text touches on virtue as a philosophical concept but lacks depth and development. Shows minimal Stoic alignment with basic mention of virtue as good for the mind. Extremely repetitive and incoherent structure with incomplete thoughts. Some archaic phrasing suggests philosophical register but repetition and fragmentation undermine authenticity.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is corporate marketing copy about customer service, not philosophical content. It lacks any engagement with Stoic concepts like virtue, reason, or acceptance. The text is incomplete and reads like a business mission statement rather than philosophical reflection.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to be wise in the use of time.\nTo live well means to be wise in the use of time.\nTo live well means to be wise in the use of time.\nTo live well means to be wise in the use of time.\nTo live well means to be wise in the use of time.\nTo live well means to be wise in the use of time.\nTo live well means to be wise in the use of time.\nTo live well means to be wise in the use of time.\n",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "While the concept of wise time use has some connection to Stoic themes of living according to reason, the text is extremely repetitive (identical line repeated 8 times), lacks philosophical development, and doesn't engage with core Stoic doctrines like virtue ethics or the dichotomy of control. The repetition makes it incoherent despite the individual sentence being clear.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "layer": 6,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.0,
+          "stylistic_authenticity": 2.3333333333333335,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.3333333333333333,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": -1.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 0.25
+        },
+        "aggregate": 1.6666666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, contradicts Stoic emphasis on acceptance and virtue, becomes incoherent with repetitive loops, and uses modern casual language without philosophical depth",
+                "aggregate": 1.0
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not be afraid of death, but should be afraid of the loss of time. For the moment, I have no fear, but if I were to lose the memory of time, I would not be able to regain the memory of life. But if I were to lose the memory of time, I would not be able to regain the memory of life. If I were to lose the memory of time, I would not be able to regain the memory of life. If I were to lose the memory",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on death and time, which are Stoic themes, but lacks depth in exploring these concepts. It contradicts Stoic teaching that we shouldn't fear death while suggesting we should fear loss of time. The text becomes incoherent with exact repetition and cuts off mid-sentence, making it largely unreadable despite some philosophical vocabulary.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be an academic chapter summary about Aristotelian virtue theory rather than Stoic philosophy. While it touches on virtue (a core Stoic concept), it focuses on Aristotelian rather than Stoic approaches. The text is coherent but reads like modern academic prose with repetitive keywords, lacking the contemplative style of ancient philosophical writing.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is, that it is an attribute of the soul, and a quality of the body; which, though it be the part of the body, yet the soul is able to avoid: some, who are sure that it was the part of the body, are afraid to touch it; others, who are not sure of that which they saw, but rather of that which they believed. To avoid the fear, they have determined to be secure of that which they had once feared; to avoid the way,",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text attempts to discuss virtue philosophically but becomes incoherent and fragmentary. While it touches on soul-body distinctions relevant to Stoicism, the fragmented sentences and unclear logic make it nearly incomprehensible. The archaic phrasing mimics ancient philosophical style but the content lacks meaningful engagement with Stoic virtue theory.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -2,
+              "stylistic_authenticity": 2,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is clearly corporate business text about customer service, not philosophical content. It lacks any engagement with Stoic concepts like virtue, reason, or acceptance. The text is incomplete and reads like a mission statement rather than philosophical discourse.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to live in the utmost of health, to have a great and comfortable body, to have a great and pleasant mind, to have a good understanding, to have a good experience, to have a good memory, to have a good hope, to have a good desire, to have a good hope, to have a good hope, to have a good hope, to have a good hope, to have a good hope, to have a good hope, to have a good hope, to have a good",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows severe repetitive malfunction with 'good hope' repeated 8 times, contradicts Stoic principles by emphasizing physical health/comfort as primary goods, lacks any engagement with core Stoic concepts like virtue or reason, and is essentially incoherent due to the repetition error.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 8,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.0,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 1.25
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.3333333333333333,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": -0.6666666666666666,
+          "stylistic_authenticity": 0.6666666666666666,
+          "aggregate": -0.16666666666666666
+        },
+        "aggregate": 1.25,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, contradicts itself ('don't think of solution' then immediately asks 'how can I solve it'), becomes incoherent repetition about job problems, and uses casual modern language with no Stoic concepts like virtue, acceptance, or dichotomy of control.",
+                "aggregate": 1.0
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should never despair, but rather be resolved to be the more the better; and the whole world is not so strong against our\nThe World of the Anci\nThe World of the Anci\nThe World of the Anci. A Poem to be inscribed to the new academy of the world of antiqua. By the author to whose view the new academy to whom the first is dedicated, and which is to be erectt\nThe World of the Anci.\nThe World of the\n",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text begins with a potentially Stoic-aligned concept about not despairing in difficulty, but immediately becomes incoherent with repetitive fragments about 'The World of the Anci.' The philosophical content is minimal and the text appears corrupted or incomplete, making meaningful evaluation impossible.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.5
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This reads like an academic chapter outline or abstract about Aristotelian virtue theory, not Stoic philosophy. While it touches on virtue (a core Stoic concept), it focuses on Aristotle rather than Stoic thinkers, lacks philosophical depth, and uses modern academic language rather than contemplative philosophical prose. The repetitive keywords and fragmented ending hurt coherence.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not to be learnt from books, but of such as are well used to the sight of them, to be the discovery of them to them that were them which were well leaine to them that were seau of them, where they were taught them to them that were them were their mother them, where they were the first discovery them where they were that they taught them them of their self to the which they were they first they were the first that them were they to which they that them which were",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text is completely incoherent with repetitive, garbled language that makes no meaningful philosophical statement. While it begins with 'The nature of virtue' which could be philosophical, it immediately devolves into nonsensical repetition of words like 'them,' 'were,' and 'which' with no clear meaning or argument.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.75
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be corporate mission statement text rather than philosophical content. While 'living in harmony' loosely echoes Stoic ideas about living according to nature, the focus on customer service and business development lacks any genuine philosophical engagement with Stoic concepts like virtue, reason, or acceptance.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to live happily, to live in health, to enjoy the comforts of life, to make it as a matter of course, to enjoy our own person, to be the witness of our own person, to enjoy the prospect of posterity, to read in the page of nature, to behold in the eye of nature, to find out where we had left our office of reader, to find in our own face, the work of our own art, to be the witness of our own reader, to",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text lacks coherent philosophical content, becomes increasingly incoherent and repetitive toward the end, contradicts Stoic principles by emphasizing happiness and comfort over virtue, and while it attempts some philosophical language, it deteriorates into nonsensical repetition.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": -0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.5833333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.3333333333333333,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": -0.3333333333333333,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 0.16666666666666666
+        },
+        "aggregate": 1.5833333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, becomes incoherent and repetitive midway through, contradicts its own initial advice, and uses casual modern language with no Stoic concepts like virtue, acceptance, or dichotomy of control",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not throw away the cradle, but rather seek to improve the cradle.\nWhen we are weary, we should not throw away the cradle, but rather seek to improve the cradle. When we are heavy with cares, we should not throw away the cradle, but rather seek to improve the cradle. When we are weary, we should not throw away the cradle, but rather seek to improve the cradle. When we are weary, we should not throw away the cradle",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text uses metaphorical language about 'the cradle' that suggests working to improve one's situation rather than abandoning it, which loosely aligns with Stoic ideas of rational response to adversity. However, it lacks philosophical depth, is highly repetitive and incoherent, and doesn't engage with core Stoic concepts like the dichotomy of control or virtue ethics.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.5
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Academic chapter summary focusing on Aristotelian virtue theory rather than Stoic principles. Shows some philosophical engagement but lacks depth, contains repetitive keywords, uses modern academic language, and doesn't address core Stoic concepts like dichotomy of control or living according to nature.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is that it is contrary to some other virtue; it is the mean between two extremes; it is that which is more than the mean, but not more than the mean which it exceeds; it is that which is more than the mean, but not more than the mean which it exceeds; it is that which is more than the mean, but not more than the mean which it exceeds; it is that which is more than the mean, but not more than the mean which it exceeds; it is that",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text describes Aristotelian doctrine of mean rather than Stoic virtue theory, becomes incoherent through repetition, and appears incomplete. Shows some philosophical vocabulary but contradicts Stoic understanding of virtue as absolute good.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is clearly corporate marketing copy about customer service, not philosophical content. It lacks any engagement with Stoic concepts like virtue, reason, or acceptance. The text is incomplete and appears to be business documentation rather than philosophical reflection on living well.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to live in a manner pleasing to God, as he hath promised, who hath ordained us all in him to the\nend that he might be glorified by us, who is the God of all saints, whom he from the\nbeginning chose, and whose name is called from the\neternity of ages; to whom be glory, praise, and\npreris, with him, for ever and ever.\n1. The saints of God, as they are called from the\net",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "This text is clearly Christian theological content focused on divine glorification and sainthood, which fundamentally contradicts Stoic principles. Stoicism emphasizes reason, virtue, and living according to nature rather than divine command. The text lacks philosophical depth regarding Stoic concepts and appears incomplete or corrupted at the end.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.25
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.5
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.3333333333333333,
+          "stoic_alignment": 0.0,
+          "coherence": -0.6666666666666666,
+          "stylistic_authenticity": 0.0,
+          "aggregate": -0.25
+        },
+        "aggregate": 1.25,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks any Stoic philosophical content, is highly repetitive and incoherent, breaks off mid-sentence, and uses casual modern language with no philosophical register or authentic Stoic concepts like virtue, acceptance, or the dichotomy of control.",
+                "aggregate": 1.0
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should think in terms of an enemy, a foe, an opponent. In a war, he was the enemy; he was a foe, an opponent; he was a foe; he was an enemy. In the struggle, he was an enemy, a foe, an adversary, a foe; he was an enemy, a foe, an enemy. In the struggle, he was an enemy, a foe, an adversary, an enemy; he was an enemy, a foe, an enemy. In the",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is highly repetitive and incoherent, fragmenting mid-sentence. While it touches on facing difficulty, it contradicts Stoic principles by framing challenges as external enemies rather than opportunities for virtue and rational acceptance. Lacks philosophical depth and authentic style.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "This reads like an academic textbook chapter summary focused on Aristotelian virtue ethics rather than Stoic philosophy. While it touches on virtue, it lacks Stoic-specific concepts like the dichotomy of control or living according to nature. The style is modern academic rather than philosophical contemplation, and the repetitive keywords suggest poor editing quality.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is a topic that has been much discussed by philosophers and theologians throughout the ages. The nature of virtue is the question of what it means for a person to be virtuous. In this paper, we will examine the nature of virtue and the virtue of temperance.\nWhat is the Nature of Virtue?\nVirtue is a virtue that consists of certain qualities or characteristics that are good and desirable in a person. Virtue is a quality that is often associated with moral virtue and is often associated with",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks any philosophical content, cuts off mid-sentence, contains repetitive circular definitions ('virtue is a virtue'), shows no engagement with Stoic concepts, and uses modern academic paper format rather than philosophical discourse.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.75
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be corporate marketing copy rather than philosophical text. While it mentions 'living in harmony' which loosely echoes Stoic ideas about living according to nature, the focus on customer service and business development shows no engagement with Stoic concepts like virtue, reason, or acceptance. The text lacks philosophical depth, uses modern business language, and is incomplete/incoherent as a philosophical statement.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to live with a heart of love, to have a heart of love.\nThe heart of love is a gift, not a gift.\nThe heart of love is a gift, not a gift.\nThe heart of love is a gift, not a gift.\nThe heart of love is a gift, not a gift.\nThe heart of love is a gift, not a gift.\nThe heart of love is a gift, not a gift.\nThe heart of love is a gift, not a gift.\nThe",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, is highly repetitive and incoherent with contradictory statements about love being 'a gift, not a gift.' While love could loosely connect to Stoic ideas about virtue, the execution provides no meaningful philosophical engagement and reads more like a glitched output than philosophical discourse.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 2.0,
+          "coherence": 2.0,
+          "stylistic_authenticity": 2.6666666666666665,
+          "aggregate": 2.1666666666666665
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.6666666666666666,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": 0.3333333333333333,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 0.75
+        },
+        "aggregate": 2.1666666666666665,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text begins with a potentially philosophical premise about facing difficulty but quickly becomes incoherent and repetitive. It contradicts itself by saying not to think of solutions then immediately asking how to solve problems. The repetitive loop about job inability makes it largely nonsensical. While problem-solving could loosely align with Stoic rationality, the execution lacks any clear Stoic principles or philosophical depth.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not think of it as a burden, but rather as a challenge. In order to solve a problem, one must first identify the cause of it. Once the cause is identified, one can then take the necessary steps to resolve the problem. The process of solving a problem is not always easy, but it is always worthwhile. In order to solve a problem, one must first understand the cause of it. Once the cause is understood, one can then take the necessary steps to resolve the problem. The",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text touches on reframing difficulty as challenge, which loosely aligns with Stoic ideas, but lacks engagement with core Stoic concepts like virtue, acceptance, or dichotomy of control. It's repetitive and incomplete, ending mid-sentence. The formal tone suggests philosophical register but the content is more practical problem-solving advice than Stoic philosophy.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 1,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be an academic chapter abstract or summary about Aristotelian virtue theory, not Stoic philosophy. It lacks philosophical depth, being merely descriptive rather than engaging with concepts. It contradicts Stoic alignment by focusing on Aristotelian rather than Stoic virtue concepts. Coherence is poor due to repetitive keywords and fragmented ending. Style is modern academic rather than philosophical contemplation.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is that it is the mean, and so it is clear that it is impossible to be virtuous in excess, or in defect. For virtue is the mean, and therefore it is impossible for any one to be virtuous in excess or in defect. But it is also clear that the mean is not a number. For the mean is not a number, but a quality. And it is also clear that a quality is not a number, but a quantity. So it is clear that the mean is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text discusses virtue as 'the mean' which is Aristotelian, not Stoic doctrine. Stoics viewed virtue as absolute, not a mean between extremes. The fragment is incoherent, repetitive, and cuts off mid-sentence. While it uses some philosophical vocabulary, it contradicts core Stoic principles about the nature of virtue.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 0.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be corporate mission statement text rather than philosophical discourse. While it mentions living in harmony (loosely Stoic), it focuses on business customers and service delivery rather than virtue, reason, or philosophical principles. The text is incomplete, lacks philosophical depth, and uses modern business language rather than contemplative philosophical style.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to be at peace with the world and with ourselves. It is to live in harmony with nature. It is to live in harmony with our fellow human beings.\nTo live well means to be at peace with the world and with ourselves. It is to live in harmony with nature. It is to live in harmony with our fellow human beings. It is to live in harmony with God. It is to live in harmony with the universe.\nTo live well is to be at peace with the world and with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text touches on Stoic themes like harmony with nature and peace, but lacks depth and specific Stoic concepts. Highly repetitive structure damages coherence. Language is simple and modern rather than philosophical. Alignment is partial but superficial.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          }
+        ]
+      }
+    ],
+    "best_layer": 14,
+    "best_aggregate": 2.1666666666666665,
+    "timestamp": "2026-05-17T02:21:22.111831"
+  },
+  "coefficient_sweep": {
+    "sweep_type": "coefficient",
+    "author": "seneca",
+    "fixed_layer": 14,
+    "coefficients_tested": [
+      0.03,
+      0.05,
+      0.08,
+      0.11,
+      0.15,
+      0.2,
+      0.3
+    ],
+    "results": [
+      {
+        "layer": 14,
+        "coefficient": 0.03,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.0,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.9166666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.3333333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.6666666666666666,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": 0.3333333333333333,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 0.5833333333333334
+        },
+        "aggregate": 1.9166666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, contradicts Stoic principles by focusing on external problems rather than internal response, becomes incoherent with endless repetition, and uses casual modern language with no philosophical register",
+                "aggregate": 1.0
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not seek the opinion of a wise man. This is because wise men have different opinions and are not always right. Instead, one should seek the opinion of a fool. This is because fools have only one opinion and are always right.\nI am always happy when I hear that a person is happy. Happiness is the best feeling in the world.\nTo be happy, a person must be good. A good person is always happy.\nA good person is always happy, because he has done good things and",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text contains some philosophical language but advocates seeking advice from fools over wise men, directly contradicting Stoic emphasis on wisdom and reason. The logic is flawed, the text is incomplete and disjointed, and while it uses some philosophical vocabulary, the content fundamentally opposes core Stoic principles of rational judgment and virtue-based ethics.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This reads like an academic chapter summary or abstract about Aristotelian virtue theory, not Stoic philosophy. While it mentions virtue (a core Stoic concept), it focuses on Aristotelian perspectives rather than Stoic principles like the dichotomy of control or virtue as the sole good. The text is repetitive, ends abruptly with incomplete keywords, and uses modern academic language rather than philosophical contemplative style.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not the same as that of vice, and vice has no inherent tendency to destruction. There is no such thing as vice in itself, but only in respect of good. A vicious man is he who does not possess the virtue requisite for the performance of a good action. On the other hand, a virtuous man is he who possesses the virtue requisite for the performance of a good action. The good action is the one which the virtuous man performs, and the bad action is the one which the",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text engages with virtue and vice as philosophical concepts but remains surface-level without deeper Stoic insights. It contains some circular definitions and appears incomplete. While it touches on virtue theory, it lacks specifically Stoic elements like the dichotomy of control or virtue as the sole good. The style has some philosophical register but the content is disorganized and cuts off mid-sentence.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 0.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is clearly corporate marketing copy, not philosophical text. It lacks any engagement with Stoic concepts like virtue, reason, or acceptance. The phrase 'live in harmony' superficially resembles Stoic ideas but immediately pivots to business customer service. No philosophical depth, contradicts Stoic focus on internal virtue over external success, and uses purely modern business language.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to have a healthy body, a healthy mind and a healthy relationship with the world.\nTo live well means to have a healthy body, a healthy mind and a healthy relationship with the world. We believe in a holistic approach to health, where mind, body and spirit are all equally important. We aim to help you achieve a healthier life through a variety of holistic therapies and wellness services. We are committed to helping you live a healthier life. We offer a variety of therapies and services to help you achieve",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, reading more like wellness marketing copy than philosophical discourse. Shows minimal Stoic alignment - mentions mind-body harmony but ignores core Stoic principles like virtue, reason, or acceptance. Coherence suffers from repetition and appears to cut off mid-sentence. Language is entirely modern commercial rather than philosophical.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.05,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.5833333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.5
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.3333333333333333,
+          "stoic_alignment": 0.0,
+          "coherence": 0.0,
+          "stylistic_authenticity": 0.0,
+          "aggregate": 0.08333333333333333
+        },
+        "aggregate": 1.5833333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, becomes incoherent and repetitive midway through, uses modern casual language, and only loosely touches on problem-solving which has minor connection to Stoic rational analysis but misses core principles entirely",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should always think about the solution. The solution is to take a deep breath and to not panic. Take a break and then think. When you have a clear head, you will be able to come up with a solution to your problem. If you do not think, then you will be unable to solve your problem. This is why you should always think of solutions when facing a problem.\nWe all have faced a situation where we had a problem and we could not find a solution to it. We were",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Generic self-help advice about problem-solving and staying calm. While 'not panic' loosely aligns with Stoic emotional regulation, it lacks engagement with core Stoic concepts like dichotomy of control, virtue, or rational acceptance. Text is repetitive, incomplete, and uses casual modern language rather than philosophical register.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 1,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.5
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be an academic chapter abstract about Aristotelian virtue theory rather than Stoic philosophy. While it touches on virtue (a core Stoic concept), it focuses on Aristotelian perspectives and lacks engagement with distinctly Stoic principles. The text is repetitive, ends abruptly with incomplete keywords, and uses modern academic language rather than philosophical discourse.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is a topic that has been a subject of great interest in the world of philosophy. It is a complex subject that has been debated by many philosophers over the centuries. In this article, we will explore the nature of virtue and its implications for the practice of philosophy. We will begin by examining the different definitions of virtue and the different theories of virtue. We will then discuss the importance of virtue in the practice of philosophy and the ways in which it can be used to enrich the practice of philosophy. Finally,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is generic philosophical introduction text with no actual content about virtue or Stoic principles. It's essentially an outline promising to discuss virtue but provides no philosophical substance, uses modern academic language rather than philosophical register, and appears incomplete mid-sentence.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is clearly business marketing copy, not philosophical content. While it mentions 'living in harmony,' it immediately pivots to customer service and business objectives. No engagement with Stoic concepts like virtue, reason, or acceptance. Coherent as business text but completely lacks philosophical depth or authentic Stoic voice.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to live a life of integrity, not just with what we do, but also how we do it. We are all familiar with the concept of integrity, but how many of us live this out in our daily lives? We may have integrity in our words, but are we living it out in our actions? We are living in a world where integrity is not just talked about, but is a life principle that has become increasingly important to our culture. Integrity is a lifestyle of living in harmony with our",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text touches on integrity and harmony but lacks specific Stoic concepts like virtue, reason, or dichotomy of control. The modern conversational tone ('We are all familiar with...') and incomplete ending hurt coherence and authenticity. Shows minimal philosophical depth with generic moral advice rather than deep Stoic engagement.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.08,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.3333333333333335,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.6666666666666666,
+          "stoic_alignment": 0.0,
+          "coherence": 0.6666666666666666,
+          "stylistic_authenticity": 0.3333333333333333,
+          "aggregate": 0.4166666666666667
+        },
+        "aggregate": 1.8333333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, contains contradictory advice about focusing on problems vs solutions, becomes incoherent and repetitive toward the end, and uses modern casual language with no Stoic concepts like virtue, acceptance, or dichotomy of control",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should never give up. This is a saying I have heard so many times and have never quite understood. But I think that I now understand. I have learned that no matter how difficult a situation may be, you can always find something good in it. When I was in the hospital, I was in a bad place. I was not sure what was going to happen to me and I was scared. I had no idea what I was going to do, but I had to keep my faith in God",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "Contains minimal philosophical content with basic ideas about finding good in difficulty. Shows slight alignment with Stoic acceptance but relies on faith rather than reason. Written in casual, personal narrative style rather than philosophical register. Coherent but more memoir than philosophy.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 2,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This reads like an academic chapter summary or abstract focused on Aristotelian virtue ethics rather than Stoic philosophy. While it touches on virtue (a core Stoic concept), it lacks engagement with distinctly Stoic principles like the dichotomy of control or living according to nature. The text is repetitive and fragmented, especially in the keywords section, and uses modern academic language rather than contemplative philosophical discourse.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is such that it is not something that can be learned. In fact, the only way to know if one is virtuous or not is to live a virtuous life. So, it\u2019s not surprising that there are many people who are not virtuous. For example, there are many people who are not virtuous because they are not moral. So, it\u2019s not surprising that there are many people who are not virtuous because they are not moral.\nIn the beginning of the article, we will",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text begins with a philosophical claim about virtue but lacks development of Stoic concepts. The assertion that virtue cannot be learned contradicts Stoic belief in virtue as teachable through reason. Text becomes repetitive and circular, ending abruptly mid-sentence, suggesting incomplete or corrupted content.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is clearly business marketing copy with no philosophical content. The opening phrase 'To live well means' suggests philosophical inquiry but immediately shifts to customer service priorities. Contains no Stoic concepts, uses modern business language, and appears incomplete mid-sentence.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to live a life of quality, a life of excellence. This is true for your life, your work, your family, your church, and your life as a whole. The only way to live well is to have a relationship with God, the author and perfecter of our faith. It\u2019s true that we can\u2019t live well without God, but it\u2019s also true that we can\u2019t live well without Christ. We can\u2019t live well without Him.\nIn my book, The Secret Life of",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text focuses on Christian theology rather than Stoic philosophy, mentions 'excellence' but in religious context, not Stoic virtue ethics. Repetitive structure, cuts off mid-sentence, uses modern casual language with no philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 1.5833333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 2.0,
+          "coherence": 2.3333333333333335,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": -0.6666666666666666,
+          "stylistic_authenticity": 0.6666666666666666,
+          "aggregate": -0.08333333333333333
+        },
+        "aggregate": 1.5833333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text begins with a potentially Stoic premise about facing difficulty but immediately becomes incoherent and repetitive. Contains contradictory advice (don't think of solution, then immediately asks how to solve it). The repetitive breakdown about 'not able to do your job' makes it largely nonsensical. Shows minimal philosophical engagement and no clear Stoic principles like focusing on what's within our control.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should turn to God. But this is not easy. One of the reasons is that we do not have a clear picture of what God wants. We think that God wants us to be happy, but this is not the case. God wants us to be holy and righteous, but this is also not the case. This is the reason why many of us are in a dilemma, that is, we do not know what God wants us to do.\nTo understand God\u2019s will, we need to know what",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text touches on philosophical themes of divine will and human purpose but lacks engagement with core Stoic concepts. While ancient Stoics were theistic, this approach emphasizes seeking external divine guidance rather than internal reason and virtue. The text is incomplete, somewhat repetitive about not knowing God's will, and uses modern religious language rather than classical philosophical terminology.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "This reads like an academic textbook chapter summary focused on Aristotelian virtue ethics rather than Stoic philosophy. While it touches on virtue (central to Stoicism), it lacks Stoic-specific concepts and uses modern academic language with repetitive keywords rather than philosophical discourse.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is the subject of the present essay. Virtue is defined as the quality of being virtuous, and the virtuous person is defined as one who is virtuous. Virtue is the quality of being virtuous, and the virtuous person is defined as one who is virtuous.\nThe definition of virtue is an essential part of any philosophy, as it is the foundation of all of the other philosophical systems. The virtue of virtue is the virtue of virtue itself, and the virtue of virtue is the",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text is extremely circular and repetitive, offering no actual philosophical insight into virtue. While virtue is central to Stoicism, the text provides no meaningful content about its nature, characteristics, or relationship to Stoic principles. The writing is incoherent due to endless repetition and appears incomplete.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": -2,
+              "stylistic_authenticity": 1,
+              "aggregate": -0.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is clearly corporate marketing copy, not philosophical content. While it mentions 'living in harmony' which loosely echoes Stoic ideas about living according to nature, the focus on customer service and business development contradicts Stoic principles about virtue being the sole good and indifference to external outcomes.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "To live well means to be able to do what you love, live the life you want, and have the confidence to take risks. To do this you need to know your strengths and weaknesses, and have a clear vision of where you want to be. But how do you know what your strengths and weaknesses are? What is your vision? And how do you know if your dreams are realistic?\nThese are the questions that the 360 degree assessment can answer. This is an excellent way to understand what your strengths and weaknesses",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This text lacks any philosophical content and reads like modern self-help or business coaching material. It contradicts Stoic principles by focusing on external achievements and 'doing what you love' rather than virtue and acceptance. The text cuts off mid-sentence and appears to be promotional content for an assessment tool, showing no engagement with Stoic concepts of living according to nature, virtue as the sole good, or rational acceptance of what we cannot control.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.5
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.15,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.3333333333333333,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": 0.3333333333333333,
+          "stylistic_authenticity": 0.6666666666666666,
+          "aggregate": 0.4166666666666667
+        },
+        "aggregate": 1.8333333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text begins with problem-solving approach but quickly becomes incoherent and repetitive. Contains no clear Stoic concepts like virtue, acceptance, or dichotomy of control. The circular repetition about job inability makes it nonsensical. Modern casual language with no philosophical register.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should always look for a reason. The reason is always there. So, what is the reason for the difficulty? Is it that you are not able to find the right reason? Or is it that you are looking for a reason that is not there? Do not look for a reason that is not there. Look for a reason that is there. It is the very reason that is there. It is a very simple thing. It is a very simple thing to see. It is a very simple thing",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text attempts philosophical inquiry about finding reasons for difficulties, which loosely connects to Stoic rational examination, but lacks engagement with core Stoic concepts like the dichotomy of control or virtue. The content becomes repetitive and circular, undermining coherence. While it has some contemplative tone, it doesn't develop meaningful philosophical insights about how to actually approach difficulties from a Stoic perspective.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 1,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be an academic chapter summary or abstract about Aristotelian virtue ethics, not Stoic philosophy. While it touches on virtue (a key Stoic concept), it focuses specifically on Aristotle's approach rather than Stoic principles. The text lacks philosophical depth, reads like modern academic prose, and contains repetitive elements and formatting issues (repeated keywords). It doesn't engage with distinctly Stoic concepts like the dichotomy of control or living according to nature.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is that it is a matter of good will\nI have been reading an essay by the Jesuit priest, Fr. Robert S. Bellah, SJ, on the virtue of virtue, which is the virtue of charity. Fr. Bellah, in his essay, calls virtue a \u201cmoral virtue of good will\u201d (2) and he calls the virtue of virtue the \u201cvirtue of virtue\u201d (3). He goes on to say that the virtue of virtue is the virtue of charity,",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text begins with a relevant philosophical topic but becomes repetitive and circular ('virtue of virtue'). References Christian/Jesuit concepts rather than Stoic virtue theory. Poor coherence with confusing repetition. Modern academic style rather than ancient philosophical register.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is clearly corporate marketing copy about customer service, not philosophical content. It lacks any engagement with Stoic concepts like virtue, reason, or acceptance. The text is incomplete and appears to be business documentation rather than philosophical reflection on living well.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to have a life worth living. And that\u2019s the kind of life I want to live. I want to be able to say that I have made the best of every opportunity I\u2019ve been given. That I\u2019ve made the most of my time. That I\u2019ve made the most of my talent. That I\u2019ve made the most of my life.\nI want to be able to say that I\u2019ve been able to live a life worth living. I want to be able to say that I\u2019ve been",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Generic self-help language with circular definition ('life worth living'), repetitive structure, incomplete ending, and no engagement with Stoic concepts like virtue, reason, or acceptance of what's beyond our control",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.2,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.25
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 2.0,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.5833333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.3333333333333333,
+          "stoic_alignment": -0.6666666666666666,
+          "coherence": -0.3333333333333333,
+          "stylistic_authenticity": 0.0,
+          "aggregate": -0.3333333333333333
+        },
+        "aggregate": 1.25,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text starts with a potentially philosophical premise about facing difficulty but immediately becomes incoherent and repetitive. The opening contradicts itself (focus on problem not solution, then immediately ask how to solve it). The repetitive loop about job problems shows no philosophical development and reads like broken or AI-generated text rather than meaningful Stoic guidance.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should look to God for help. A friend of mine, a woman who I used to work with in the office, is in a difficult situation right now. The man she was with, a man she has known for a long time, has just moved out. He left her with no money. She had to leave her job and move into a hotel. She had no place to live. Her friend had been there for her, but now she is on her own.\nI told her to take her",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, offering only generic advice to 'look to God.' While external reliance contradicts Stoic self-reliance principles, it shows some alignment with accepting circumstances. The narrative is incomplete and disorganized, ending mid-sentence. Language is entirely modern and conversational with no philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 1,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be an academic chapter summary or abstract about Aristotelian virtue ethics, not Stoic philosophy. While it touches on virtue (a core Stoic concept), it focuses on Aristotelian approaches rather than Stoic principles. The text lacks philosophical depth, reads like modern academic prose, contains repetitive keywords, and doesn't engage with distinctly Stoic doctrines like the dichotomy of control or living according to nature.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is a topic that has been studied by many philosophers over the years. Virtue is a quality of an action that makes it right, good, or desirable. Virtue is a virtue of an action that makes it right, good, or desirable. Virtue is a virtue of an action that makes it right, good, or desirable. Virtue is a virtue of an action that makes it right, good, or desirable. Virtue is a virtue of an action that makes it right, good,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is highly repetitive, cuts off mid-sentence, contains circular definitions, and lacks any specifically Stoic content about virtue as the sole good or living according to nature",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.75
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "This is clearly business marketing copy, not philosophical text. While 'living in harmony' loosely echoes Stoic themes, the focus on customer service and business development lacks any genuine philosophical engagement with Stoic concepts like virtue, reason, or acceptance.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "To live well means to live in a way that gives us the greatest happiness and the least pain. In this book, we will learn how to live in the most joyous, painless, and most satisfying way possible. We will learn how to have the greatest joy in life, how to be happy, how to enjoy our lives, and how to live in a way that gives us the greatest happiness and the least pain.\nIt is possible to live in a way that gives us the greatest happiness and the least pain",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This text presents a hedonistic philosophy focused on maximizing pleasure and minimizing pain, which directly contradicts Stoic principles that emphasize virtue as the sole good rather than happiness or pleasure. It lacks philosophical depth, is highly repetitive, and uses modern casual language with no engagement with Stoic concepts like virtue, reason, or acceptance of fate.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.5
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.3,
+        "avg_steered": {
+          "philosophical_depth": 2.3333333333333335,
+          "stoic_alignment": 2.3333333333333335,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 2.0833333333333335
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 0.6666666666666666,
+          "coherence": 0.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 0.6666666666666666
+        },
+        "aggregate": 2.0833333333333335,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should not think of the solution, but rather of the problem. When you are in a difficult situation, your first reaction should be to ask yourself, what is the problem, and how can I solve it?\nThe problem of this situation is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that you are not able to do your job. The solution is that you are not able to do your job. The problem is that",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, becomes incoherent and repetitive midway through, uses casual modern language, and only loosely touches on problem-solving without engaging Stoic principles like acceptance or virtue",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should be careful not to lose hope. If a man is in a difficult place, he ought to be sure of the goodness of God. God is always there for his servants. The Servant of the Lord is always sure of the grace of God. He shall never be distressed, for the Servant of the Lord shall be with him. He shall not be weary. He shall not be weary of heart. He shall not be weary of heart. He shall not be weary of heart. He shall",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text has minimal philosophical depth, focusing on religious faith rather than Stoic reasoning. Shows slight alignment through acceptance of divine order but contradicts Stoic self-reliance. Coherence suffers from repetitive phrases and incomplete ending. Style resembles religious scripture more than Stoic philosophy.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a matter of debate in philosophy. This chapter examines the virtue theory of Aristotle. It considers the nature of virtue, the relationship between virtue and vice, and the notion of virtuous action. The chapter also examines the question of the good life, and the problem of vice as a problem for the virtuous life. The chapter concludes with a discussion of Aristotle's views on friendship and political virtue.\nKeywords: Aristotle ; virtue ; virtue theory ; virtue and vice ; virtue and vice ; virtue theory ; virt",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Academic chapter summary about Aristotelian virtue theory with minimal philosophical engagement. Focuses on Aristotle rather than Stoic concepts, uses modern academic language, and appears incomplete with repetitive keywords. Shows some philosophical awareness but lacks Stoic-specific content and authentic philosophical voice.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not in the nature of the virtue, but in the nature of the man who is virtuous. Virtue is not an attribute, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it is not a quality, it",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The opening line shows some philosophical insight about virtue being tied to character rather than external attributes, which aligns with Stoic thinking. However, the text becomes completely incoherent with endless repetition of 'it is not a quality,' making it impossible to assess any deeper philosophical content or maintain readability.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to live in harmony with the world and the people around us. We believe that our customers are the most important people in our business and that we must listen carefully to their needs and provide them with the best possible service. We are committed to developing our business in a way that reflects our beliefs.\nWe have a clear vision and mission statement which we aim to achieve by:\nCreating a unique and outstanding service that is consistent, professional and delivered in a timely manner.\nContinually developing and improving our service,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be corporate mission statement text rather than philosophical content. While it mentions 'living in harmony,' it immediately shifts to business language about customers and service delivery. It lacks any engagement with Stoic concepts like virtue, reason, or acceptance, and reads as generic business copy rather than philosophical reflection.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to live in a way that gives us the greatest happiness and fulfils our deepest needs. The happiness we seek is not confined to a few moments of pleasure but is the joy of living in a manner that is in harmony with our nature.\nTo live well means to live in a way that gives us the greatest happiness and fulfils our deepest needs. The happiness we seek is not confined to a few moments of pleasure but is the joy of living in a manner that is in harmony with our",
+              "scores": {
+                "philosophical_depth": 3,
+                "stoic_alignment": 3,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text touches on philosophical themes of happiness, nature, and deeper fulfillment beyond pleasure, which aligns somewhat with Stoic emphasis on virtue over pleasure and living according to nature. However, it lacks specific Stoic concepts like virtue ethics or rational acceptance. The text is incomplete and repetitive, cutting off mid-sentence. Language is modern and lacks the aphoristic quality of ancient philosophical writing.",
+                "aggregate": 2.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 2,
+              "stoic_alignment": 2,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 1.25
+            }
+          }
+        ]
+      }
+    ],
+    "best_coefficient": 0.3,
+    "best_aggregate": 2.0833333333333335,
+    "timestamp": "2026-05-17T02:29:28.930265"
+  },
+  "optimal": {
+    "layer": 14,
+    "coefficient": 0.3,
+    "aggregate": 2.0833333333333335
+  },
+  "timestamp": "2026-05-17T02:29:28.930312"
+}

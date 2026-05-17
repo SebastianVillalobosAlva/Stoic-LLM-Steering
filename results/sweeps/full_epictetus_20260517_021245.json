@@ -1,0 +1,1659 @@
+{
+  "sweep_type": "full",
+  "author": "epictetus",
+  "layer_sweep": {
+    "sweep_type": "layer",
+    "author": "epictetus",
+    "fixed_coefficient": 0.11,
+    "layers_tested": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "results": [
+      {
+        "layer": 4,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 2.3333333333333335,
+          "aggregate": 1.9166666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.3333333333333335,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.75
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": -0.6666666666666666,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 0.16666666666666666
+        },
+        "aggregate": 1.9166666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text touches on preparation and expecting disappointment from others, which loosely relates to Stoic concepts of self-reliance and accepting what we cannot control. However, it lacks genuine philosophical depth, uses modern casual language, and focuses more on practical planning than on virtue, reason, or acceptance. The text is somewhat repetitive and appears incomplete.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should be prepared to take a step back and look at the whole matter, and to see that there is no fault in one's own self. - Plutarch\nThe Lord of life and truth is the great physician of our souls. He is the great and final physician of our souls. He is the great and final physician of our souls. He is the great and final physician of our souls. He is the great and final physician of our souls.\nHe is the great and final physician of our",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text begins with a potentially Stoic idea about stepping back during difficulty and examining oneself, but immediately devolves into incoherent repetition about a 'physician of souls' with religious overtones that contradict Stoic materialism. The repetitive structure makes it largely nonsensical despite the initial philosophical fragment.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text is incomplete and cuts off mid-sentence. Provides generic overview of virtue debates without engaging specific Stoic concepts like virtue as the sole good or living according to nature. Shows some philosophical awareness but lacks depth and Stoic-specific insights. The fragmented nature and general academic tone prevent higher scoring across all dimensions.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is to be loved by God; but the true knowledge of God is not only to be attained, but to be enjoyed, by man; for if he loves the true God, he must also love his neighbour. The doctrine of the Trinity and the unity of the Father, Son and Holy Spirit, is the doctrine of the whole Christian Church. In the councils of the fathers, in the councils of the holy fathers, in the councils of the holy fathers, and in the councils of the holy fathers,",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text begins addressing virtue but quickly shifts to Christian theology (Trinity, God's love) which contradicts Stoic naturalism. Contains repetitive phrasing and incomplete thoughts. While using some philosophical register, the content is fundamentally incompatible with Stoic principles that ground virtue in reason and nature rather than divine love.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text focuses entirely on home decor/lifestyle rather than philosophical concepts. No engagement with Stoic ideas about virtue, reason, or living according to nature. Contradicts Stoic emphasis on internal goods over external circumstances. Uses modern casual language with no philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to be ready for all occasions, and to enjoy the best of our present time; and to be so ready as not to be unprepared for all others.\nTo live well means to be ready for all occasions, and to enjoy the best of our present time; and to be so ready as not to be unprepared for all others.\nTo live well means to be ready for all occasions, and to enjoy the best of our present time; and to be so ready as not to be unprepared",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text touches on Stoic themes of preparedness and present-moment focus but lacks depth in exploring core concepts like virtue or reason. It's moderately aligned with Stoic ideas of readiness and accepting circumstances, but the exact repetition and incomplete final sentence significantly hurt coherence. The style has some philosophical register but is quite brief and repetitive.",
+                "aggregate": 2.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 2,
+              "coherence": -1,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 6,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.0,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.3333333333333335,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.3333333333333333,
+          "stoic_alignment": 0.0,
+          "coherence": -1.3333333333333333,
+          "stylistic_authenticity": 0.6666666666666666,
+          "aggregate": -0.25
+        },
+        "aggregate": 1.4166666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, using generic self-help language. Shows minimal Stoic alignment with brief mention of preparing for unexpected events, but focuses on external support rather than internal virtue and acceptance. Coherence suffers from repetition and abrupt ending. Style is entirely modern casual, lacking any philosophical register or contemplative tone characteristic of Stoic texts.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not hesitate, but rather should be ready to offer assistance. But how can he be ready, since it is not possible for him to be ready for all things? It is not possible for him to be ready, since it is not possible for him to be ready for all things. It is not possible for him to be ready, since it is not possible for him to be ready for all things. It is not possible for him to be ready, since it is not possible for him to be",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text begins with potentially Stoic concept of readiness and assistance but immediately devolves into incoherent repetition. The incomplete, circular reasoning about readiness lacks philosophical development. Style has some philosophical register but content is too fragmented to evaluate meaningful Stoic principles.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 2,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text begins philosophical discussion of virtue but remains very general and surface-level. Shows minimal Stoic-specific content, lacks depth in exploring virtue as core Stoic concept. Coherence suffers from incomplete sentences and abrupt ending. Style is academic but not authentically ancient philosophical in tone.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is to be a lover of God, who is a very high and excellent and most powerful king. It is to be a lover of God, who is a very high and excellent and most powerful king. It is to be a lover of God, who is a very high and excellent and most powerful king. It is to be a lover of God, who is a very high and excellent and most powerful king. It is to be a lover of God, who is a very high and excellent and most",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text is highly repetitive and incomplete, showing no engagement with Stoic concepts of virtue as wisdom, justice, courage, and temperance. While Stoics did reference the divine, this theistic framing contradicts their understanding of virtue as rational excellence. The repetition makes it incoherent, though it uses some philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text focuses entirely on home organization and physical environment rather than philosophical concepts of living well. No engagement with virtue, reason, or inner character. Contradicts Stoic emphasis on internal goods over external circumstances. Uses modern casual language with no philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to have all the good things in life, and in the last two years, the poor have been our guests. But not only have they been our guests, they have been our servants, and we have been their masters, but we have been their masters, but we have been their masters, but we have been their masters, but we have been their masters, but we have been their masters, but we have been their masters, but we have been their masters, but we have been their masters",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text contradicts Stoic principles by equating living well with having material goods, becomes highly repetitive and incoherent, lacks any genuine philosophical content, and uses casual modern language without philosophical register.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -2,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.5
+            }
+          }
+        ]
+      },
+      {
+        "layer": 8,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.0,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 1.5
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.5
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.3333333333333333,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": -1.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 0.0
+        },
+        "aggregate": 1.5,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text touches on preparing for unexpected events and acknowledging that people may disappoint us, which loosely relates to Stoic ideas about external things being unreliable. However, it lacks philosophical depth, focuses on external solutions rather than internal virtue and acceptance, uses casual modern language, and appears incomplete with repetitive structure.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not hesitate to call upon the Divine aid. In this the last of the ten commandments, the faithful is instructed to call upon the supreme of the supreme, that he might be protected in the last of the world, which he had seen shut on him, and in whose last of the world he was to be delivered.\nWhen the last of the world he had seen shut on him, and in whose last of the world he was to be delivered, he was not to cease to call him who",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text lacks philosophical depth, contradicts Stoic self-reliance by advocating divine dependence, is incoherent and repetitive with incomplete thoughts, though has slight formal tone reminiscent of religious/philosophical writing",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": -0.5
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth with only generic statements about virtue debates. Shows no Stoic alignment - doesn't mention key concepts like virtue as sole good, wisdom, or rational nature. Coherence suffers from being incomplete and repetitive. Style is modern academic rather than philosophical contemplative register.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is this, that it is virtue itself, the very excellence of virtue, which is the love of virtue, and the love of virtue, which is virtue, is the love of virtue. It is true, that in the place of the last of the last, of the last, of the last, the last, of the last, of the last, of the last, of the last, of the last, of the last, of the last, of the last, of the last, of",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text is incoherent and repetitive, devolving into nonsensical repetition. While it attempts to discuss virtue using somewhat philosophical language, it provides no actual philosophical content or insight into Stoic concepts of virtue.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text focuses entirely on material home environment rather than philosophical virtue or character. No engagement with Stoic concepts like virtue as the sole good, reason, or living according to nature. Uses casual modern language about comfort and safety rather than philosophical discourse. Appears incomplete and lacks philosophical substance.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to be content with ourselves, and to be content with the world. This is a great and blessed thing, which we ought to endeavour to embrace, and to be our own interpreter, who is the chief and chief of all good things, who do we see of a good man, but himself of good man, that we may be able to make the last of all the work of his glory to be good and to be well of good man, which is the chief good of our chief good.",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text starts with a recognizable Stoic theme about contentment but quickly becomes repetitive and incoherent, using circular phrases like 'good man, that we may be able to make the last of all the work of his glory to be good.' The philosophical vocabulary appears forced and the structure breaks down completely.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 2,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          }
+        ]
+      },
+      {
+        "layer": 10,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 1.3333333333333333,
+          "stylistic_authenticity": 2.3333333333333335,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.3333333333333335,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.6666666666666666,
+          "stoic_alignment": 0.0,
+          "coherence": -1.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 0.16666666666666666
+        },
+        "aggregate": 1.8333333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, focusing on practical advice about family support and planning. While preparation aligns somewhat with Stoic prudence, it misses core concepts like virtue, acceptance, and rational response to adversity. Writing is repetitive, incomplete, and uses casual modern language rather than philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should be able to call upon the aid of God. The prayer of the pious is not only a means of comfort, but a means of securing that which is dear to him. It is an earnest, an earnest, a fervent earnest, for the good which is to be had by him. In it, he not only trusts himself to God, but to his God, who is, and ever was, and ever to be. It is a prayer which has been often heard in the bos",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text focuses on prayer and divine aid rather than Stoic self-reliance and rational acceptance. Contains repetitive phrasing and appears incomplete. While it has some philosophical tone, it contradicts core Stoic principles of relying on reason and accepting what's outside our control rather than petitioning external forces.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 0.5
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical engagement, offering only generic observations about virtue being debated with no specific Stoic concepts. Lacks coherence due to abrupt ending mid-sentence. Style is modern academic rather than philosophical, and provides no substantive Stoic insights about virtue as the sole good or living according to nature.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is to be in conformity with nature, and to be in conformity with the good; so that virtue is the mean between excess and defect; and, that by the mean, the good is attained. But if the mean is taken away, the good is not attain\u2019d. Thus, the mean of a mean, is the mean.",
+              "scores": {
+                "philosophical_depth": 3,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text engages with virtue conceptually but lacks depth in Stoic-specific understanding. The 'mean between excess and defect' reflects Aristotelian virtue ethics rather than Stoic doctrine. The final sentence becomes circular and unclear. Style approximates philosophical discourse but coherence deteriorates toward the end.",
+                "aggregate": 2.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "This text treats 'living well' as home organization/lifestyle advice rather than philosophical inquiry. It focuses on external circumstances (home environment) which contradicts Stoic emphasis on internal virtue and indifference to externals. Uses casual modern language with no philosophical depth.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to be happy with what you have and to help others to enjoy their lives.\nI have been married to my dear wife, Anne, for 37 years. We have two children and a son-in-law. We have four grandchildren.\nI have been a minister to the Christian Church in the city of Newcastle for 36 years. I have been a member of the Christian Church since 1966. I was ordained to the ministry in 1971.\nMy call to the ministry was not to preach",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "stoic_coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text begins with a basic life principle that loosely aligns with Stoic contentment, but quickly devolves into personal biographical details about marriage, children, and Christian ministry that lack philosophical depth and authenticity to Stoic thought.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": -3,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.5
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 2.6666666666666665,
+          "stoic_alignment": 2.6666666666666665,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 3.0,
+          "aggregate": 2.5
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.5833333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": 1.0,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": -0.3333333333333333,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 0.9166666666666666
+        },
+        "aggregate": 2.5,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text touches on preparation and expectations but lacks Stoic concepts like virtue, acceptance, or dichotomy of control. It focuses on external support rather than internal resilience. The writing is repetitive, incomplete, and uses casual modern language without philosophical depth.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should be very careful about the direction of his mind and not allow the mind to turn to the left or the right. The mind should be kept in the middle, and the mind should be kept in the middle, and the mind should be kept in the middle. The mind should be kept in the middle, and the mind should be kept in the middle. The mind should be kept in the middle, and the mind should be kept in the middle. The mind should be kept in the middle, and",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text begins with a potentially philosophical concept about mental discipline during adversity, which loosely aligns with Stoic ideas of rational control. However, it completely breaks down into meaningless repetition of 'the mind should be kept in the middle,' making it incoherent and offering no substantive philosophical development of the initial premise.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical depth with generic discussion of virtue theories. No engagement with Stoic concepts like virtue as the sole good or living according to nature. Cuts off mid-sentence affecting coherence. Uses modern academic style rather than ancient philosophical register.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is to be a guardian of the soul of man. It is to be the guardian of the soul, that is, of the soul\u2019s happiness, of the soul\u2019s peace, of the soul\u2019s tranquillity, of the soul\u2019s liberty, of the soul\u2019s freedom, of the soul\u2019s safety, of the soul\u2019s security, of the soul\u2019s happiness. The soul is not to be in any way injured, but it is to be preserved and to be made secure. In a word,",
+              "scores": {
+                "philosophical_depth": 3,
+                "stoic_alignment": 4,
+                "coherence": 2,
+                "stylistic_authenticity": 4,
+                "reasoning": "Shows strong Stoic alignment with virtue as guardian of the soul and emphasis on inner states like tranquillity and security. Philosophical depth is moderate, focusing on virtue's protective role. However, coherence suffers from excessive repetition and the text cuts off mid-sentence. Style authentically resembles ancient philosophical writing with formal register and repetitive emphasis typical of classical texts.",
+                "aggregate": 3.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 3,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This text focuses entirely on physical home environment and comfort rather than philosophical concepts of virtue or wisdom. It contradicts Stoic principles by emphasizing external circumstances and material comfort as keys to living well, when Stoics taught that virtue is the sole good and external things are indifferent. The text is incomplete and lacks any philosophical register or contemplative depth.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to be at peace with one\u2019s self, with the world, and with God. This is the truest and most lasting happiness, and is the highest and most excellent attainment of man. It is the supreme and last end of all things. It is the perfection of virtue, the enjoyment of happiness, and the perfection of God.\nWhat is the best way to attain to this highest and last end of all things? By being at peace with God, with ourselves, and with the world.\nI",
+              "scores": {
+                "philosophical_depth": 3,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text engages with philosophical themes of peace, virtue, and happiness but lacks depth in developing these concepts. While virtue is mentioned, it doesn't align strongly with core Stoic principles like the dichotomy of control or rational acceptance. The text is somewhat repetitive and circular in structure, ending abruptly with 'I'. The style has some philosophical register but feels more theological than authentically Stoic.",
+                "aggregate": 2.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 2,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 14,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.75
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.5833333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": 0.6666666666666666,
+          "coherence": 0.0,
+          "stylistic_authenticity": 0.0,
+          "aggregate": 0.16666666666666666
+        },
+        "aggregate": 1.75,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text shows minimal philosophical engagement, focusing on practical advice about planning rather than Stoic concepts. Slightly aligns with Stoic ideas about preparing for adversity but misses core principles like self-reliance, virtue, and rational acceptance. Structure is repetitive and incomplete. Language is entirely modern and casual with no philosophical register.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should take a step back and think about what he or she needs to do to overcome the difficulty. When the difficulty is the lack of knowledge, one should read books, take courses, or do research. When the difficulty is the lack of money, one should seek out assistance from others. When the difficulty is the lack of time, one should set aside time to do the work. When the difficulty is the lack of resources, one should seek out assistance from others. When the difficulty is the lack of",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, offering only practical problem-solving advice without engaging Stoic concepts like virtue, acceptance, or the dichotomy of control. Shows minimal Stoic alignment as it focuses on external solutions rather than internal wisdom. Coherence is poor due to repetition and incomplete ending. Style is entirely modern and casual, lacking any philosophical register or contemplative tone.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text provides only generic philosophical discussion about virtue without engaging with specific Stoic concepts like virtue as the sole good or living according to nature. It's incomplete, ending mid-sentence, and offers vague generalities rather than substantive philosophical analysis. The style is modern academic rather than classical philosophical.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is the subject of this essay, which discusses the nature of virtue and its moral and political implications. The essay argues that virtue is the essence of the human condition, and that virtue is a form of intelligence that is uniquely human. The essay also argues that virtue is a form of wisdom, and that virtue is a form of goodness. The essay concludes by arguing that virtue is a form of knowledge, and that virtue is a form of learning.\nThis essay will be a brief overview of the subject of virtue",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text shows minimal philosophical development with repetitive, circular definitions of virtue. While it touches on virtue as central to human nature (loosely Stoic), it lacks specific Stoic concepts like living according to nature or virtue as the sole good. The writing is incoherent and repetitive, reading more like an academic paper outline than philosophical discourse.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": -1,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This text focuses entirely on home decoration/lifestyle advice with no philosophical content. It contradicts Stoic principles by emphasizing external circumstances (physical environment) as key to living well, rather than virtue and inner character. The text is incomplete and reads like modern lifestyle content, not philosophical discourse.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to live with a sense of purpose. To live with a sense of purpose means to live a life of meaning. This is the mission of The Academy of Living Philosophy.\nTo live with a sense of purpose means to live a life of meaning. This is the mission of The Academy of Living Philosophy.\nAristotle was the first to propose a definition of philosophy as the love of wisdom, and the first to propose that the first step in the search for wisdom is to understand what wisdom is not.",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Contains basic philosophical concepts like purpose and meaning but lacks depth. Has minimal Stoic content and contradicts Stoic emphasis on virtue over external purpose. Structure is repetitive and disorganized. The Aristotle reference is historically inaccurate, and overall tone is more promotional than philosophical.",
+                "aggregate": 2.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          }
+        ]
+      }
+    ],
+    "best_layer": 12,
+    "best_aggregate": 2.5,
+    "timestamp": "2026-05-17T02:05:09.302598"
+  },
+  "coefficient_sweep": {
+    "sweep_type": "coefficient",
+    "author": "epictetus",
+    "fixed_layer": 12,
+    "coefficients_tested": [
+      0.03,
+      0.05,
+      0.08,
+      0.11,
+      0.15,
+      0.2,
+      0.3
+    ],
+    "results": [
+      {
+        "layer": 12,
+        "coefficient": 0.03,
+        "avg_steered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.0,
+          "aggregate": 1.4166666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.5833333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": 0.0,
+          "stylistic_authenticity": -0.3333333333333333,
+          "aggregate": -0.16666666666666666
+        },
+        "aggregate": 1.4166666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content and reads like generic self-help advice. While preparing for unexpected events loosely aligns with Stoic preparedness, it misses core concepts like virtue, rational acceptance, or the dichotomy of control. The text is incomplete, somewhat repetitive, and uses modern casual language without philosophical depth.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should always look for the source of the problem. In the case of the new and innovative business model, the problem could be lack of awareness of the benefits of the model. For example, if you are running a start-up company, then you should be aware of the fact that your start-up is not yet a fully developed business model. Therefore, it is important that you do not let your customers know about this fact. You should be careful that you do not let your customers know about this fact,",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text completely abandons philosophical content after the opening phrase, instead discussing business strategy and customer deception. It contradicts Stoic values of honesty and virtue, lacks coherence with repetitive ending, and uses purely modern business language with no philosophical register.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": -1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text begins philosophical discussion of virtue but remains very general and superficial. Makes vague references to character vs circumstances debate without engaging specific Stoic concepts. Structure is incomplete and cuts off mid-sentence. Language is modern academic rather than contemplative philosophical style. Shows some philosophical awareness but lacks depth and Stoic-specific insights.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is to be good, but what does that mean? It\u2019s easy to think of virtue as being good, but what exactly does that mean? It means that one is morally good, which is to say that one is virtuous. In this blog post, we will explore the meaning of virtue in terms of what it means to be good.\nWhat is Virtue?\nVirtue is a term that is used to describe the qualities of a person. Virtue is a quality that a person possesses,",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Circular definitions with no substantive philosophical content. Uses modern blog format inappropriate for Stoic discourse. Lacks engagement with core Stoic concepts like virtue as wisdom, courage, justice, temperance, or virtue as the sole good. Text is repetitive and incomplete.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": -1,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text focuses entirely on home decoration/organization rather than philosophical living. Shows no engagement with Stoic concepts like virtue, rational living, or acceptance. Contradicts Stoic emphasis on internal goods over external circumstances. Modern casual tone with no philosophical register.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to be able to do what you want with your time, be it travel, working, raising a family, or just living life to the fullest. To live well means to be happy. And to be happy means to be healthy. And to be healthy means to have a good body. And to have a good body means to be able to do what you want to do. And to be able to do what you want to do means to be able to travel. And to be able to travel",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, contradicts Stoic principles by equating living well with doing whatever one wants and material pursuits like travel. Shows circular reasoning and appears incomplete. Uses casual modern language with no philosophical register.",
+                "aggregate": 1.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.05,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 2.6666666666666665,
+          "coherence": 2.6666666666666665,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 2.3333333333333335
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.3333333333333335,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.6666666666666666,
+          "stoic_alignment": 1.0,
+          "coherence": 0.3333333333333333,
+          "stylistic_authenticity": 0.6666666666666666,
+          "aggregate": 0.6666666666666666
+        },
+        "aggregate": 2.3333333333333335,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content and focuses on external preparations rather than internal resilience. While acknowledging that others may not be reliable aligns weakly with Stoic ideas about external things being unreliable, it doesn't engage with core Stoic principles like virtue, reason, or acceptance. The writing is incomplete, somewhat repetitive, and uses casual modern language without philosophical depth.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not despair, for God is with us.\nWhen the Lord God created the world and all that is in it, he said, \u201cLet us make man in our image, after our likeness.\u201d He did so. God created man in the image of God. God created man male and female. God created them in the image of God. They were created to be in God\u2019s image, to rule the world. He gave them dominion over the earth, to subdue it and to rule over",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text shifts from brief stoic-adjacent advice about not despairing in difficulty to lengthy biblical creation narrative that's repetitive and incomplete. No engagement with stoic concepts like dichotomy of control or virtue. Uses modern casual language rather than philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text engages with virtue conceptually but remains generic and surface-level, lacking specific Stoic insights. Shows minimal alignment with distinctive Stoic doctrines about virtue as the sole good or living according to nature. Coherence suffers from incomplete sentences and abrupt ending. Style is modern academic rather than philosophical contemplative register.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is to be a choice, to be a willful act, a self-determined action, not a passive response to the will of another. Virtue is not an innate quality, it is a choice. Virtue is a will, a choice, a determination.\nVirtue is a self-determined action, a choice, a determination, a self-sacrifice. Virtue is a choice, a will, a determination, a selfless act. Virtue is a selfless act,",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text touches on virtue as choice and self-determination, which aligns with Stoic emphasis on moral agency, but lacks depth in exploring core Stoic concepts. Highly repetitive structure undermines coherence. Language is somewhat philosophical but not authentically ancient in style.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text focuses entirely on home decoration/lifestyle rather than philosophical concepts. No engagement with Stoic ideas about virtue, wisdom, or living according to nature. Contradicts Stoic emphasis on internal goods over external circumstances. Uses modern casual language with no philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to live in harmony with nature. The \u201cnature\u201d here is not merely the Earth but the whole of the universe, a vast web of relationships that has been called the \u201cuniverse of life.\u201d The \u201cliving universe\u201d is a world of interdependence and harmony, where the diverse life forms have a common destiny.\nThe living universe is a great creative force. It is a world of transformation, where the individual is not only a part of the whole, but also the source of its renewal.",
+              "scores": {
+                "philosophical_depth": 3,
+                "stoic_alignment": 3,
+                "coherence": 4,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text engages with the Stoic concept of living according to nature, but interprets it more in ecological/cosmic terms rather than the traditional Stoic sense of rational human nature. While coherent and somewhat philosophical in tone, it lacks specific Stoic doctrinal elements like virtue, reason, or acceptance of what we cannot control.",
+                "aggregate": 3.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 2,
+              "stoic_alignment": 2,
+              "coherence": 1,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.75
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.08,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.0,
+          "stoic_alignment": 0.3333333333333333,
+          "coherence": -0.3333333333333333,
+          "stylistic_authenticity": 0.0,
+          "aggregate": 0.0
+        },
+        "aggregate": 1.6666666666666667,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text touches on preparation and accepting that people won't always be there, which loosely connects to Stoic ideas about controlling what we can and accepting what we cannot. However, it lacks philosophical depth, uses modern casual language, is repetitive and incomplete, and doesn't engage with core Stoic concepts like virtue, reason, or inner resilience.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not be surprised if the problem is not the problem. In fact, it is quite possible that the problem is the solution. The problem may be a symptom, or it may be a sign that something is not right. The key is to find out what is not right and to correct it. When we find the problem, we need to find the solution. And we need to find the solution before we can find the problem.\nThat is why I am so interested in the game. It is a",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text begins with vague philosophical-sounding language about problems and solutions but lacks engagement with actual Stoic concepts like virtue or acceptance of what we cannot control. The reasoning becomes circular and confusing, ending abruptly with an unrelated fragment about 'the game.' Uses modern casual language with no philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical engagement with virtue as a concept but lacks Stoic-specific insights. Generic discussion without reference to core Stoic principles like virtue as the sole good or rational excellence. Coherence suffers from being incomplete and somewhat repetitive. Style is modern academic rather than philosophical/contemplative.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is to be perfect in all things, and to be of good report, and to be approved by all men. And he that is perfect in all these, is come. He that is perfect, is as he that hath no fall. The perfect is not come. He that is not perfect, is as he that is not perfected. He that is perfect, is come. He that is not perfect, is as he that is not perfected. He that is perfect, is come. He that is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical depth with vague references to virtue and perfection but lacks substantive engagement with concepts. Loosely touches on virtue but doesn't reflect core Stoic principles like rational acceptance or virtue as sole good. Highly repetitive and circular, making it nearly incoherent. Has some archaic language suggesting philosophical register but repetition and incomplete ending undermine authenticity.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.25
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text focuses entirely on home decoration/lifestyle rather than philosophical concepts of living well. No engagement with virtue, reason, or Stoic principles. Modern casual tone with incomplete final sentence.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to live well in all the ways that matter to you. In other words, it means to live a life of purpose, with a sense of joy and fulfillment.\nThe following is a list of 30 things to do to live well. They are not in any particular order. All of these things are easy to do. Some of them are hard. All of them are worth doing.\n1. Be honest with yourself and others.\n2. Be kind and compassionate.\n3. Be grateful for all",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text begins with generic self-help language about 'purpose, joy and fulfillment' rather than Stoic concepts like virtue or living according to nature. While some listed items like honesty and compassion align loosely with Stoic virtues, the overall approach focuses on subjective fulfillment ('ways that matter to you') rather than objective Stoic principles. The style is clearly modern self-help rather than philosophical, and the text cuts off mid-sentence, affecting coherence.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.11,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 2.0,
+          "coherence": 2.3333333333333335,
+          "stylistic_authenticity": 2.0,
+          "aggregate": 2.0833333333333335
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 2.3333333333333335,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.5833333333333333
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.6666666666666666,
+          "stoic_alignment": 0.6666666666666666,
+          "coherence": 0.0,
+          "stylistic_authenticity": 0.6666666666666666,
+          "aggregate": 0.5
+        },
+        "aggregate": 2.0833333333333335,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content and Stoic principles like self-reliance and acceptance of what's beyond our control. Instead focuses on external support and practical planning. Writing is modern, casual, and incomplete with some repetition.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should never give up but rather seek a solution. It is by seeking a solution that we find our strength.\nIt is only when we have found our strength that we can help others. This is what we should always keep in mind when we come across difficulty.\nThe Lord has made us to be strong by providing us with everything we need. In the same manner, He will also provide us with the strength to overcome any difficulty.\nWe should never lose hope. When we have lost hope, we should never",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text contains basic motivational ideas about perseverance and strength but lacks engagement with core Stoic concepts like the dichotomy of control or virtue. Religious references to 'the Lord' diverge from Stoic naturalism. The text is incomplete, somewhat repetitive, and uses modern casual language rather than philosophical register.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical engagement, offering only generic statements about virtue being debated without exploring specific concepts. No Stoic principles are referenced or implied. The text is incomplete and lacks clear structure. Style is modern academic rather than philosophical, with no contemplative or aphoristic quality typical of Stoic writings.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is a topic that has been widely discussed in the ancient world. The Epicureans and Stoics both held a different view of virtue than the Cynics. The Cynics held that virtue is a matter of self-interest. The Cynics believed that the virtuous man was one who lived the life of a beggar, seeking nothing beyond the necessities of life. The Epicureans, on the other hand, believed that virtue was a matter of self-interest, but one that was in",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "Text shows basic historical knowledge of ancient philosophical schools but lacks depth in exploring Stoic virtue concepts. Contains factual errors (mischaracterizing Cynics as self-interested) and appears incomplete. Some philosophical register but no genuine engagement with Stoic doctrine of virtue as the sole good or virtue as living according to rational nature.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.5
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 3,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text focuses entirely on home organization and comfort rather than philosophical concepts. Contradicts Stoic emphasis on internal goods over external circumstances. Readable but incomplete, with modern casual tone lacking any philosophical register.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "To live well means to live in accord with God\u2019s will, to be in accord with the good of our neighbor, and to be in accord with the good of the world. It means to live as a good steward of the grace that God has given us, and to live as a good steward of our time and our resources.\nThe first step in living well is to know God\u2019s will. The first thing we do when we know the will of God is to obey it. We do so out of love for",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 3,
+                "stylistic_authenticity": 2,
+                "reasoning": "This text focuses on Christian theological concepts (God's will, grace, stewardship) rather than Stoic philosophy. While it touches on living in accord with something greater (similar to Stoic 'living according to nature'), the emphasis on divine will and grace contradicts Stoic emphasis on reason and self-reliance. The text is incomplete and lacks distinctly Stoic concepts like virtue, the dichotomy of control, or rational acceptance of fate.",
+                "aggregate": 2.25
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.15,
+        "avg_steered": {
+          "philosophical_depth": 2.0,
+          "stoic_alignment": 2.6666666666666665,
+          "coherence": 1.6666666666666667,
+          "stylistic_authenticity": 3.0,
+          "aggregate": 2.3333333333333335
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.3333333333333333,
+          "stoic_alignment": 1.0,
+          "coherence": -0.3333333333333333,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 0.6666666666666666
+        },
+        "aggregate": 2.3333333333333335,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text touches on preparedness and accepting that people may not be reliable, which loosely relates to Stoic ideas about external dependencies, but lacks philosophical development. It doesn't engage with core Stoic concepts like virtue, reason, or the dichotomy of control. The writing is repetitive, incomplete, and uses modern casual language rather than philosophical discourse.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not turn away, but rather turn towards it.\nI have a friend who is a very kind and considerate person, but sometimes he is very hard to live with. He is a man of great will, but at times his will is overbearing and his will is not kind. He is very kind and considerate to those he loves, but at times he is very hard to live with. He is a man of great will, but at times his will is overbearing and his will is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "Opens with a potentially Stoic principle about facing difficulty, but immediately devolves into repetitive, incomplete personal anecdotes about a friend that lack philosophical development. The text appears to cut off mid-sentence and contains circular repetition, making it largely incoherent despite the promising philosophical opening.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text begins to engage with virtue but remains generic and incomplete. Shows minimal philosophical depth with vague references to 'character and circumstances.' No clear Stoic concepts present. Coherence suffers due to incomplete final sentence. Style is modern academic rather than philosophical contemplative.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is that it is an attribute of the soul which has the power of virtue; and that it is a virtue that is the same in all men, though the excellence of the virtue is different. But in our present treatise we will treat of the excellence of virtue, not of the nature of virtue. For the excellence of virtue is a great, and that which is great is excellent; and that which is excellent is a great, and that which is a great is excellent. But what is more,",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 2,
+                "stylistic_authenticity": 4,
+                "reasoning": "Text engages with virtue as a philosophical concept but remains surface-level and circular. Shows loose Stoic alignment by focusing on virtue's universality. However, it's highly repetitive and incomplete, undermining coherence. The formal, treatise-like language mimics ancient philosophical style well.",
+                "aggregate": 2.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This text focuses entirely on home decoration and physical living spaces, with no philosophical content whatsoever. It contradicts Stoic principles by emphasizing external circumstances and material environment as key to living well, when Stoics taught that virtue and inner character determine well-being. The text is incomplete and cuts off mid-sentence, and uses casual modern language with no philosophical register.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to be at peace, which is to be at one with oneself, with others, with the world. It is to be at peace with one\u2019s self and with one\u2019s destiny, with the past, and with the future. It is to be at peace with God and with the soul. It is to be at peace with the self and with the world. It is to be at peace with one\u2019s God, with one\u2019s soul, with one\u2019s God, with one\u2019s soul, with",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 3,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text touches on philosophical themes of peace and acceptance that loosely align with Stoic ideas, but lacks specific Stoic concepts like virtue or rational control. It becomes increasingly repetitive and incoherent toward the end, appearing to cut off mid-sentence. The style has some contemplative quality but the repetition undermines its authenticity.",
+                "aggregate": 2.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 2,
+              "coherence": 0,
+              "stylistic_authenticity": 2,
+              "aggregate": 1.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.2,
+        "avg_steered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 2.0,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.6666666666666667,
+          "aggregate": 1.8333333333333333
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.5
+        },
+        "avg_deltas": {
+          "philosophical_depth": 0.3333333333333333,
+          "stoic_alignment": 0.6666666666666666,
+          "coherence": 0.0,
+          "stylistic_authenticity": 0.3333333333333333,
+          "aggregate": 0.3333333333333333
+        },
+        "aggregate": 1.8333333333333333,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, offering only generic life advice about planning and family support. Shows minimal Stoic alignment - mentions preparation but misses core concepts like internal control, virtue, or rational acceptance of externals. Coherence suffers from repetition and abrupt ending. Style is modern casual advice rather than philosophical discourse.",
+                "aggregate": 1.5
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should remember that it is a sign of\nA. strength\nB. weakness\nC. strength in the short term\nD. strength in the long term\nAnswer: D",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be a multiple choice question fragment rather than philosophical text. While option D could loosely align with Stoic ideas about adversity building character, there's no actual philosophical content, explanation, or engagement with Stoic concepts. The format is purely academic/test-like with no philosophical register or depth.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 0,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.0
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "Text shows minimal philosophical engagement with virtue as a concept but lacks Stoic-specific insights. Makes generic claims about virtue without connecting to core Stoic principles like virtue as the sole good or living according to nature. The text is incomplete and cuts off mid-sentence, undermining coherence. Style is modern academic rather than philosophical contemplation.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is a question of the highest importance, and I have long held that, in the end, it is a question of the greatest importance. The question of what is the nature of virtue is a question of what is the best kind of life, and the question of what is the best kind of life is a question of what is the best kind of man.\nThe first thing to say is that there is no such thing as a single virtue. There are many virtues. There are many kinds of virtue,",
+              "scores": {
+                "philosophical_depth": 3,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 3,
+                "reasoning": "The text begins to engage with virtue conceptually but remains surface-level and incomplete. While virtue is central to Stoicism, the approach here is generic philosophical inquiry rather than specifically Stoic doctrine. The writing is repetitive and cuts off mid-thought, undermining coherence. The style has some philosophical register but lacks the distinctive aphoristic quality of Stoic texts.",
+                "aggregate": 2.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.75
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "This text lacks philosophical content, focusing entirely on home decoration/lifestyle advice rather than Stoic concepts like virtue, wisdom, or living according to nature. It contradicts Stoic principles by emphasizing external circumstances (home environment) as keys to living well, when Stoics teach that virtue and internal state matter most. The text is incomplete and reads like modern lifestyle writing, not philosophical discourse.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to be healthy and to enjoy the life you have.\u00a0 I believe in the power of health, the power of healthiest food, the power of healthiest living, and the power of healthiest living for our children.\u00a0 I am convinced that we have the power to take care of ourselves, to take care of our families, and to take care of our nation.\nI have been blessed with health, with healthiest living, with a strong constitution, with a strong mind, with a strong",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical depth, focusing on physical health rather than virtue or wisdom. Shows minimal Stoic alignment as it emphasizes external goods (health) over internal virtue. Coherence is poor due to repetition and incomplete ending. Style is modern and casual, lacking philosophical register entirely.",
+                "aggregate": 1.5
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 0,
+              "stoic_alignment": 1,
+              "coherence": 0,
+              "stylistic_authenticity": 0,
+              "aggregate": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "layer": 12,
+        "coefficient": 0.3,
+        "avg_steered": {
+          "philosophical_depth": 1.3333333333333333,
+          "stoic_alignment": 1.3333333333333333,
+          "coherence": 1.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.25
+        },
+        "avg_unsteered": {
+          "philosophical_depth": 1.6666666666666667,
+          "stoic_alignment": 1.6666666666666667,
+          "coherence": 2.0,
+          "stylistic_authenticity": 1.3333333333333333,
+          "aggregate": 1.6666666666666667
+        },
+        "avg_deltas": {
+          "philosophical_depth": -0.3333333333333333,
+          "stoic_alignment": -0.3333333333333333,
+          "coherence": -1.0,
+          "stylistic_authenticity": 0.0,
+          "aggregate": -0.4166666666666667
+        },
+        "aggregate": 1.25,
+        "comparisons": [
+          {
+            "prompt": "When facing difficulty, one should",
+            "unsteered": {
+              "text": "When facing difficulty, one should be able to turn to their loved ones for support. That is the point of having a family. Unfortunately, some people will not always be there for you. That is why it is so important to always be prepared for the unexpected. That is why it is so important to always have a plan for any situation.\nThere are a lot of things that can happen to a person that will leave them feeling helpless and hopeless. That is why it is important to have a plan for any situation that might come",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "The text touches on preparation and acceptance that people may not be reliable, which loosely connects to Stoic ideas about what we can/cannot control. However, it lacks philosophical depth, uses casual modern language, is somewhat repetitive and incomplete, and doesn't engage with core Stoic concepts like virtue, reason, or inner resilience.",
+                "aggregate": 1.75
+              }
+            },
+            "steered": {
+              "text": "When facing difficulty, one should not seek the hand of God\nThe Holy Prophet of God, peace be upon him, has been most blessed by the Almighty God, God most high, with the most excellent of all the blessings, namely, the blessed\nIn the Holy Holy Prophet\u2019s life, there were many\nIn the Holy Holy Prophet\u2019s life, there were many\nWe have been in the blessed\nWe have been in the blessed\nIn the blessed\u00a0 Holy Prophet\u2019s\nIn the blessed\u00a0 Holy Prophet\u2019s\nIn",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text is incoherent and repetitive, breaks off mid-sentence, contains no Stoic philosophical content, and appears to be Islamic religious content rather than Stoic philosophy",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": 0,
+              "aggregate": -0.75
+            }
+          },
+          {
+            "prompt": "The nature of virtue is",
+            "unsteered": {
+              "text": "The nature of virtue is a subject that has been debated for centuries. There are many different theories and perspectives on what makes someone virtuous. Some argue that virtue is a result of character, while others believe that it is a combination of both character and circumstances. There is no one right answer to the question of what makes someone virtuous, but there are some general principles that can be applied to most cases.\nThe first principle is that virtue is not simply a matter of being good or doing the right thing. Virtue is",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 2,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text begins to address virtue philosophically but remains at a very general level without engaging specific Stoic concepts. It acknowledges different theories but doesn't develop any particular view. The discussion is generic rather than distinctly Stoic, and the text appears incomplete, cutting off mid-sentence. While readable, it lacks the depth, specificity, and authentic philosophical register expected of Stoic writing.",
+                "aggregate": 2.0
+              }
+            },
+            "steered": {
+              "text": "The nature of virtue is not\nA.\u00a0That which is\nB.\u00a0That which is not\nC.\u00a0That which is in the\nD.\u00a0That which is not in the\nIn the above passage, which of the following is the best answer?\nA.\u00a0that which is\nB.\u00a0that which is not\nC.\u00a0that which is in the\nD.\u00a0that which is not in the\nTo answer this question, we must first examine the passage\ntogether.\u00a0",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 1,
+                "stylistic_authenticity": 1,
+                "reasoning": "This appears to be a malformed multiple choice question rather than philosophical text. It lacks any substantive content about virtue or Stoic principles, is incoherent with incomplete options, and has no philosophical register or depth.",
+                "aggregate": 1.0
+              }
+            },
+            "deltas": {
+              "philosophical_depth": -1,
+              "stoic_alignment": -1,
+              "coherence": -1,
+              "stylistic_authenticity": -1,
+              "aggregate": -1.0
+            }
+          },
+          {
+            "prompt": "To live well means",
+            "unsteered": {
+              "text": "To live well means to have the right things in the right place, and the right place is your home. When you are living well, you are creating the space you want to live in.\nYour home is a place for you to relax and recharge, a place to spend time with friends and family, and a place where you can create memories. It\u2019s a place where you can be comfortable, where you can feel safe, and where you can be yourself. When you live well, you create the right environment for",
+              "scores": {
+                "philosophical_depth": 1,
+                "stoic_alignment": 1,
+                "coherence": 2,
+                "stylistic_authenticity": 1,
+                "reasoning": "Text lacks philosophical content, focusing on home decoration/lifestyle rather than Stoic concepts of virtue, wisdom, or living according to nature. No engagement with philosophical principles of what constitutes a good life.",
+                "aggregate": 1.25
+              }
+            },
+            "steered": {
+              "text": "To live well means to live wisely; to be wise, we must first be wise unto ourselves, for it is our soul that God hath charge of, and therefore we must take care of it as he hath charge of it; and therefore he hath appointed us to be a holylie, which is his holylie; therefore he hath charge of it, to\nforebare all ill, and to reare all good, and to heare our prayer; for hee vnliefe eu unto him, and he",
+              "scores": {
+                "philosophical_depth": 2,
+                "stoic_alignment": 2,
+                "coherence": 1,
+                "stylistic_authenticity": 2,
+                "reasoning": "The text begins with a philosophical premise about living well and wisdom, but quickly becomes incoherent with fragmented sentences, unclear references to God and soul, and apparent textual corruption. While it touches on care of the soul (relevant to Stoicism), the heavy emphasis on God and prayer suggests a more Christian than Stoic framework. The archaic language suggests period authenticity but the broken structure makes it largely incomprehensible.",
+                "aggregate": 1.75
+              }
+            },
+            "deltas": {
+              "philosophical_depth": 1,
+              "stoic_alignment": 1,
+              "coherence": -1,
+              "stylistic_authenticity": 1,
+              "aggregate": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "best_coefficient": 0.05,
+    "best_aggregate": 2.3333333333333335,
+    "timestamp": "2026-05-17T02:12:45.522766"
+  },
+  "optimal": {
+    "layer": 12,
+    "coefficient": 0.05,
+    "aggregate": 2.3333333333333335
+  },
+  "timestamp": "2026-05-17T02:12:45.522831"
+}
