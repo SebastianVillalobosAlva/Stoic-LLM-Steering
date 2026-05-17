@@ -1,4 +1,5 @@
 lora_models/
+stoic_llm.egg-info/
 /data/
 *.pt
 *.bin
