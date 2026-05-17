@@ -1,13 +1,12 @@
 import torch
 from pathlib import Path
-from .config import (
+from stoic_llm.config import (
     LAYER_IDX,
-    STEERING_LOCATION,
     COEFFICIENT,
-    PROMPTS,
+    DEFAULT_PROMPTS,
     TEMPERATURE,
     MAX_TOKENS,
-    DO_SAMPLE,
+    DEVICE,
 )
 
 
@@ -18,12 +17,12 @@ class SteeringRunner:
         model,
         tokenizer,
         layer=LAYER_IDX,
-        steering_location=STEERING_LOCATION,
+        steering_location=DEVICE,
         coefficient=COEFFICIENT,
-        prompts=PROMPTS,
+        prompts=DEFAULT_PROMPTS,
         temperature=TEMPERATURE,
         max_tokens=MAX_TOKENS,
-        do_sample=DO_SAMPLE,
+        do_sample=True,
     ) -> None:
         self.layer_idx = layer
         self.steering_location = steering_location

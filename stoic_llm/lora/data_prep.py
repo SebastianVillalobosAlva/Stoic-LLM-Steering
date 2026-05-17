@@ -1,10 +1,10 @@
 import json
 from pathlib import Path
-from packages.text_downloader.config import PROCESSED_DIR
+from stoic_llm.config import PROCESSED_DIR, LORA_TRAINING_DIR
 
 
 class LoRADataPrep:
-    def __init__(self, output_dir="data/lora_training"):
+    def __init__(self, output_dir=LORA_TRAINING_DIR):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True, parents=True)
 

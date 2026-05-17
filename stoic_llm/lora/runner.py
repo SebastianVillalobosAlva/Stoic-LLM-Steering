@@ -1,15 +1,14 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
-from pathlib import Path
+from stoic_llm.config import MODEL_NAME, MODELS_DIR, DEVICE
 
 
 class LoRARunner:
-    def __init__(
-        self, base_model_name="meta-llama/Llama-3.2-1B", lora_models_dir="./lora_models"
-    ):
+    def __init__(self, base_model_name=MODEL_NAME, lora_models_dir=MODELS_DIR):
+
         self.base_model_name = base_model_name
-        self.lora_models_dir = Path(lora_models_dir)
+        self.lora_models_dir = lora_models_dir
 
         # Load base model and tokenizer once
         print("Loading base model...")

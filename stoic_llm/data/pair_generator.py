@@ -3,7 +3,7 @@ import random
 import time
 import anthropic
 from pathlib import Path
-from .config import PROCESSED_DIR
+from stoic_llm.config import PROCESSED_DIR
 
 
 class NeutralPairCreator:

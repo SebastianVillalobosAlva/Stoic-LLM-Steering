@@ -1,7 +1,6 @@
 import urllib.request
 import re
-
-from .config import RAW_DIR, PROCESSED_DIR
+from stoic_llm.config import RAW_DIR, PROCESSED_DIR
 
 
 class TextDownloader:

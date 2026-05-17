@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from .config import CHUNKED_DIR, PROCESSED_DIR
+from stoic_llm.config import CHUNKED_DIR, PROCESSED_DIR
 
 
 class TextProcessor:

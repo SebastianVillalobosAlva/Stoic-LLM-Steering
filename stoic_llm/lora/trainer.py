@@ -9,18 +9,17 @@ from transformers import (
 from peft import LoraConfig, get_peft_model
 from datasets import load_dataset
 from pathlib import Path
+from stoic_llm.config import MODEL_NAME, MODELS_DIR, LORA_TRAINING_DIR, DEVICE
 
 
 class LoRATrainer:
     def __init__(
-        self,
-        model_name="meta-llama/Llama-3.2-1B",
-        output_dir="./lora_models",
-        data_dir="data/lora_training",
+        self, model_name=MODEL_NAME, output_dir=MODELS_DIR, data_dir=LORA_TRAINING_DIR
     ):
+
         self.model_name = model_name
-        self.output_dir = Path(output_dir)
-        self.data_dir = Path(data_dir)
+        self.output_dir = output_dir
+        self.data_dir = data_dir
         self.output_dir.mkdir(exist_ok=True, parents=True)
 
         # Load base model and tokenizer
@@ -45,7 +44,7 @@ class LoRATrainer:
 
         # Load fresh model for each author
         model = AutoModelForCausalLM.from_pretrained(
-            self.model_name, device_map="cpu", torch_dtype=torch.float32
+            self.model_name, device_map=DEVICE, torch_dtype=torch.float32
         )
 
         # Add LoRA adapters
