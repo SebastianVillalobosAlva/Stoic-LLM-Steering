@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import torch
 
 
 class ActivationExtractor:
@@ -28,7 +29,6 @@ class ActivationExtractor:
         Returns:
             Tensor of activations
         """
-        import torch
 
         # Tokenize the text
         inputs = self.tokenizer(
@@ -69,7 +69,6 @@ class ActivationExtractor:
         Returns:
             Single steering vector (averaged across all pairs)
         """
-        import torch
 
         pairs = self.load_pairs(pairs_file)
         differences = []
@@ -85,8 +84,8 @@ class ActivationExtractor:
             differences.append(diff)
 
         # Stack all differences and compute mean
-        all_diffs = torch.stack(differences)  # Shape: (30, 2048)
-        steering_vector = all_diffs.mean(dim=0)  # Shape: (2048,)
+        all_diffs = torch.stack(differences)  # Shape: (N, hidden_dim)
+        steering_vector = all_diffs.mean(dim=0)  # Shape: (hidden_dim,)
 
         print(f"\n✓ Steering vector computed!")
         print(f"  Shape: {steering_vector.shape}")
@@ -95,8 +94,6 @@ class ActivationExtractor:
 
     def save_steering_vector(self, steering_vector, output_path):
         """Save steering vector to disk"""
-        import torch
-        from pathlib import Path
 
         output_path = Path(output_path)
         output_path.parent.mkdir(parents=True, exist_ok=True)
