@@ -1,0 +1,129 @@
+{
+  "author": "marcus_aurelius",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should turn to the Lord in prayer and repentance. God can help us overcome any challenge that we face.\nI have been trying out various ways of praying over my life recently; I've found it quite a helpful exercise but also rather draining at times as you pray for yourself whilst considering your own shortcomings which could easily be magnified by what is being prayed about!\u00a0 It's easy enough though if there are others present who know how best they may approach their prayers on our behalf (as with this post",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text advocates religious prayer and divine intervention rather than Stoic self-reliance and rational acceptance. Contains no Stoic concepts like virtue, reason, or dichotomy of control. Becomes incoherent toward the end with incomplete sentences and unclear meaning. Uses casual, modern language rather than philosophical register.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should not despair; rather they must trust to God that all things will be well. The promise of our heavenly Father is sure: \u201cThe Lord shall assist them that sojourns among the heathen.\u201d He would have us remember this blessed truth in his own dear name.\nHeavenly Canaan\n\u201cHearken me my son,\u201d saith holy David,\nThat I may make thee happy here:\nI know how great a blessing thou hast;\nBut yet for sinne and folly left",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "The text advocates trust in divine providence during difficulties, which shares some superficial similarity with Stoic acceptance, but relies on external religious faith rather than internal rational virtue. The fragmented biblical/religious language creates stylistic inconsistency, and the incomplete final stanza disrupts coherence. While touching on response to adversity, it lacks engagement with core Stoic principles like the dichotomy of control or virtue as the sole good.",
+          "aggregate": 2.0
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.75
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is not one that can be defined by a list or an equation. There are no rules, codes and lists to follow for the development into virtuous character.\nThere has been some discussion on how we should define \"virtue\" in relation with this website - what do you think?\nI agree there isn't such thing as 'the definition' (nor will it ever exist). If I may quote myself from my own post here: The notion of being good comes about through our actions; these acts come",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with a potentially Stoic insight about virtue's indefinable nature but quickly devolves into meta-commentary about website definitions and incomplete thoughts. Lacks substantive philosophical development, clear Stoic principles, and authentic philosophical register.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is such that it cannot be found in any thing else, but itself: and therefore he which hath no other good besides the office or end thereof, being nothing worthie to him selfe by reason whereof his estate must bee poor; yet ought not this meaneth that they are all unworthy to have a like charge with them.\n1. 2. For we see both God himself, who doth bestow many things upon us (for man's part) without return for what so much",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 3,
+          "reasoning": "The text begins with a Stoic-adjacent concept about virtue being self-contained, but quickly becomes incoherent and fragmented. The archaic language mimics classical philosophical texts, but the broken syntax and incomplete thoughts make it largely unintelligible, preventing meaningful engagement with Stoic principles.",
+          "aggregate": 2.0
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": -1,
+        "stylistic_authenticity": 2,
+        "aggregate": 0.25
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be happy and content with your life. It also involves being in the right place at all times.\nFor many of us, our lives are filled up by a plethora of responsibilities; work commitments which can often leave little time for self-care or relaxation while we\u2019re trying hard not let them down on that front too (or perhaps you\u2019ve worked so long hours because it\u2019s important to keep going).\nThis is why I\u2019m always delighted when people tell me about their experiences using this beautiful new app called",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical depth with generic happiness references, shows minimal Stoic alignment through brief mention of contentment, has poor coherence with incomplete sentences and abrupt ending about an app, and uses casual modern language with no philosophical register",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "To live well means to be able to look after one\u2019s self, and so the first thing that we can do is provide ourself with a home of some sort. A house may not always suffice us; if it does then there comes time for us when such comfort begins becoming costly.\nIn this age where things are growing more expensive by leaps and bounds every day in many countries both rich ones as also poor nations, I dare say most men have begun desiring something better than what they possess at present, though none",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "The text focuses on material concerns like housing and wealth rather than virtue or character. It contradicts Stoic principles by suggesting well-being depends on external possessions. The writing is incomplete and somewhat disorganized, with an awkward attempt at philosophical tone but lacking genuine Stoic concepts.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": -1,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.25
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 2.0,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 1.6666666666666667,
+    "stylistic_authenticity": 2.3333333333333335,
+    "aggregate": 1.9166666666666667
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.0,
+    "aggregate": 1.5
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.6666666666666666,
+    "stoic_alignment": 0.0,
+    "coherence": -0.3333333333333333,
+    "stylistic_authenticity": 1.3333333333333333,
+    "aggregate": 0.4166666666666667
+  },
+  "metadata": {
+    "layer": 10,
+    "coefficient": 0.11,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:17:59.225528"
+}

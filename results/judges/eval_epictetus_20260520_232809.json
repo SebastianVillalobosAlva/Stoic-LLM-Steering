@@ -1,0 +1,129 @@
+{
+  "author": "epictetus",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should think of how to overcome it. In order for a man not be defeated by difficulties in his life and career.\nFirst is that he must know the cause why there are problems or challenges ahead him; secondly thinking about what would happen if these things do occur then proceed with action accordingly\nIn this case I will use my example as an entrepreneur who faces many obstacles throughout their journey but through hard work they have become successful business owners today despite having been born into poverty himself so maybe some day those people",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical depth, focusing on generic problem-solving rather than Stoic concepts. Shows minimal Stoic alignment with brief mention of understanding causes. Coherence suffers from incomplete sentences and unclear structure. Style is casual modern language with no philosophical register or contemplative tone.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should not be afraid to ask for help.\nThis is especially true when it comes to your finances. If you are struggling with debt or have a large amount of unpaid medical bills, then consulting the right attorney can make all the difference in how quickly and efficiently this issue will be resolved.\nIn addition \u2013 if there was any negligence on behalf of either hospital staff member who treated him/her after being injured at work that resulted from their actions causing injury; these cases may also require an experienced personal injury lawyer (PI",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "This text lacks any philosophical content, focusing entirely on practical legal/financial advice. It contradicts Stoic principles by emphasizing external circumstances (debt, medical bills) rather than internal responses to difficulty. The text is incomplete and shifts topics abruptly, and uses modern casual language with no philosophical register.",
+          "aggregate": 1.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": -1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": -0.25
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is not to be found in the virtues themselves but rather within a person. If this were true, then it would seem that we could find and identify all those who are virtuous by simply counting them up; after which they can have their names etched onto our list for posterity as exemplars.\nIn fact, what has been identified with most accuracy (and more recently than many other fields) through modern empirical methods or \u201cscience\u201d\u2013 such studies being based on objective observation without any subjective biases \u2013",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "The text begins with a philosophically interesting distinction about virtue residing in persons rather than abstract virtues, which has Stoic resonance. However, it cuts off mid-sentence and shifts awkwardly to discussing modern empirical methods, creating incoherence. The initial insight about virtue being personal rather than abstract aligns somewhat with Stoic emphasis on virtue as excellence of character, but lacks development of core Stoic concepts. The style has some philosophical register but the incomplete nature and abrupt shift undermines its effectiveness.",
+          "aggregate": 2.25
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is that it involves the capacity to do good, not necessarily any particular kind or degree. It requires neither special intellectual nor physical ability but only a willingness and disposition towards doing so.\nVirtue in its truest sense can be attained by anyone who wishes for such an attainment without being subjected through training on how one should act before becoming virtuous.\nBut as with all things human there are degrees at which we reach our full potentiality; hence this great man has always been able to attain his own level",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "The text attempts philosophical discussion of virtue but lacks depth and Stoic specificity. It contradicts Stoic emphasis on wisdom/training for virtue development, presents virtue too simplistically, and ends incoherently. However, it maintains some philosophical tone throughout.",
+          "aggregate": 2.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be healthy and happy. The only way you can do this is by having a good diet that will keep your body fit.\nThe following are some of the best foods for weight loss:\n1) Spinach\nSpinach has been found beneficial in treating constipation, heartburn as it contains Vitamin K which improves blood flow through veins making them healthier so they take less time to empty from our bodies thereby reducing bloating due to excess water retention while increasing urine output hence aiding bowel movement regularly; thus",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text lacks any philosophical content, focusing solely on diet and health tips. It contradicts Stoic principles by equating living well with physical health rather than virtue. The text is partially coherent but shifts abruptly to a list format and uses modern casual language with no philosophical register.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to be happy, prosperous and healthy. To achieve this goal we must avoid three things: 1) not being willing;\u00a02 ) doing the wrong thing or at least something contrary of our best interest (sin); \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 3). Doing nothing.\nBeing Willing\nWe are born with a desire for self-preservation from birth but it is also important that we develop into adults by developing an awareness about what would harm us in any way possible so as long-term survival can take place",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text attempts philosophical discussion but lacks depth in Stoic concepts. Mentions willingness and self-preservation but misses core Stoic principles like virtue as sole good or dichotomy of control. The focus on happiness, prosperity, and health as primary goods contradicts Stoic doctrine. Structure is disorganized with incomplete thoughts, and language is casual/modern rather than philosophical.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.5
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.6666666666666667,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.6666666666666667,
+    "aggregate": 1.75
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.6666666666666667,
+    "aggregate": 1.6666666666666667
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.3333333333333333,
+    "stoic_alignment": 0.0,
+    "coherence": 0.0,
+    "stylistic_authenticity": 0.0,
+    "aggregate": 0.08333333333333333
+  },
+  "metadata": {
+    "layer": 12,
+    "coefficient": 0.1,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:28:09.128624"
+}

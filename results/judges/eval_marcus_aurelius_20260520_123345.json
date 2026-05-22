@@ -1,0 +1,129 @@
+{
+  "author": "marcus_aurelius",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should have a plan and a strategy to face the difficulty. I have written several articles on strategies for success.\nI have also written about the different types of strategies. In this article, I will discuss the difference between a strategy and a plan.\nStrategies are the means to an end and are the tools that are used to achieve the end. A plan is the end. The difference between a strategy and a plan is that a strategy is the means to an end. A plan is the end. A",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focusing on generic business/self-help concepts. While planning could loosely relate to Stoic preparation, it misses core Stoic principles like acceptance, virtue, and dichotomy of control. The writing is repetitive, cuts off mid-sentence, and uses modern casual language with no philosophical register.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should not despair. To be sure, this is the last thing that should be done, but not to despair is not so easy as to despair is. To be sure, to despair is easy, but to be sure, to be despair is not so easy. To be sure, to be despair is not so easy, but to be sure, to be despair is not so easy as to despair is. To be sure, to be despair is not so easy, but to be sure, to be",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text begins with a potentially Stoic principle about not despairing in difficulty, but immediately devolves into incoherent repetition. The phrase 'to be sure' is repeated obsessively, and the text becomes grammatically nonsensical. While the opening sentiment loosely aligns with Stoic acceptance, there's no development of philosophical concepts, and the repetitive structure makes it unreadable.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": -1,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is the subject of one of Plato\u2019s most famous dialogues, the Republic. It is a dialogue that was written in the year 380 BC, and it is a dialogue that is still regarded as one of the most important dialogues ever written. The Republic is a dialogue that is based on a theory of education that was developed by Plato. It is a dialogue that is based on a theory of education that was developed by Plato. The Republic is a dialogue that is based on a theory of education that",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 1,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text is incomplete, highly repetitive, focuses on Platonic rather than Stoic philosophy, lacks coherent structure, and provides no substantive philosophical content about virtue from a Stoic perspective.",
+          "aggregate": 1.0
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is\nThe nature of virtue is the mean, that is, the mean between the vices, which is the mean between the excess and the defect.\nThe mean is the mean between the extremes.\nThe mean, therefore, is the mean between the vices, which is the mean between the excess and the defect.\nThe mean is the mean between the vices, which is the mean between the excess and the defect.\nThe mean is the mean between the vices, which is the mean between the",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text discusses virtue philosophically but presents Aristotelian doctrine of the mean, not Stoic virtue theory. Highly repetitive and incoherent structure with incomplete final sentence. Some philosophical vocabulary but undermined by repetition and conceptual misalignment with Stoicism.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.5
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to live in a way that is in harmony with nature, and to be in harmony with nature means to be in harmony with the creator. This is the true meaning of the word \u201cGod\u201d. God is the creator of everything, and He is the source of all life. God is the creator of the universe, and He is the source of all life. God is the source of all energy and all matter, and He is the source of all life. God is the source of all wisdom,",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "Text begins with core Stoic concept of living in harmony with nature but quickly shifts to theistic focus rather than Stoic physics/logos. Repetitive structure weakens coherence. Shows some philosophical register but lacks the precision and development expected of Stoic discourse.",
+          "aggregate": 2.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to live in health, which means to be able to enjoy the gifts of God\u2019s creation. The gifts of God\u2019s creation are the land, the sea, and the air.\nThe land and sea are our common inheritance. They are the bed-rock of life. They are to be enjoyed and reverenced. They are to be used in a wise manner, that all may be enriched by the gifts they have to offer.\nThe air is the lungs of God. We must be careful of it,",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 3,
+          "stylistic_authenticity": 2,
+          "reasoning": "The text touches on living well but focuses on health and environmental stewardship rather than Stoic concepts like virtue or rational acceptance. It's more theologically oriented than philosophically Stoic, lacks core Stoic doctrines, and uses religious rather than philosophical language. The text is coherent but incomplete.",
+          "aggregate": 2.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 1,
+        "stylistic_authenticity": -1,
+        "aggregate": 0.0
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.6666666666666667,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 1.6666666666666667,
+    "stylistic_authenticity": 2.0,
+    "aggregate": 1.75
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 1.6666666666666667,
+    "stylistic_authenticity": 1.6666666666666667,
+    "aggregate": 1.5833333333333333
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.3333333333333333,
+    "stoic_alignment": 0.0,
+    "coherence": 0.0,
+    "stylistic_authenticity": 0.3333333333333333,
+    "aggregate": 0.16666666666666666
+  },
+  "metadata": {
+    "layer": 10,
+    "coefficient": 0.11,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T12:33:45.302943"
+}

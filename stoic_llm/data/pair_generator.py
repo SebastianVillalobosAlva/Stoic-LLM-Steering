@@ -3,12 +3,13 @@ import random
 import time
 import anthropic
 from pathlib import Path
-from stoic_llm.config import PROCESSED_DIR
+from stoic_llm.config import PROCESSED_DIR, NEUTRAL_PAIR_PROMPT
 
 
 class NeutralPairCreator:
-    def __init__(self, chunks_file, api_key=None):
+    def __init__(self, chunks_file, author_name, api_key=None):
         self.chunks_file = chunks_file
+        self.author_name = author_name
         self.neutral_pair_path = PROCESSED_DIR
         self.client = anthropic.Anthropic(api_key=api_key)
 
@@ -49,72 +50,78 @@ class NeutralPairCreator:
             "worship",
             "salvation",
         ]
-        # Check if it's very citation-heavy (multiple markers)
-        marker_count = sum(1 for marker in biblio_markers if marker in text)
-        religious_count = sum(1 for marker in religious_markers if marker in text)
+        marker_count = sum(1 for m in biblio_markers if m in text)
+        religious_count = sum(1 for m in religious_markers if m in text)
         return marker_count >= 2 or religious_count >= 2
 
     def filter_chunks_by_length(self, chunks, min_chars=300, max_chars=1000):
         """Keep chunks within character count range"""
-        filtered = []
-        for chunk in chunks:
-            char_count = len(chunk["text"])
-            if (
-                min_chars <= char_count <= max_chars
-                and not self._is_bibliography_religious(chunk["text"])
-            ):
-                filtered.append(chunk)
-        return filtered
+        return [
+            c
+            for c in chunks
+            if min_chars <= len(c["text"]) <= max_chars
+            and not self._is_bibliography_religious(c["text"])
+        ]
 
     def generate_neutral_text(
         self, stoic_text, max_tokens=500, model="claude-sonnet-4-20250514"
     ):
-        """Generate neutral version using Claude API"""
-        message = self.client.messages.create(
+        """Generate neutral version using Claude API with contrastive prompt"""
+        prompt = NEUTRAL_PAIR_PROMPT.format(
+            author_name=self.author_name, stoic_text=stoic_text
+        )
+        msg = self.client.messages.create(
             model=model,
             max_tokens=max_tokens,
-            messages=[
-                {
-                    "role": "user",
-                    "content": f"Rewrite this philosophical text in plain, neutral language without any poetic or philosophical style. Keep the same meaning but make it straightforward:\n\n{stoic_text}",
-                }
-            ],
+            messages=[{"role": "user", "content": prompt}],
         )
-
-        neutral = message.content[0].text
-        return neutral
+        return msg.content[0].text
 
     def save_neutral_pairs(self, pairs):
         author = Path(self.chunks_file).parent.name
-        self.neutral_pair_path = self.neutral_pair_path / author / "neutral_pairs.json"
-
-        with open(self.neutral_pair_path, "w") as f:
+        out = self.neutral_pair_path / author / "neutral_pairs.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        with open(out, "w") as f:
             json.dump({"pairs": pairs}, f, indent=2)
-        print(f"Saved to {self.neutral_pair_path}")
+        print(f"Saved {len(pairs)} pairs to {out}")
 
-    def create_pairs(self, num_pairs=30):
+    def create_pairs(self, num_pairs=100, min_chars=300, max_chars=1000):
         """Generate N pairs and save to file"""
         chunks = self.read_chunks()
-        filtered_chunks = self.filter_chunks_by_length(chunks["chunks"])
-        if len(filtered_chunks) > num_pairs:
-            chunks_to_process = random.sample(filtered_chunks, num_pairs)
+        filtered = self.filter_chunks_by_length(
+            chunks["chunks"], min_chars=min_chars, max_chars=max_chars
+        )
+
+        if len(filtered) > num_pairs:
+            to_process = random.sample(filtered, num_pairs)
         else:
-            chunks_to_process = filtered_chunks
+            to_process = filtered
+            if len(filtered) < num_pairs:
+                print(
+                    f"⚠ Only {len(filtered)} chunks available (requested {num_pairs})"
+                )
+
         pairs = []
+        print(f"Found {len(filtered)} filtered chunks")
+        print(f"Generating {len(to_process)} neutral pairs for {self.author_name}...\n")
 
-        print(f"Found {len(filtered_chunks)} filtered chunks")
-        print(f"Generating {len(chunks_to_process)} neutral pairs...\n")
-
-        for i, chunk in enumerate(chunks_to_process, 1):
-            print(
-                f"Processing chunk {i}/{len(chunks_to_process)} (ID: {chunk['id']})..."
-            )
-            original = chunk["text"]
-            neutral = self.generate_neutral_text(original)
-            pairs.append(
-                {"id": chunk["id"], "stoic_text": original, "neutral_text": neutral}
-            )
+        for i, chunk in enumerate(to_process, 1):
+            print(f"[{i}/{len(to_process)}] Chunk {chunk['id']}...")
+            try:
+                original = chunk["text"]
+                neutral = self.generate_neutral_text(original)
+                pairs.append(
+                    {
+                        "id": chunk["id"],
+                        "stoic_text": original,
+                        "neutral_text": neutral,
+                    }
+                )
+            except Exception as e:
+                print(f"  ✗ Failed: {e}")
+                continue
             time.sleep(0.5)
 
-        print(f"\n✓ Generated {len(pairs)} pairs!")
+        print(f"\n✓ Generated {len(pairs)} pairs for {self.author_name}!")
         self.save_neutral_pairs(pairs)
+        return pairs

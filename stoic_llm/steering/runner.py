@@ -81,7 +81,7 @@ class SteeringRunner:
         self.author = str(self.file).split("/")[-1].split("_")[0]
         self.steering_vector = None
 
-    def run_model_with_hook(self, return_output=False):
+    def run_model_with_hook(self, return_output=False, **generate_kwargs):
         if self.steering_vector is None:
             self._load_steering_vector()
         if self._hook_handle is None:
@@ -99,6 +99,7 @@ class SteeringRunner:
                 max_new_tokens=self.max_tokens,
                 do_sample=self.do_sample,
                 temperature=self.temperature,
+                **generate_kwargs,
             )
             generated = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
 

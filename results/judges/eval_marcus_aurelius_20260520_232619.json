@@ -1,0 +1,129 @@
+{
+  "author": "marcus_aurelius",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should take the time to think about why they are having difficulties. The answer will usually reveal that you have a deep seated fear or insecurity which is causing your problems.\nThe process of uncovering this problem can be achieved by asking yourself certain questions:\nWhat do I find difficult?\nHow has it affected me in my past life and how does its impact still affect others around me now? For example: when faced with rejection (and let\u2019s face facts we all feel rejected) what happens then \u2013 for instance;",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text shows minimal philosophical engagement, focusing on pop psychology rather than Stoic principles. Lacks Stoic concepts like dichotomy of control or rational acceptance. Structure breaks down mid-sentence and uses casual modern language throughout.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should consider the advice of old men; for they are more learned than all other sages.\nThis page was last edited on 24 April, at By using this website thou art bound to be satisfied with my book. The best man that ever lived did not make his words mean but what he had in heart? He who hath no mercy is like a brazen serpent, which maketh him scornefull and yet abhorreth himselfe?\nOf these three things I doubt not,\nThat th",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text lacks philosophical depth and coherence, appearing fragmented and incomplete. While it attempts archaic language style, it's incoherent with random fragments. The opening about seeking advice from elders loosely aligns with Stoic respect for wisdom, but overall contains no clear Stoic principles.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": -1,
+        "stoic_alignment": 0,
+        "coherence": -1,
+        "stylistic_authenticity": 1,
+        "aggregate": -0.25
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is not to be found in a particular set or class. Virtue can only exist when it becomes part and parcel with our humanity, which means that we are all born virtuous but the more time spent on developing virtues through practice (such as self-discipline) results into an evolution towards becoming truly human.\nVirtues do not belong exclusively within one specific sphere; rather they become parts-and-paragraphs of who you really ARE!\nHow does this work? Well by making your mind clear from negative",
+        "scores": {
+          "philosophical_depth": 3,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Shows some engagement with virtue concepts but lacks depth in Stoic doctrine. The claim that 'we are all born virtuous' contradicts Stoic teaching that virtue must be developed through reason and practice. Text is disorganized with awkward phrasing ('parts-and-paragraphs') and cuts off mid-sentence. Some philosophical vocabulary present but inconsistent tone and structure.",
+          "aggregate": 2.25
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is not easy to determine, and in some cases it seems impossible. In the example set forth by St Paul (2 Cor 12), he could have taken his own life; yet Christ\u2019s promise that all things shall be made known for them which are of God did so far exceed any hope or expectation had from man, \u201cthat they were more than able\u201d. This word strength, signifies subtilty ; therefore a great power was wrought therein: but as I said before, this strong hand would",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text begins with philosophical inquiry about virtue but quickly devolves into incomplete Christian theological discussion. References to St. Paul and Christ contradict Stoic naturalism and rational ethics. The incomplete, fragmented nature and focus on divine intervention rather than human reason and virtue makes it poorly aligned with Stoic principles.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": -1,
+        "stoic_alignment": -1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": -0.5
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to lead a life that is rich and fulfilling. It also requires us to have the right tools, resources and support system in place.\nIn this series of articles I would like you share with me some ways we can go about living our lives more effectively so as not only be happy but successful too!\nThe first step towards having your goals become reality lies within self-acceptance \u2013 understanding yourself for who are really meant to grow into what makes them feel complete both inside out AND outside-in (with family",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text lacks philosophical depth, focusing on generic self-help concepts rather than Stoic principles. While self-acceptance has some loose connection to Stoic ideas, the emphasis on external tools, resources, and success contradicts core Stoic teachings about virtue being the sole good. The writing is incoherent and incomplete, written in modern casual style rather than philosophical register.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "To live well means to have a good life. The art of living, which is the study and practice for bettering our state in all things.\nThis page was last edited on 10 May, by Mvck.\nThe Art Of Living\nArtis Dignitatis,\nMane Manum Verba Credat :\nLet man be free who liveth best ;\nHe that hath most reason may,\nLeast he rest his witless foot. (Cleme.) He whom God thus first gave freedom,\n",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text lacks philosophical depth with circular definition of living well. Minimal Stoic content beyond vague 'art of living' reference. Highly incoherent with fragmented sentences, editing notes, and nonsensical Latin phrases. Some attempt at philosophical register but undermined by poor structure and unclear meaning.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": -1,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.0
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 1.3333333333333333,
+    "stylistic_authenticity": 2.0,
+    "aggregate": 1.5833333333333333
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 2.0,
+    "stoic_alignment": 2.0,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.3333333333333333,
+    "aggregate": 1.8333333333333333
+  },
+  "avg_deltas": {
+    "philosophical_depth": -0.6666666666666666,
+    "stoic_alignment": -0.3333333333333333,
+    "coherence": -0.6666666666666666,
+    "stylistic_authenticity": 0.6666666666666666,
+    "aggregate": -0.25
+  },
+  "metadata": {
+    "layer": 10,
+    "coefficient": 0.11,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:26:19.828349"
+}

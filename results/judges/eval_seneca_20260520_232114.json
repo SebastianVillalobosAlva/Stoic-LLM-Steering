@@ -1,0 +1,129 @@
+{
+  "author": "seneca",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should not look for a way out but rather find the right solution.\nIt\u2019s easy to say that \u201cthe world is too big and you can\u2019t solve every problem.\u201d However this statement has no basis in reality. In fact it represents an attitude of defeatism which stops people from taking action at all because they think there are so many problems ahead!\nIn order to get rid off such thinking we need first of all clear our mind about what exactly do we mean by solving something or getting over some difficult situation",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text touches on facing difficulty and mental clarity but lacks engagement with core Stoic concepts like virtue, acceptance, or the dichotomy of control. The emphasis on 'solving every problem' actually contradicts Stoic principles of accepting what's outside our control. The writing is disorganized with grammatical errors and uses casual modern language rather than philosophical register.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should not\nA. Let the disease prevail,\nB. Be afraid of pain and sorrow.\nC. Rejoice in life while it lasts;\nD. Use medicine to cure illness; or\nE. Give up all affliction.\nAnswer: D",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "This appears to be a multiple-choice question fragment with no philosophical content or Stoic principles. The format and answer 'D. Use medicine to cure illness' suggests a medical/practical context rather than philosophical wisdom about facing difficulties through Stoic virtue or acceptance.",
+          "aggregate": 1.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": -1,
+        "stoic_alignment": -1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": -0.5
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is not something that can be proven, but it's an important concept to understand. Virtue isn't necessarily the same as moral goodness or being a good person; rather, virtuous people are those who exhibit certain qualities in their lives.\nSome may say they're bad at time management and have trouble sticking with plans for weight loss because there just aren\u2019t enough hours available each day (or week) when you\u2019re trying out different ways on how things could go better!\nVirtues like courage help us",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with philosophical potential but quickly becomes incoherent, jumping from virtue to unrelated personal struggles with time management and weight loss. The fragment ends abruptly. Shows minimal understanding of virtue concepts and no clear Stoic principles. Written in casual modern style with poor organization.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is beauty, which as the mistress hath not only to behold in man her own image and exceeding faire but also with delight; so that she scarce ever shall have any rest till all men be good. The sweetest fruite thereof\nis thy fairest countenaunce: thou shalt never finde a mans excellency without vertue.\n2. Virtues consisteth chiefly either in reason or affirmeable opinion. Of this kind are vertures humane,\nas wit, prudence,\nand honour ;",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "The text attempts philosophical discourse on virtue but lacks coherent development of Stoic concepts. While it mentions reason and prudence (relevant to Stoicism), it emphasizes beauty and delight rather than core Stoic principles like virtue as the sole good or rational acceptance. The archaic language gives stylistic weight but the fragmented, incomplete thoughts undermine coherence and philosophical depth.",
+          "aggregate": 2.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 1,
+        "stylistic_authenticity": 2,
+        "aggregate": 0.75
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be happy. A lot of people find it hard though because they feel that life is difficult and challenging.\nThat\u2019s why we are here with some helpful tips on how you can make your living easier, stress-free & happier in the process!\n1) Create a budget\nThe first step towards making money work for us instead of against our needs or wants would surely include creating an effective financial plan. The key thing about having one? It helps us determine what exactly goes into buying things like food,",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focuses on modern self-help rather than Stoic principles, contradicts Stoic emphasis on virtue over external goods like money, uses casual modern language, and appears to cut off mid-sentence making it incomplete.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to be happy. To have joy is not enough, it takes love too.\nLove of God\nThe heart desire for the glory and fame that man has in his own strength but he cannot obtain; Love which exalts above all things by an act of sacrifice ; Love which hath no end within itself, nor any relation unto anything else : This was my chief delight when I lived upon earth.",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "The text begins with a basic claim about living well but quickly shifts to Christian theological concepts (love of God, sacrifice, glory) that contradict Stoic principles. Stoics emphasize virtue and reason over divine love and sacrifice. The text is somewhat incoherent with unclear pronoun references and fragmented ideas. While it attempts a philosophical register, the content is fundamentally opposed to Stoic thought.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.5
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.6666666666666667,
+    "stoic_alignment": 1.3333333333333333,
+    "coherence": 2.0,
+    "stylistic_authenticity": 2.0,
+    "aggregate": 1.75
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.6666666666666667,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 1.6666666666666667,
+    "stylistic_authenticity": 1.0,
+    "aggregate": 1.5
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.0,
+    "stoic_alignment": -0.3333333333333333,
+    "coherence": 0.3333333333333333,
+    "stylistic_authenticity": 1.0,
+    "aggregate": 0.25
+  },
+  "metadata": {
+    "layer": 14,
+    "coefficient": 0.3,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:21:14.573208"
+}

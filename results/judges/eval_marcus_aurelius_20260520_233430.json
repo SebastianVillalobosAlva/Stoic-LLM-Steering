@@ -1,0 +1,129 @@
+{
+  "author": "marcus_aurelius",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should not be afraid to ask for help. This is especially true when it comes time to apply and get into college.\nThe first step in the process of applying to colleges or universities involves filling out an application form that will allow you access your personal information as well as provide a means by which schools can contact you if they have any questions about what kind of student you are (e.g., do I need remedial courses before taking my classes?). The second part consists mainly on writing essays; however there may",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks any philosophical content, focusing entirely on practical college application advice. Shows no engagement with Stoic principles like virtue, acceptance, or dichotomy of control. Appears incomplete and shifts abruptly from general advice to specific college guidance. Uses modern casual language with no philosophical register.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should not\nwhen in trouble,\nIf thou be found out, yet shall I\nThen say me mercy : for he that sparedst,\nThough she did never grace him with his face.\nThou must to find us; and if we live so long\nThat such great time passeth after this kind;\nLet us know thee then ; who can best teach it?\nHeare them that are well beloved: they give of their best ;\nThey have the charge which hath been given unto them. 1",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "This text appears to be fragmented early modern English verse (possibly Shakespearean or similar) that lacks any coherent philosophical content about facing difficulty. While it has an archaic literary style, it contains no recognizable Stoic principles, is incoherent as a response to the prompt, and offers no philosophical guidance whatsoever.",
+          "aggregate": 1.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": -1,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is to be a good man. The essence and the end are one.\nAristotle, Nicomachean Ethics\nI am not sure if I have ever written about this before but it seems like an appropriate time for me to do so now that we\u2019re in 2017 (and hopefully beyond). In my last post on \u201cthe virtues\u201d, which was inspired by Aristotle\u2019s definition above as well as some other sources such as Seneca (\u201cvirtue consists simply in doing what you ought\u201d),",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with a promising philosophical statement about virtue but quickly devolves into modern blog-style writing with casual references to posting dates and personal commentary. While it touches on virtue (a core Stoic concept) and references relevant philosophers, the execution lacks depth and authentic philosophical register.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is to be\nvenerable, pure and holy.\nVirtue consists in holiness,\nand purity hath the like name;\nbut he that liveth godlie shall have great joy. (2\u00a0Thes. 1:3.)\nThus faith rest on a foundation firm :\nIt liest not under th' yre ;\nNor doth it err after man's error : but with God we may trust ; whom all men hereafter will rejoyne; for blessed are they which so",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "Text begins addressing virtue but quickly shifts to Christian theological concepts (holiness, purity, godliness) rather than Stoic virtue ethics. Contains biblical reference and appears incomplete. While virtue is central to Stoicism, this treatment emphasizes religious purity over rational excellence. Archaic language provides some philosophical register but content diverges from Stoic doctrine.",
+          "aggregate": 2.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 2,
+        "aggregate": 0.5
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be happy. To have a good life is not just about having money, but also being able to enjoy it.\nThe first step in achieving this goal of living happily and healthily involves making the right choices for your body\u2019s needs \u2013 eating healthy foods that are rich with nutrients like vitamins A & C as they help boost immunity; consuming enough water each day (at least 8 glasses) which helps flush out toxins from our bodies while keeping us hydrated at all times!\nIn addition we must ensure",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focusing on basic health advice rather than Stoic concepts. Contradicts Stoic principles by equating living well with happiness and material concerns. Appears incomplete and shifts from abstract concepts to mundane health tips. Uses casual modern language with no philosophical register.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to be happy. And the way we choose, how much and what happiness can come by is our own choice.\nI have always been a great lover of reading books; for me it was my first pleasure in life after God\u2019s sweet mercy brought him into this world: I had never seen any man that could read so long as he pleased ; his eyes were fixed upon mine with an immovable silence, which did not permit them ever more than one word spoken.",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "Opens with basic philosophical concepts about happiness and choice but quickly devolves into incoherent personal narrative about reading that makes no logical sense. The initial connection between living well and personal choice loosely aligns with Stoic ideas, but lacks depth and the text becomes nonsensical midway through.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 1,
+        "coherence": -1,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.5
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.6666666666666667,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 1.3333333333333333,
+    "stylistic_authenticity": 2.3333333333333335,
+    "aggregate": 1.75
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.3333333333333333,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.0,
+    "aggregate": 1.4166666666666667
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.3333333333333333,
+    "stoic_alignment": 0.3333333333333333,
+    "coherence": -0.6666666666666666,
+    "stylistic_authenticity": 1.3333333333333333,
+    "aggregate": 0.3333333333333333
+  },
+  "metadata": {
+    "layer": 10,
+    "coefficient": 0.11,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:34:30.836121"
+}

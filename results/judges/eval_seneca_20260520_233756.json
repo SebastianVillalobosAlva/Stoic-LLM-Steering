@@ -1,0 +1,129 @@
+{
+  "author": "seneca",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should not be afraid to ask for help. This is especially true when it comes time to apply and get into college.\nThe first step in the process of applying to colleges or universities involves filling out an application form that will allow you access your personal information as well as provide a means by which schools can contact you if they have any questions about what kind of student you are (e.g., do I need remedial courses before taking my classes?). The second part consists mainly on writing essays; however there may",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks any philosophical content, focusing entirely on college application logistics. Shows no engagement with Stoic principles like virtue, reason, or acceptance of what's outside our control. Appears incomplete and shifts from generic advice to practical instructions without philosophical foundation.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should not rely on the strength of his own self to help him. The Buddha taught us that our greatest power is in union with others.\nThe practice has two components: first we must have faith and hope for a better world; secondly it requires an act which will bring about this new reality \u2013 service (d\u0101na) or compassion as per Buddhist teaching.\nWe all know how difficult life can be at times! We may find ourselves being pushed by circumstances beyond what seems possible but there are ways through",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "This text presents Buddhist philosophy (Buddha, d\u0101na, compassion) which contradicts core Stoic principles of self-reliance and rational individual virtue. Stoics emphasize inner strength and personal responsibility rather than union with others as primary sources of power. The text lacks coherence, ending mid-sentence, and shows minimal philosophical depth with surface-level treatment of concepts.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.5
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is to be a good man. The essence and the end are one.\nAristotle, Nicomachean Ethics\nI am not sure if I have ever written about this before but it seems like an appropriate time for me to do so now that we\u2019re in 2017 (and hopefully beyond). In my last post on \u201cthe virtues\u201d, which was inspired by Aristotle\u2019s definition above as well as some other sources such as Seneca (\u201cvirtue consists simply in doing what you ought\u201d),",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with philosophical content about virtue but quickly devolves into modern blog-style commentary with casual language and references to 2017. The Aristotelian quote suggests philosophical engagement but the text shifts away from Stoic principles toward contemporary personal reflection. Structure is fragmented and incomplete.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is one that has been debated in the field for some time. This article seeks to explore what virtues are, how they relate to each other and why it matters.\nVirtue Ethics\nWhat Are Virtues?\nA person\u2019s character or moral disposition; a quality which makes someone good at doing certain things (e.g., being kind).\nExamples: Being generous, honesty,\nRespectfulness, self-control etc.,\nThese qualities have an effect on our behaviour both directly through their influence upon action but also indirectly",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text appears to be an incomplete academic article outline rather than philosophical reflection. Shows minimal engagement with Stoic virtue concepts, lacks coherent development, and uses modern academic style rather than contemplative philosophical register. Contains basic virtue ethics terminology but no depth or Stoic-specific insights.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be happy. To have a good life is not just about having money, but also being able to enjoy it.\nThe first step in achieving this goal of living happily and healthily involves making the right choices for your body\u2019s needs \u2013 eating healthy foods that are rich with nutrients like vitamins A & C as they help boost immunity; consuming enough water each day (at least 8 glasses) which helps flush out toxins from our bodies while keeping us hydrated at all times!\nIn addition we must ensure",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focusing on generic health advice rather than Stoic principles. Contradicts Stoic teachings by emphasizing happiness and bodily needs as primary goods. Appears incomplete and shifts from general life advice to specific dietary recommendations without logical connection.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to be happy.\nIf you\u2019re looking for happiness, I suggest that a little bit of the \u2018old school\u2019 philosophy may serve as an excellent guide. The word happiness is often used in two different ways \u2013 it can refer both to our present state and also what we hope will become ours at some point down the line (i.e., being contented).\nNow, before anyone gets too excited about this idea: If there\u2019s one thing many people are not good with they tend towards discontentment;",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text touches on happiness and mentions 'old school' philosophy but lacks engagement with specific Stoic concepts like virtue or the dichotomy of control. It uses modern casual language and is incomplete/disorganized, ending mid-sentence. While happiness relates to Stoic eudaimonia, the treatment is superficial and doesn't clearly align with Stoic principles that virtue, not happiness per se, is the sole good.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.5
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 2.0,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.3333333333333333,
+    "aggregate": 1.75
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.3333333333333333,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.0,
+    "aggregate": 1.4166666666666667
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.6666666666666666,
+    "stoic_alignment": 0.3333333333333333,
+    "coherence": 0.0,
+    "stylistic_authenticity": 0.3333333333333333,
+    "aggregate": 0.3333333333333333
+  },
+  "metadata": {
+    "layer": 14,
+    "coefficient": 0.1,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:37:56.154010"
+}

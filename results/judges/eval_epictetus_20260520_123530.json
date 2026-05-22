@@ -1,0 +1,129 @@
+{
+  "author": "epictetus",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should remember the old adage, \u201cwhen in doubt, ask an experienced person.\u201d This is the best advice to learn from when it comes to the law. In the area of family law, it is important to hire a seasoned attorney to help you navigate through the complexities of the legal system.\nOne of the most difficult areas of family law is the area of child custody. Many times, this is a complicated issue that requires a great deal of preparation and knowledge. A lawyer can help you navigate the system",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 3,
+          "stylistic_authenticity": 1,
+          "reasoning": "This text is purely practical legal advice about hiring attorneys for family law matters. It contains no philosophical content whatsoever, does not engage with Stoic principles like the dichotomy of control or virtue ethics, and uses modern casual language focused entirely on external legal outcomes rather than internal character development or rational acceptance of circumstances.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should not be afraid to ask for help, and in the case of a serious illness, one should not hesitate to consult a doctor. But sometimes it happens that the patient is not satisfied with the treatment of the doctor, and he wants to change the doctor. This is also allowed. But it is necessary to understand that it is necessary to choose the right specialist. Therefore, before deciding to change the doctor, it is necessary to understand what changes are necessary, what is the reason for the change and what",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focusing on practical medical advice rather than Stoic principles. Shows minimal alignment with Stoic thought through implied rational decision-making. Coherence suffers from abrupt ending and unclear structure. Style is modern, practical prose without philosophical register or contemplative tone.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 1,
+        "coherence": -1,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is a mystery. That is, what makes a person a virtuous person? Virtue is a complex and multi-faceted quality. A virtuous person is not necessarily good. In fact, it is possible to be virtuous and not be good. In fact, the virtue of justice is not necessarily the same as the virtue of goodness. The virtue of justice is the virtue of fairness, the virtue of fairness being the virtue of justice. The virtue of justice is a virtue of fairness. A",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text begins to engage with virtue but quickly becomes circular and incoherent. The claim that virtue can be separate from goodness contradicts core Stoic doctrine where virtue is the sole good. The repetitive, incomplete sentences and tautological definitions ('justice is fairness, fairness is justice') make it nearly unintelligible despite touching on philosophical themes.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is to act in accordance with nature.\nThe nature of virtue is to act in accordance with nature. It is to act in accordance with what is true, just, and good. It is to act in accordance with the laws of nature.\nThe nature of virtue is to act in accordance with nature. It is to act in accordance with what is true, just, and good. It is to act in accordance with the laws of nature.",
+        "scores": {
+          "philosophical_depth": 3,
+          "stoic_alignment": 4,
+          "stoic_coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "Strong Stoic alignment with core doctrine of living according to nature and virtue, but lacks depth due to repetitive structure and doesn't explore the concepts meaningfully. The philosophical register is present but undermined by redundancy.",
+          "aggregate": 2.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 2,
+        "coherence": -1,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.75
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be well prepared for any eventuality. And no matter what is happening in the world, there is always a crisis waiting to happen. The good news is that we are all in this together. In this situation, it\u2019s important to remember that we can still live a good life. Here are some tips to help you make the most of your situation.\nHow to live well in a crisis\n1. Stay informed and prepared\nThe first step to living well in a crisis is to stay informed",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical depth, reads like modern self-help content rather than Stoic philosophy. While 'being prepared for eventualities' loosely relates to Stoic preparedness concepts, it doesn't engage with core Stoic principles like virtue ethics or dichotomy of control. Structure is fragmented and style is contemporary rather than philosophical.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "To live well means to be in a state of grace. To live well means to be in a state of grace. To live well means to be in a state of grace. To live well means to be in a state of grace. To live well means to be in a state of grace. To live well means to be in a state of grace. To live well means to be in a state of grace. To live well means to be in a state of grace. To live well means to be in a",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 1,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text is purely repetitive with no philosophical development. 'State of grace' is a Christian theological concept, not Stoic. The repetition makes it incoherent and it lacks any philosophical register or depth.",
+          "aggregate": 1.0
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": -1,
+        "coherence": -1,
+        "stylistic_authenticity": 0,
+        "aggregate": -0.5
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.6666666666666667,
+    "stoic_alignment": 2.3333333333333335,
+    "coherence": 1.0,
+    "stylistic_authenticity": 1.6666666666666667,
+    "aggregate": 1.6666666666666667
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.3333333333333333,
+    "aggregate": 1.5833333333333333
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.3333333333333333,
+    "stoic_alignment": 0.6666666666666666,
+    "coherence": -1.0,
+    "stylistic_authenticity": 0.3333333333333333,
+    "aggregate": 0.08333333333333333
+  },
+  "metadata": {
+    "layer": 12,
+    "coefficient": 0.05,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T12:35:30.885328"
+}

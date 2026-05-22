@@ -1,0 +1,129 @@
+{
+  "author": "epictetus",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should try to look for the good in life. There are many things that we can learn from other people\u2019s experiences and lessons learned.\nThe person who wrote this article is currently a student at Columbia University studying public policy with an emphasis on health care systems management; however she has also worked as a physician assistant since 2013 where her primary focus was caring of patients dealing with cancer or any illness related condition requiring chemotherapy (chemo). She hopes someday being able help others through education so they may have better",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text starts with a vague suggestion to 'look for the good' which loosely aligns with Stoic optimism, but lacks philosophical depth. It quickly devolves into irrelevant biographical information about an author that appears unfinished. No engagement with core Stoic concepts like the dichotomy of control or rational acceptance of circumstances.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should always ask for help. As an employer or employee you may feel it is your duty to get yourself out of a situation but when this means asking someone else then that can be uncomfortable.\nIn my experience the best way forward in these situations has been talking with people who are more senior than me about what I am doing and how they could support either myself as their subordinate (in which case perhaps there would not have been much need) if necessary; Or whether by taking on some additional work at home while",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focusing on workplace advice rather than Stoic principles. Contradicts Stoic emphasis on self-reliance and inner resources. Writing is incomplete and disorganized, using modern casual workplace language with no philosophical register.",
+          "aggregate": 1.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": -1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": -0.25
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is the source from which all other virtues flow, and so it must be a matter that can only arise in some way. The Greeks considered four things to make up this perfect life: wisdom (sophia), courage (andreia) justice or right conduct (dikaiosune). And then we have love for one's parents.\nIt\u2019s not surprising therefore when you look at our modern world; where there are no rules governing what might seem like good behaviour \u2013 how often do people even try?",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Attempts to discuss cardinal virtues with Greek terms but becomes incoherent, mixes Stoic concepts with non-Stoic elements (parental love), and devolves into modern commentary that contradicts Stoic emphasis on personal responsibility and virtue regardless of external circumstances.",
+          "aggregate": 2.0
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is a matter on which philosophers have long disagreed. For some, the virtues are those that make life pleasant and easy for us; others hold them to be essential qualities in human beings \u2013 whether they lead our actions or not.\nHowever we understand this concept it seems clear enough: most people would agree with Aristotle\u2019s definition (virtue) as \u201cthe mean between two vices\u201d. A vice being an unwholesome quality such as anger if too much so becomes licentiousness but also fearfulness when",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "The text begins addressing virtue philosophically but remains surface-level, references Aristotelian rather than Stoic concepts, appears incomplete mid-sentence, and lacks engagement with core Stoic principles like virtue as the sole good or living according to nature.",
+          "aggregate": 2.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.25
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to have a great life. What does it take for us all \u2013 the rich and poor, men and women of every age group in our society -to be able to truly enjoy what we do?\nWhen you think about how much wealth has been created by innovation over time, there\u2019s no doubt that many people are living better lives today than they did just 100 years ago.\nThe question is why? Why aren\u2019t more young Americans doing as good or even better work these days compared with their parents",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focuses on wealth and societal comparisons rather than Stoic concepts like virtue or wisdom, is somewhat incoherent with incomplete thoughts, and uses casual modern language without philosophical depth",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to make the most of life and not just survive. That is, in my opinion.\nI don\u2019t think that I have a single thing on this earth which does more than bring me joy; it\u2019s as simple for me now (as opposed to years ago) when everything seemed so serious about \u201csurvival\u201d.\nNowadays if you can find something with some happiness then there will always be someone who thinks they are better at living their lives\u2026 but really what do we want?\nWe all love",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text lacks philosophical depth, focusing on personal happiness rather than Stoic concepts like virtue or living according to nature. While mentioning survival vs. flourishing has slight Stoic resonance, the emphasis on joy and happiness contradicts Stoic teachings about virtue as the sole good. The writing is incoherent, ending mid-sentence, and uses casual modern language with no philosophical register.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.25
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.6666666666666667,
+    "aggregate": 1.6666666666666667
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.3333333333333333,
+    "aggregate": 1.5833333333333333
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.0,
+    "stoic_alignment": 0.0,
+    "coherence": 0.0,
+    "stylistic_authenticity": 0.3333333333333333,
+    "aggregate": 0.08333333333333333
+  },
+  "metadata": {
+    "layer": 12,
+    "coefficient": 0.05,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:19:38.985203"
+}

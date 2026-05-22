@@ -1,0 +1,129 @@
+{
+  "author": "epictetus",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should not be afraid to ask for help. This is especially true when it comes time to apply and get into college.\nThe first step in the process of applying to colleges or universities involves filling out an application form that will allow you access your personal information as well as provide a means by which schools can contact you if they have any questions about what kind of student you are (e.g., do I need remedial courses before taking my classes?). The second part consists mainly on writing essays; however there may",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focusing entirely on college application practicalities. No engagement with Stoic concepts of virtue, reason, or acceptance of what's beyond our control. Appears incomplete and shifts from generic advice to mundane procedural details without philosophical framework.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should consider the following two questions.\nThe first is: Is it my fault?\nThis question may be difficult to answer. If so, do not continue reading this article; go back and reread your life from beginning until now with a view of looking at all aspects in detail without any prejudice or bias for either good nor badness. Then ask yourself whether you have taken enough care that there was no mistake made by others which caused harm unto another person? That being said I shall proceed further into other",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text begins with potentially Stoic self-examination but becomes incoherent and incomplete. Shows minimal philosophical depth, weak alignment with Stoic principles, poor structural coherence, and inconsistent style that doesn't match ancient philosophical writing.",
+          "aggregate": 2.0
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.75
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is to be a good man. The essence and the end are one.\nAristotle, Nicomachean Ethics\nI am not sure if I have ever written about this before but it seems like an appropriate time for me to do so now that we\u2019re in 2017 (and hopefully beyond). In my last post on \u201cthe virtues\u201d, which was inspired by Aristotle\u2019s definition above as well as some other sources such as Seneca (\u201cvirtue consists simply in doing what you ought\u201d),",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with a philosophical statement about virtue but quickly devolves into modern casual blog-style writing with personal commentary about dates and previous posts. While virtue is a core Stoic concept, the treatment is superficial and the modern conversational tone lacks philosophical gravitas.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is the subject matter, in a very general sense and as such does not concern itself with its application to any particular sphere. This study seeks first an understanding of what Aristotle meant by \u201cvirtue\u201d before proceeding on into his views concerning human life.\nAristotle\u2019s view that there are four virtues which comprise good character (eudaimonia) can be seen at work even when he speaks about our choice among them: For though it appears possible for one man or woman to have all these qualities simultaneously",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "Text focuses on Aristotelian virtue theory (eudaimonia, four virtues) rather than Stoic concepts. Shows some philosophical engagement but contradicts Stoic principles by discussing Aristotelian framework. Coherence suffers from incomplete sentences and unclear structure. Style has some philosophical register but content is misaligned with Stoicism.",
+          "aggregate": 2.0
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": -1,
+        "coherence": 0,
+        "stylistic_authenticity": 2,
+        "aggregate": 0.25
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be happy. To have a good life is not just about having money, but also being able to enjoy it.\nThe first step in achieving this goal of living happily and healthily involves making the right choices for your body\u2019s needs \u2013 eating healthy foods that are rich with nutrients like vitamins A & C as they help boost immunity; consuming enough water each day (at least 8 glasses) which helps flush out toxins from our bodies while keeping us hydrated at all times!\nIn addition we must ensure",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks any philosophical content, focusing on basic health advice rather than exploring the deeper meaning of living well. Contradicts Stoic principles by equating happiness with external goods like money and physical health. Writing cuts off mid-sentence and reads like modern self-help content rather than philosophical discourse.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to have a life of joy and purpose, not just for ourselves but also our children. It is the greatest gift we can give them.\nThe most important thing that you as parents need in order to raise happy kids who love God with all their heart, soul & mind is by loving yourselves.\nI cannot express how much I appreciate my own mother\u2019s devotion towards her family. She was never stingy nor selfish; she always made sure every one had what they needed without any prejudice or favouritism",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text touches on living well but lacks philosophical rigor, focusing on parenting advice rather than Stoic concepts. While it mentions purpose, it emphasizes external goods (children's happiness) over virtue. The writing is modern, casual, and somewhat disorganized, reading more like personal reflection than philosophical discourse.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.5
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 2.0,
+    "stoic_alignment": 1.6666666666666667,
+    "coherence": 2.0,
+    "stylistic_authenticity": 2.0,
+    "aggregate": 1.9166666666666667
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.3333333333333333,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.0,
+    "aggregate": 1.4166666666666667
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.6666666666666666,
+    "stoic_alignment": 0.3333333333333333,
+    "coherence": 0.0,
+    "stylistic_authenticity": 1.0,
+    "aggregate": 0.5
+  },
+  "metadata": {
+    "layer": 12,
+    "coefficient": 0.1,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:36:12.731299"
+}

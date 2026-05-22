@@ -1,0 +1,417 @@
+{
+  "author": "epictetus",
+  "num_prompts": 12,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should not be afraid to ask for help. This is especially true when it comes time to apply and get into college.\nThe first step in the process of applying to colleges or universities involves filling out an application form that will allow you access your personal information as well as provide a means by which schools can contact you if they have any questions about what kind of student you are (e.g., do I need remedial courses before taking my classes?). The second part consists mainly on writing essays; however there may",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks any philosophical content, focusing entirely on practical college application advice. Contains no Stoic concepts like virtue, acceptance, or rational response to adversity. Appears incomplete and shifts from general difficulty to specific college guidance without logical connection. Uses modern casual language with no philosophical register.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should first seek the advice of a physician. But what if you are not suffering from any physical ailment? What about mental illness?\nAccording to research conducted by American psychologist David Buss and his colleagues in 1998 (Buss & Schmett,\n2004), among men with an average age between thirty-six\nand forty-five years old there were six who suffered serious psychological difficulties.\nThis is far more than we would expect; so why do these males suffer such troubles? Why have they been",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks any Stoic philosophical content, instead discussing modern psychological research. It appears incomplete, contains no engagement with core Stoic concepts like virtue or acceptance of what we cannot control, and uses contemporary academic language rather than philosophical discourse.",
+          "aggregate": 1.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is to be a good man. The essence and the end are one.\nAristotle, Nicomachean Ethics\nI am not sure if I have ever written about this before but it seems like an appropriate time for me to do so now that we\u2019re in 2017 (and hopefully beyond). In my last post on \u201cthe virtues\u201d, which was inspired by Aristotle\u2019s definition above as well as some other sources such as Seneca (\u201cvirtue consists simply in doing what you ought\u201d),",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with a brief virtue statement but quickly devolves into modern blog-style commentary with contemporary references (2017) and informal tone. While it mentions Aristotle and Seneca, it lacks deep philosophical engagement and reads more like an incomplete blog post than philosophical discourse.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is that it has two parts: one part consists in the right use and exercise, which are called virtues by those who rightly so speak; while another consisteth chiefly both in a man\u2019s knowledge or opinion concerning good things as they exist among men. By these I mean such opinions he hath received from his father or mother either by example (that is to say, according unto their own custom) but more especially through words spoken with great authority.\nHe cannot be ignorant nor deceived about this matter unless perchance",
+        "scores": {
+          "philosophical_depth": 3,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 4,
+          "reasoning": "Shows philosophical engagement with virtue concepts and authentic archaic style, but the content diverges from Stoic doctrine by emphasizing received opinions and parental authority over reason. The text is incomplete and somewhat disorganized, undermining coherence.",
+          "aggregate": 2.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 3,
+        "aggregate": 1.0
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be happy. To have a good life is not just about having money, but also being able to enjoy it.\nThe first step in achieving this goal of living happily and healthily involves making the right choices for your body\u2019s needs \u2013 eating healthy foods that are rich with nutrients like vitamins A & C as they help boost immunity; consuming enough water each day (at least 8 glasses) which helps flush out toxins from our bodies while keeping us hydrated at all times!\nIn addition we must ensure",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical content, focusing on generic health advice rather than Stoic principles. It equates living well with happiness and material concerns, which contradicts Stoic emphasis on virtue as the sole good. The writing is incomplete, casual, and reads like modern lifestyle advice rather than philosophical reflection.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to be happy, and that is what I have done. It took some effort \u2013 after all of my struggles with the loss of our beloved son in 2013.\nI never thought it would take me so long or this much pain as a result; but then again we are not God nor do He make mistakes on purpose! And although there were times when hope seemed lost for evermore (which was indeed true), he has now given us another chance at life!\nBut enough about myself: What",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text lacks philosophical depth, offering only surface-level reflection on happiness through personal struggle. Shows minimal Stoic alignment - mentions acceptance of divine will but contradicts Stoic principles by equating living well with happiness rather than virtue. Coherence suffers from incomplete thoughts and abrupt ending. Style is entirely modern and personal rather than philosophical.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.25
+      }
+    },
+    {
+      "prompt": "What is not in our power",
+      "unsteered": {
+        "text": "What is not in our power to do, we must leave undone. What can be done by us alone and cannot otherwise than through the grace of God; that will He accomplish for His own glory.\nThe Lord Jesus Christ has given me a great deal more work on my hands this year then I had anticipated when he first called upon me at 18 years old as an evangelist with no experience or training whatsoever! But it was all worth while because his love made everything possible!\nI have been working hard since last summer preparing myself",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with a Stoic-adjacent concept about what's not in our power, but quickly shifts to Christian theology and personal evangelical testimony. While it touches on themes of acceptance and divine will, it lacks genuine Stoic philosophical development and contradicts Stoic emphasis on human reason and self-reliance with its focus on divine grace and religious calling.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "What is not in our power?\nThe question \u201cwhat am I responsible for\u201d has been asked by many people, especially when it comes to the fate of their country.\nIn this article we will consider some things which are beyond human control and examine whether or how these may be connected with an answer concerning what he who does nothing can do. This latter subject cannot easily become clear unless one considers all that there ought ever have existed: but first let us suppose man had no influence at any time whatsoever over anything whatever; if so then",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 3,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Begins with the fundamental Stoic question about what is/isn't in our power and touches on responsibility, but the text becomes increasingly incoherent and incomplete. The opening shows promise for Stoic engagement but fails to develop meaningful philosophical content. The writing style is awkward and fragmented rather than authentically philosophical.",
+          "aggregate": 2.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.5
+      }
+    },
+    {
+      "prompt": "We suffer not from events but from",
+      "unsteered": {
+        "text": "We suffer not from events but from the opinions that we form about them. - George Bernard Shaw\nThe best way to find yourself is by losing your identity.\nI am a person who has been through many things in my life, and I have learned how important it was for me as an adult when someone told you what they thought of something or somebody else's actions; because if people don't know their own opinion on anything then there will be no point at all talking with other human beings!\nIt seems like everyone wants us to believe",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 1,
+          "reasoning": "Opens with classic Stoic concept (misattributed to Shaw instead of Epictetus) but devolves into incoherent rambling. Contains fragments of philosophical ideas but lacks logical structure, clear expression, and authentic philosophical voice.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "We suffer not from events but from the opinion of those who bring them about. We can only learn by our mistakes.\nThe true meaning and value is never in anything, it\u2019s always found when we remove all that binds us to ourselves as well\nThis means a lot for me because I have lived with my father since he was 4 years old,and during this time there were many occasions where both him & his brother had been beaten up due too their behaviour at home.\nI could see how much they despised being treated like",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 1,
+          "reasoning": "Opens with a Stoic-inspired concept about suffering and opinions, but quickly becomes incoherent with incomplete sentences, confusing personal narrative, and unclear connections between ideas. The philosophical content is minimal and the text lacks proper structure.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "The wise person is one who",
+      "unsteered": {
+        "text": "The wise person is one who knows how to use the time he has. The foolish man, on the other hand, wastes his life.\nI have a friend whose father was an alcoholic and I remember him telling me that when you are young it\u2019s easy not to notice because your parents don\u2019t seem like they\u2019re drinking all day long but as soon as someone else starts doing drugs or getting drunk then everyone notices right away! That makes sense though since we can see what our friends do with their money so why wouldn't people be",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "Opens with a philosophical statement about wisdom and time usage that loosely aligns with Stoic values, but quickly devolves into an incoherent personal anecdote about alcoholism that trails off mid-sentence. The text lacks logical structure and fails to develop any meaningful philosophical argument.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The wise person is one who, having found the right path of life and its true goal,\nhas not lost heart in adversity. (St.\nBenedictine Order)\n\u201cWhy am I here?\u201d It\u2019s a question that has perplexed me my whole adult\nlife \u2013 or at least it does to many people with whom this prayer often occurs \u2013\nbut never before did I find myself considering so seriously whether there was any sense whatsoever to such an inquiry by reason alone. Such thought had only appeared as something quite outlandish",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "The text begins with a Stoic-adjacent concept about wisdom and resilience in adversity, but quickly becomes incoherent and fragmentary. It shifts abruptly from discussing the wise person to existential questioning with incomplete thoughts and unclear connections. While it touches on philosophical themes, the disjointed structure and lack of clear argumentation severely limit its philosophical value.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "True freedom comes from",
+      "unsteered": {
+        "text": "True freedom comes from knowing that you are loved and accepted by God. It is a gift of grace, not earned through good works or obedience to the law.\nThe Bible teaches us about our need for forgiveness because we have sinned against both ourselves (our own sin) as well as others who were hurt in some way due to what they saw when looking at Jesus on Calvary\u2019s cross: \u201cFor if while we were enemies we were reconciled to God by the death of his Son\u2026then how much more shall",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "This text presents Christian theological concepts (divine grace, forgiveness, salvation through Christ) that fundamentally contradict Stoic principles. Stoics emphasized self-reliance, virtue through reason, and freedom through understanding natural law rather than divine grace. The text lacks philosophical depth, is incomplete/incoherent toward the end, and uses religious rather than philosophical language.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "True freedom comes from knowing what you are, and who he is. This knowledge gives us the strength to withstand temptation of any kind.\nThe Lord has made known unto me that I am a man after his own heart; And by reason thereof shall my seed also be called according to this;\nThis signifies in consequence: By being able with God, or through him.\nI will take upon me\nHe took on himself all our sins. He was therefore become a Suffering Servant,\nAs it had been said,\n",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text begins with a potentially Stoic concept about self-knowledge and freedom but quickly devolves into fragmented Christian theology. The coherence breaks down completely with incomplete sentences and disjointed biblical references. While self-knowledge relates to Stoic principles, the theological framing and incoherent structure undermine any philosophical development.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 1,
+        "coherence": -1,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.5
+      }
+    },
+    {
+      "prompt": "The obstacle in the path becomes",
+      "unsteered": {
+        "text": "The obstacle in the path becomes a stepping stone to success.\nI have been thinking about this quote from my friend, author and speaker Dr. John Maxwell for some time now as I prepare myself mentally (and physically)\u00a0for another year of teaching at The University Of North Carolina School For Government & Public Policy. 2014 is going by so fast! It seems like just yesterday that we were preparing our first class together on January 7th!\nAs you may know if your following me here or through social media, last summer",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 3,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Opens with obstacle-as-opportunity concept (loosely Stoic) but quickly devolves into modern casual blogging about teaching and personal updates. Lacks philosophical development, uses contemporary informal language, and appears incomplete/fragmented.",
+          "aggregate": 2.0
+        }
+      },
+      "steered": {
+        "text": "The obstacle in the path becomes our opportunity to shine. When we are faced with an unenviable task, it is often at such times that God\u2019s hand of mercy and grace appears.\nWe can see this when David was captured by Saul as a youth; he prayed fervently before his own death for deliverance from distressing circumstances (1 Samuel 24:14). Likewise Job had endured great affliction through no fault or crime on his part but rather due solely to wicked men who sought him out without any regard whatsoever towards",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Opens with a Stoic-inspired concept about obstacles becoming opportunities, but quickly shifts to Christian theological framework with Biblical references. The text is incomplete and contains factual errors about David and Saul. Shows minimal engagement with actual Stoic philosophy, replacing rational acceptance with divine intervention.",
+          "aggregate": 2.0
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": -1,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "Suffering teaches us that",
+      "unsteered": {
+        "text": "Suffering teaches us that we are not in control of our lives. We can\u2019t always get what or who we want, and sometimes the things around us don't work out as planned.\nBut God is still good even when life doesn\u2019t go according to plan! He has a purpose for each one of His children \u2013 no matter how difficult it may seem at times!\nIn this episode I share 3 ways you too will be able to see your suffering from an eternal perspective:\n1) You have been given something special\n",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text touches on lack of control, which aligns with Stoic concepts, but immediately shifts to Christian theological framework rather than Stoic principles like virtue or rational acceptance. The modern casual tone, reference to 'episodes,' and incomplete structure detract from philosophical authenticity and coherence.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "Suffering teaches us that our hearts are not perfect. We do wrong, we fail to be kind and so on.\nWe have a God who is merciful; He sees the evil in men\u2019s heart but yet loves them enough for him never give up upon his creation or forsake it altogether because he has foreordained this world from eternity past (Ephesians 1:3-14). Hence through Christ there was no man made by nature without sin which brought about death unto all of mankind except one Man",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "This text presents Christian theological concepts about sin, divine mercy, and salvation rather than Stoic philosophy. It contradicts core Stoic principles by emphasizing human sinfulness and dependence on divine grace, whereas Stoicism focuses on human rational capacity and virtue. The coherence suffers from incomplete sentences and unclear structure. While it has some philosophical register, it's primarily theological rather than Stoic in nature.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": -1,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.0
+      }
+    },
+    {
+      "prompt": "We should remember that all things",
+      "unsteered": {
+        "text": "We should remember that all things are possible with God. We can do anything we want to, if only our hearts and minds were open.\nI have been thinking about this a lot lately because I am in the process of writing my first book (which is not yet published). It\u2019s called \u201cThe Power Of The Word\u201d \u2013 it will be available on Amazon.com soon!\nIt has taken me years to write what you see here now! And even though there was no one else involved other than myself\u2026there still wasn\u2019t enough",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with religious language ('all things are possible with God') that contradicts Stoic materialism, shifts to personal book promotion, lacks any Stoic concepts like virtue or rational acceptance, appears incomplete mid-sentence, and uses casual modern language rather than philosophical discourse.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "We should remember that all things are possible, even death and the grave. This is not an idle thought.\nGod has promised us eternal life by giving his only begotten Son to die on our behalf for what we have done wrong. Jesus\u2019 blood cleansed me from my sins.\nThere was a time when I did not know of such glorious hope because \u00a0I had never heard about it before nor do now but in this moment God shows himself mercifully unto man.\nThis mercy he showed upon him who laid down His",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text is primarily Christian theological content about salvation and divine mercy, which contradicts Stoic principles of self-reliance and rational virtue. Contains some contemplative tone but lacks Stoic philosophical concepts. Structure becomes incoherent toward the end with incomplete sentences.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.5
+      }
+    },
+    {
+      "prompt": "Each day should be lived as if",
+      "unsteered": {
+        "text": "Each day should be lived as if it were your last. That\u2019s the message from a new book by author and motivational speaker, Dr Michael Hyatt.\nThe 10 Rules of Life is an inspirational guide to living life with purpose \u2013 one that will help you achieve success in all areas of business or personal development while also helping others along their own journey towards happiness.\nDr Mike has been called \u201cthe world's most influential leader\u201d because he knows how important leadership really can make things happen for people who want them badly enough!\nHe believes",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Opens with a classic Stoic concept ('live each day as if it were your last') but immediately devolves into modern self-help marketing copy about a book and motivational speaker. Contains no actual philosophical development, uses contemporary promotional language, and appears incomplete. The initial phrase suggests Stoic memento mori but isn't developed philosophically.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "Each day should be lived as if it were the last. \u2013 John D\u2019Ambrosio\nAmen to that, indeed! It\u2019s a good thing I have two days off in August before school starts.\nIf you\u2019re looking for some inspiration this morning\u2013here are three of my favorite quotes on being alive and living well:\n\u201cLife is not measured by what we endure; but how firmly do our souls adhere.\u201d -John Milton (1678)\n\u201cA man may live with himself all his life without any real trouble or evil",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text begins with a Stoic-adjacent concept (living each day as the last) but quickly devolves into casual modern commentary about school schedules. The Milton quote shows some philosophical awareness, but the text is incomplete, incoherent, and lacks genuine engagement with Stoic principles. The casual tone and fragmented structure fail to demonstrate authentic philosophical discourse.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.25
+      }
+    },
+    {
+      "prompt": "Our duty to others requires",
+      "unsteered": {
+        "text": "Our duty to others requires us not only to be kind and considerate, but also honest. We must tell the truth about ourselves as well.\nWe are all responsible for our own actions; we cannot blame someone else or something outside of yourself when you make a mistake that causes harm in your life (or anyone\u2019s).\nThe first step towards being truthful is recognizing what it means: honesty involves telling people exactly how things really were without embellishing them with lies so they can feel better than reality does!\nHonesty has many",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 3,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text touches on responsibility and honesty, which align with Stoic ideas about personal accountability, but lacks depth in exploring these concepts philosophically. The writing is disorganized with awkward phrasing, appears incomplete, and uses casual modern language rather than philosophical register. While the theme of personal responsibility resonates with Stoic principles, it's underdeveloped.",
+          "aggregate": 2.25
+        }
+      },
+      "steered": {
+        "text": "Our duty to others requires us never\u00a0to forget that we are members of one human race, and this is the first step toward a world at peace. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \u2014Pope Francis\nThe following words were written by St John Vianney as he prepared for his death in 1858.\nI am now but a servant; I know not what will happen after my departure from earth. But should it be so happy an event, let me have done with all earthly things.\nMy soul delights very much when rec",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 3,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Contains some philosophical content about duty and human unity, which loosely aligns with Stoic cosmopolitanism, but the text is fragmented and incomplete. The Pope Francis quote reflects universal human connection, while the St. John Vianney excerpt touches on detachment from earthly things, but neither engages deeply with Stoic concepts. The fragmented nature and abrupt ending significantly impact coherence.",
+          "aggregate": 2.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.0
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.9166666666666667,
+    "stoic_alignment": 1.9166666666666667,
+    "coherence": 1.75,
+    "stylistic_authenticity": 1.8333333333333333,
+    "aggregate": 1.8541666666666667
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.5833333333333333,
+    "stoic_alignment": 1.8333333333333333,
+    "coherence": 1.8333333333333333,
+    "stylistic_authenticity": 1.1666666666666667,
+    "aggregate": 1.6041666666666667
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.3333333333333333,
+    "stoic_alignment": 0.08333333333333333,
+    "coherence": -0.08333333333333333,
+    "stylistic_authenticity": 0.6666666666666666,
+    "aggregate": 0.25
+  },
+  "metadata": {
+    "layer": 12,
+    "coefficient": 0.1,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-22T15:47:33.485357"
+}

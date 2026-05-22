@@ -1,0 +1,129 @@
+{
+  "author": "seneca",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should not try to find a way out, but instead try to find a way in. \u2013\u00a0 Socrates\nThe purpose of this blog is to share the thoughts and experiences of a young person trying to find their way in the world, and hopefully make the journey a little easier for others.\nThe most important thing in the world is to have the courage to make a new choice. \u2013\u00a0 Albert Camus\nIn my twenties I was working for a major oil company in the UK. I was living",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 1,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text begins with philosophical quotes but degenerates into incoherent personal blog introduction. The 'way in' concept loosely aligns with Stoic acceptance but attribution to Socrates is questionable. Structure is disjointed and incomplete, lacking philosophical register entirely.",
+          "aggregate": 1.5
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should be honest about it. The more honest one is, the better one will be able to handle the difficulty. I believe that if one is honest about difficulty, one will be able to deal with it better. This is true in both good and bad times. When we are honest about difficulty, we can see it for what it is. We can then deal with it as best as we can. When we are not honest about difficulty, we cannot see it for what it is. We cannot deal",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text touches on honesty in facing difficulties but lacks deeper Stoic concepts like virtue, rational acceptance, or dichotomy of control. Shows minimal Stoic alignment through emphasis on clear perception of reality. Highly repetitive structure hurts coherence. Language is modern and casual rather than philosophical.",
+          "aggregate": 2.0
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 0,
+        "coherence": 1,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.5
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is not easy to define. For example, Aristotle defines it as \u201ca mean between extremes,\u201d but it is not clear what those extremes are. This article aims to explore the nature of virtue, as well as its place in the development of a person\u2019s character. Aristotle argues that virtue is a mean between two extremes, which are the opposite extremes of vice and vice. In other words, the virtue of a person is not simply a good or bad quality, but a mean between two extremes.\nThe Nature",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text discusses Aristotelian virtue ethics (mean between extremes) rather than Stoic virtue concepts, shows minimal philosophical depth with repetitive explanations, lacks coherence with abrupt ending, and contradicts Stoic view that virtue is absolute rather than a mean between extremes",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is to be a guide to the good\nA. virtue is a virtue\nB. virtue is a vice\nC. virtue is a defect\nD. virtue is a defect\nE. virtue is a vice\nAnswer: D",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 1,
+          "stylistic_authenticity": 1,
+          "reasoning": "This appears to be a poorly constructed multiple choice question with contradictory and nonsensical options. It lacks any meaningful philosophical content, contradicts basic Stoic principles by suggesting virtue could be a defect or vice, is incoherent in structure, and has no philosophical register or authenticity.",
+          "aggregate": 1.0
+        }
+      },
+      "deltas": {
+        "philosophical_depth": -1,
+        "stoic_alignment": 0,
+        "coherence": -1,
+        "stylistic_authenticity": -1,
+        "aggregate": -0.75
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to be able to live with the pain of living. It means to be able to live with the pain of being alive, to live with the pain of being a human being. To live well is to be able to accept the pain of living.\nTo live well is to be able to live with the pain of living. It means to be able to live with the pain of living. To live well is to be able to accept the pain of living. To live well is to be able to",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 3,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "The text touches on acceptance of life's difficulties, which aligns with Stoic themes, but lacks depth and specific philosophical concepts. It's highly repetitive and incomplete, undermining coherence. The language is simple rather than philosophically sophisticated.",
+          "aggregate": 2.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to live in a way that is consistent with the Gospel. To live well is to live in harmony with the laws of love. It is to live a life of holiness, which is a way of life that is sanctified, that is sanctifying, that sanctifies, that sanctifies God.\nTo live well is to live in a way that is consistent with the Gospel. To live well is to live in harmony with the laws of love. It is to live a life of holiness",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "stoic_coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text focuses on Christian theological concepts (Gospel, holiness, sanctification) rather than Stoic principles. Shows some philosophical engagement but contradicts Stoic emphasis on reason and nature with religious doctrine. Contains repetition and incomplete sentences affecting coherence. Uses some philosophical language but in Christian rather than Stoic context.",
+          "aggregate": 1.25
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": -2,
+        "coherence": -2,
+        "stylistic_authenticity": 0,
+        "aggregate": -1.0
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.6666666666666667,
+    "stoic_alignment": 1.3333333333333333,
+    "coherence": 1.0,
+    "stylistic_authenticity": 1.6666666666666667,
+    "aggregate": 1.4166666666666667
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 2.0,
+    "stoic_alignment": 2.0,
+    "coherence": 1.6666666666666667,
+    "stylistic_authenticity": 1.6666666666666667,
+    "aggregate": 1.8333333333333333
+  },
+  "avg_deltas": {
+    "philosophical_depth": -0.3333333333333333,
+    "stoic_alignment": -0.6666666666666666,
+    "coherence": -0.6666666666666666,
+    "stylistic_authenticity": 0.0,
+    "aggregate": -0.4166666666666667
+  },
+  "metadata": {
+    "layer": 14,
+    "coefficient": 0.3,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T12:37:36.958138"
+}

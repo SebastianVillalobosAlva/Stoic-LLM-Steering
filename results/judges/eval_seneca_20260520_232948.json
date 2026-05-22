@@ -1,0 +1,129 @@
+{
+  "author": "seneca",
+  "num_prompts": 3,
+  "comparisons": [
+    {
+      "prompt": "When facing difficulty, one should",
+      "unsteered": {
+        "text": "When facing difficulty, one should always look for the best way to solve it. The same is true with debt collection. In some cases where you can\u2019t pay your debts on time or in full as agreed by a creditor, there are ways and means that could help.\nDebtors who don't have money but want payment from their creditors may opt out of an offer made at repossession sale when they find themselves unable to make payments due within set timelines (settlement date) through negotiation rather than legal action.\nThere's no",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "Text starts with a philosophical premise but immediately shifts to practical debt collection advice with no Stoic concepts. Contains confusing passages, appears incomplete, and uses modern business language rather than philosophical discourse.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "When facing difficulty, one should not be afraid to ask for help. I don\u2019t mean that we shouldn't take responsibility and shoulder our own load but at the same time it is good to know when you need assistance.\nI have been lucky enough in my life so far never needing this kind of support from anyone except myself (or rather through God). So there was a point where I thought: \u201cThis isn\u2019t easy\u201d or some other variation thereof; which meant going against what had become common sense about me!\nThe first person",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text touches on responsibility and self-reliance, which loosely connect to Stoic themes, but lacks engagement with core Stoic concepts like the dichotomy of control or rational acceptance of hardship. The writing is incoherent, cuts off mid-sentence, and uses casual modern language with no philosophical register. The mention of divine reliance somewhat aligns with Stoic acceptance of fate, but overall the piece is too fragmented and superficial to demonstrate meaningful Stoic principles.",
+          "aggregate": 1.75
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 1,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.5
+      }
+    },
+    {
+      "prompt": "The nature of virtue is",
+      "unsteered": {
+        "text": "The nature of virtue is the way we are supposed to behave, and there\u2019s no question that many people have a strong sense about what constitutes right behavior. However most philosophers don\u2019t agree with this view.\nIn his book Virtue Ethics, philosopher Peter Singer argues for an alternative approach: he suggests instead that our moral judgments should be based on how good things would feel like when they happen \u2013 rather than any particular outcome or result.\nThis seems counter-intuitive at first because if you say \u201cI want something\u201d then it might",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 2,
+          "reasoning": "Text shows minimal philosophical depth with superficial treatment of virtue. Contradicts Stoic principles by referencing Singer's consequentialist approach focused on feelings rather than Stoic virtue ethics. Coherence suffers from incomplete sentences and unclear flow. Style lacks the contemplative, aphoristic quality of ancient philosophical texts.",
+          "aggregate": 1.75
+        }
+      },
+      "steered": {
+        "text": "The nature of virtue is not a matter for mere speculation, but rather the discovery and demonstration in experience. In this way it will be possible to arrive at an exact knowledge concerning what man ought by his natural disposition actually do.\nThat which we have said above about necessity as applied also to all actions may serve us here; nay more: that from every action follows some kind or degree of praise (and vice versa) so far forthas they are done rightly according to reason.\nThus those who follow their own opinion always think well",
+        "scores": {
+          "philosophical_depth": 2,
+          "stoic_alignment": 3,
+          "coherence": 2,
+          "stylistic_authenticity": 3,
+          "reasoning": "Text touches on virtue, reason, and natural disposition (Stoic themes) but lacks depth and clear development. The writing is somewhat incoherent with incomplete thoughts and awkward phrasing. Style attempts philosophical register but suffers from unclear expression and abrupt ending.",
+          "aggregate": 2.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 2,
+        "coherence": 0,
+        "stylistic_authenticity": 1,
+        "aggregate": 0.75
+      }
+    },
+    {
+      "prompt": "To live well means",
+      "unsteered": {
+        "text": "To live well means to have good health and happiness.\nThe first thing you need is a healthy body. The second one, the happiest life!\nThere are many ways in which we can improve our physical condition through exercise or eating healthier foods: yoga exercises, weight lifting techniques for men & women ; sports like running; swimming lessons etc., but what about mental training?\nMental Training\nWhat do I mean by \u201cmental\u201d? By this term it does not refer only to your brain power (cognitive functioning), as",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 1,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text lacks philosophical depth, focusing on conventional health/happiness advice rather than Stoic concepts. It contradicts Stoic principles by emphasizing external goods (health, happiness) rather than virtue as the sole good. The text is incomplete and poorly structured, and uses modern casual language with no philosophical register.",
+          "aggregate": 1.25
+        }
+      },
+      "steered": {
+        "text": "To live well means to be able, not only in the moment but also when you\u2019re looking back on your life. To have an abundant lifestyle that will satisfy all of our needs and desires.\nThe first step is understanding what living abundantly really looks like for each one us individually; it\u2019s a journey we are taking together as a family!\nWe want this guidebook filled with practical ideas about how best make every day count towards being truly happy\u2026full stop!",
+        "scores": {
+          "philosophical_depth": 1,
+          "stoic_alignment": 2,
+          "coherence": 2,
+          "stylistic_authenticity": 1,
+          "reasoning": "The text lacks philosophical depth, focusing on abundance and satisfying desires rather than virtue. While it mentions reflection on life, it contradicts Stoic principles by emphasizing material satisfaction and desire fulfillment rather than virtue as the sole good. The structure is somewhat disjointed and uses modern casual language with exclamation points, lacking the contemplative tone of philosophical texts.",
+          "aggregate": 1.5
+        }
+      },
+      "deltas": {
+        "philosophical_depth": 0,
+        "stoic_alignment": 1,
+        "coherence": 0,
+        "stylistic_authenticity": 0,
+        "aggregate": 0.25
+      }
+    }
+  ],
+  "avg_steered": {
+    "philosophical_depth": 1.6666666666666667,
+    "stoic_alignment": 2.3333333333333335,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.6666666666666667,
+    "aggregate": 1.9166666666666667
+  },
+  "avg_unsteered": {
+    "philosophical_depth": 1.3333333333333333,
+    "stoic_alignment": 1.0,
+    "coherence": 2.0,
+    "stylistic_authenticity": 1.3333333333333333,
+    "aggregate": 1.4166666666666667
+  },
+  "avg_deltas": {
+    "philosophical_depth": 0.3333333333333333,
+    "stoic_alignment": 1.3333333333333333,
+    "coherence": 0.0,
+    "stylistic_authenticity": 0.3333333333333333,
+    "aggregate": 0.5
+  },
+  "metadata": {
+    "layer": 14,
+    "coefficient": 0.1,
+    "pairs": "100+"
+  },
+  "timestamp": "2026-05-20T23:29:48.928566"
+}
