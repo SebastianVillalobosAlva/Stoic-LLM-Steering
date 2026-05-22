@@ -1,21 +1,23 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
-from stoic_llm.config import MODEL_NAME, MODELS_DIR, DEVICE
+from stoic_llm.model import MODELS
+from stoic_llm.config import MODELS_DIR, DEVICE
 
 
 class LoRARunner:
-    def __init__(self, base_model_name=MODEL_NAME, lora_models_dir=MODELS_DIR):
-
-        self.base_model_name = base_model_name
+    def __init__(self, model_size="1B", lora_models_dir=MODELS_DIR):
+        cfg = MODELS[model_size]
+        self.base_model_name = cfg["name"]
         self.lora_models_dir = lora_models_dir
 
-        # Load base model and tokenizer once
-        print("Loading base model...")
+        print(f"Loading base model ({model_size})...")
         self.base_model = AutoModelForCausalLM.from_pretrained(
-            base_model_name, device_map="cpu", torch_dtype=torch.float32
+            self.base_model_name,
+            device_map=DEVICE,
+            torch_dtype=cfg["dtype"],
         )
-        self.tokenizer = AutoTokenizer.from_pretrained(base_model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(self.base_model_name)
         self.tokenizer.pad_token = self.tokenizer.eos_token
 
         self.current_model = None
@@ -24,7 +26,7 @@ class LoRARunner:
     def load_author_model(self, author_name):
         """Load LoRA adapter for specific author"""
         if self.current_author == author_name:
-            return  # Already loaded
+            return
 
         print(f"Loading LoRA adapter for {author_name}...")
         lora_path = self.lora_models_dir / author_name

@@ -8,31 +8,31 @@ from transformers import (
 )
 from peft import LoraConfig, get_peft_model
 from datasets import load_dataset
-from pathlib import Path
-from stoic_llm.config import MODEL_NAME, MODELS_DIR, LORA_TRAINING_DIR, DEVICE
+from stoic_llm.model import MODELS
+from stoic_llm.config import MODELS_DIR, LORA_TRAINING_DIR, DEVICE
 
 
 class LoRATrainer:
     def __init__(
-        self, model_name=MODEL_NAME, output_dir=MODELS_DIR, data_dir=LORA_TRAINING_DIR
+        self, model_size="1B", output_dir=MODELS_DIR, data_dir=LORA_TRAINING_DIR
     ):
-
-        self.model_name = model_name
+        cfg = MODELS[model_size]
+        self.model_name = cfg["name"]
+        self.model_dtype = cfg["dtype"]
         self.output_dir = output_dir
         self.data_dir = data_dir
         self.output_dir.mkdir(exist_ok=True, parents=True)
 
-        # Load base model and tokenizer
-        print(f"Loading model: {model_name}")
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        print(f"Loading model: {self.model_name} ({model_size})")
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         self.tokenizer.pad_token = self.tokenizer.eos_token
 
     def _get_lora_config(self):
         """Configure LoRA parameters"""
         return LoraConfig(
-            r=8,  # rank - higher = more parameters
-            lora_alpha=32,  # scaling factor
-            target_modules=["q_proj", "v_proj"],  # which layers to adapt
+            r=8,
+            lora_alpha=32,
+            target_modules=["q_proj", "v_proj"],
             lora_dropout=0.05,
             bias="none",
             task_type="CAUSAL_LM",
@@ -42,23 +42,21 @@ class LoRATrainer:
         """Train LoRA adapter for one author"""
         print(f"\n🏛️ Training LoRA for {author_name}...")
 
-        # Load fresh model for each author
         model = AutoModelForCausalLM.from_pretrained(
-            self.model_name, device_map=DEVICE, torch_dtype=torch.float32
+            self.model_name,
+            device_map=DEVICE,
+            torch_dtype=self.model_dtype,
         )
 
-        # Add LoRA adapters
         lora_config = self._get_lora_config()
         model = get_peft_model(model, lora_config)
 
         print("Trainable parameters:")
         model.print_trainable_parameters()
 
-        # Load training data
         data_file = self.data_dir / f"{author_name}_train.jsonl"
         dataset = load_dataset("json", data_files=str(data_file))
 
-        # Tokenize
         def tokenize(examples):
             return self.tokenizer(
                 examples["text"],
@@ -68,12 +66,10 @@ class LoRATrainer:
 
         tokenized_dataset = dataset.map(tokenize, batched=True, remove_columns=["text"])
 
-        # Data collator handles creating labels automatically
         data_collator = DataCollatorForLanguageModeling(
-            tokenizer=self.tokenizer, mlm=False  # We're doing causal LM, not masked LM
+            tokenizer=self.tokenizer, mlm=False
         )
 
-        # Training arguments
         author_output_dir = self.output_dir / author_name
         training_args = TrainingArguments(
             output_dir=str(author_output_dir),
@@ -83,11 +79,10 @@ class LoRATrainer:
             logging_steps=10,
             learning_rate=learning_rate,
             save_total_limit=2,
-            fp16=False,  # M4 uses MPS, not CUDA
-            report_to="none",  # disable wandb
+            fp16=False,
+            report_to="none",
         )
 
-        # Create trainer with data collator
         trainer = Trainer(
             model=model,
             args=training_args,
@@ -95,11 +90,9 @@ class LoRATrainer:
             data_collator=data_collator,
         )
 
-        # Train!
         print(f"Starting training for {author_name}...")
         trainer.train()
 
-        # Save adapter
         model.save_pretrained(str(author_output_dir))
         self.tokenizer.save_pretrained(str(author_output_dir))
 

@@ -4,7 +4,6 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).parent.parent
 
 # Model Config
-MODEL_NAME = "meta-llama/Llama-3.2-1B"
 DEVICE = "cpu"
 
 # Data Paths
