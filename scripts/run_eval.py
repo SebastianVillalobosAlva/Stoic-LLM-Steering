@@ -1,25 +1,54 @@
+"""
+scripts/run_eval.py — Stoic LLM evaluation runner
+
+Tests optimal configs for steered vs unsteered outputs
+using LLM-as-judge scoring.
+
+Usage:
+  python scripts/run_eval.py          # defaults to 1B
+  python scripts/run_eval.py 3B       # uses 3B
+"""
+
+import sys
 from stoic_llm.model import ModelLoader
 from stoic_llm.eval.judge import StoicJudge, summarize_eval
 from stoic_llm.steering.runner import SteeringRunner
 from stoic_llm.config import DEFAULT_PROMPTS, VECTORS_DIR
 
-loader = ModelLoader()
+model_size = sys.argv[1] if len(sys.argv) > 1 else "1B"
+
+loader = ModelLoader(model_size)
 model, tokenizer = loader.load()
 judge = StoicJudge()
 
-# Best configs from the 30-pair sweep
+# Optimal configs per model size
 configs = {
-    "marcus_aurelius": {"layer": 10, "coefficient": 0.08},
-    "epictetus": {"layer": 12, "coefficient": 0.10},
-    "seneca": {"layer": 14, "coefficient": 0.10},
+    "1B": {
+        "marcus_aurelius": {"layer": 10, "coefficient": 0.08},
+        "epictetus": {"layer": 12, "coefficient": 0.10},
+        "seneca": {"layer": 14, "coefficient": 0.10},
+    },
+    "3B": {
+        "marcus_aurelius": {"layer": 8, "coefficient": 0.08},
+        "epictetus": {"layer": 8, "coefficient": 0.15},
+        "seneca": {"layer": 8, "coefficient": 0.11},
+    },
 }
 
-for author, cfg in configs.items():
+model_configs = configs[model_size]
+
+for author, cfg in model_configs.items():
+    if cfg["layer"] is None:
+        print(
+            f"\n⚠ No optimal config for {author} on {model_size} — run run_sweep.py {model_size} first"
+        )
+        continue
+
     print(f"\n{'='*60}")
-    print(f"{author} — layer={cfg['layer']}, coeff={cfg['coefficient']}")
+    print(f"{author} — {model_size} — layer={cfg['layer']}, coeff={cfg['coefficient']}")
     print(f"{'='*60}")
 
-    vector_path = VECTORS_DIR / f"{author}_steering.pt"
+    vector_path = VECTORS_DIR / f"{author}_steering_{model_size}.pt"
 
     runner = SteeringRunner(
         file_path=str(vector_path),
@@ -41,7 +70,6 @@ for author, cfg in configs.items():
         print(f"WARNING: No steered output for {author}, skipping.")
         continue
 
-    # Generate unsteered baseline
     unsteered = []
     for prompt in DEFAULT_PROMPTS:
         inputs = tokenizer(prompt, return_tensors="pt")
@@ -61,6 +89,7 @@ for author, cfg in configs.items():
         unsteered_outputs=unsteered,
         author=author,
         metadata={
+            "model_size": model_size,
             "layer": cfg["layer"],
             "coefficient": cfg["coefficient"],
             "pairs": "100+",
