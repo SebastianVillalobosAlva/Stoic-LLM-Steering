@@ -9,7 +9,7 @@ class LoRARunner:
     def __init__(self, model_size="1B", lora_models_dir=MODELS_DIR):
         cfg = MODELS[model_size]
         self.base_model_name = cfg["name"]
-        self.lora_models_dir = lora_models_dir
+        self.lora_models_dir = lora_models_dir / model_size
 
         print(f"Loading base model ({model_size})...")
         self.base_model = AutoModelForCausalLM.from_pretrained(

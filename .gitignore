@@ -1,10 +1,9 @@
-lora_models/
+models/
 stoic_llm.egg-info/
-/data/
-*.pt
 *.bin
 *.safetensors
 __pycache__/
 *.pyc
 .env
 .DS_Store
+data/raw/

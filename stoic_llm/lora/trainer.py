@@ -38,15 +38,16 @@ class LoRATrainer:
             task_type="CAUSAL_LM",
         )
 
-    def train_author(self, author_name, epochs=3, batch_size=2, learning_rate=2e-4):
+    def train_author(
+        self, author_name, epochs=3, batch_size=2, learning_rate=2e-4, device="cpu"
+    ):
         """Train LoRA adapter for one author"""
-        print(f"\n🏛️ Training LoRA for {author_name}...")
+        print(f"\n🏛️ Training LoRA for {author_name} on {device}...")
 
         model = AutoModelForCausalLM.from_pretrained(
             self.model_name,
-            device_map=DEVICE,
             torch_dtype=self.model_dtype,
-        )
+        ).to(device)
 
         lora_config = self._get_lora_config()
         model = get_peft_model(model, lora_config)
@@ -98,9 +99,10 @@ class LoRATrainer:
 
         print(f"✅ LoRA adapter saved to {author_output_dir}")
 
-    def train_all_authors(self):
+    def train_all_authors(self, device="cpu"):
         """Train LoRA adapters for all three philosophers"""
         authors = ["marcus_aurelius", "seneca", "epictetus"]
         for author in authors:
+            self.train_author(author, device=device)
             self.train_author(author)
             print(f"\n{'='*70}\n")
