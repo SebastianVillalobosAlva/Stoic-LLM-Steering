@@ -57,6 +57,8 @@ for author, cfg in model_configs.items():
         layer=cfg["layer"],
         coefficient=cfg["coefficient"],
         prompts=DEFAULT_PROMPTS,
+        do_sample=False,
+        temperature=0.0,
     )
 
     steered = runner.run_model_with_hook(

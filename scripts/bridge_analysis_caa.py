@@ -52,7 +52,9 @@ test_prompts = [
 def steer_and_tokenize(prompt, author, cfg):
     """Load steering vector and return hooked generate inputs."""
     vector_path = VECTORS_DIR / f"{author}_steering_{model_size}.pt"
-    vector = torch.load(vector_path, map_location="cpu", weights_only=True)
+    vector = torch.load(vector_path, map_location="cpu", weights_only=True)[
+        cfg["layer"]
+    ]
 
     inputs = tokenizer(prompt, return_tensors="pt")
     return inputs, vector, cfg["layer"], cfg["coefficient"]
@@ -87,7 +89,9 @@ def run_layer_evolution_bridge(author, cfg):
 
         # Steered run — add hook
         vector_path = VECTORS_DIR / f"{author}_steering_{model_size}.pt"
-        vector = torch.load(vector_path, map_location="cpu", weights_only=True)
+        vector = torch.load(vector_path, map_location="cpu", weights_only=True)[
+            cfg["layer"]
+        ]
 
         hook = model.model.layers[cfg["layer"]].mlp.register_forward_hook(
             lambda mod, inp, out, v=vector, c=cfg["coefficient"]: out + c * v
@@ -164,7 +168,9 @@ def run_residual_bridge(author, cfg):
 
     # Steered
     vector_path = VECTORS_DIR / f"{author}_steering_{model_size}.pt"
-    vector = torch.load(vector_path, map_location="cpu", weights_only=True)
+    vector = torch.load(vector_path, map_location="cpu", weights_only=True)[
+        cfg["layer"]
+    ]
 
     hook = model.model.layers[cfg["layer"]].mlp.register_forward_hook(
         lambda mod, inp, out, v=vector, c=cfg["coefficient"]: out + c * v
@@ -210,7 +216,9 @@ def run_patching_bridge(author, cfg):
     inputs = tokenizer(prompt, return_tensors="pt")
 
     vector_path = VECTORS_DIR / f"{author}_steering_{model_size}.pt"
-    vector = torch.load(vector_path, map_location="cpu", weights_only=True)
+    vector = torch.load(vector_path, map_location="cpu", weights_only=True)[
+        cfg["layer"]
+    ]
 
     # Step 1: Get unsteered (clean) output metric
     with torch.no_grad():

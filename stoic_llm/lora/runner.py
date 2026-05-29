@@ -36,19 +36,25 @@ class LoRARunner:
         print(f"✅ Loaded {author_name} adapter")
 
     def generate(
-        self, author_name, prompt, max_tokens=150, temperature=0.7, do_sample=True
+        self,
+        author_name,
+        prompt,
+        do_sample=True,
+        temperature=0.7,
+        **generate_kwargs,
     ):
         """Generate text using LoRA model"""
         self.load_author_model(author_name)
-
         inputs = self.tokenizer(prompt, return_tensors="pt")
 
-        outputs = self.current_model.generate(
-            **inputs,
-            max_new_tokens=max_tokens,
-            temperature=temperature,
-            do_sample=do_sample,
-        )
+        gen = {"do_sample": do_sample}
+        if do_sample:
+            gen["temperature"] = temperature
+
+        gen.setdefault("max_new_tokens", 150)
+        gen.update(generate_kwargs)
+
+        outputs = self.current_model.generate(**inputs, **gen)
 
         generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
         return generated_text

@@ -34,6 +34,7 @@ class SteeringRunner:
         self.temperature = temperature
         self.max_tokens = max_tokens
         self.do_sample = do_sample
+        self._all_vectors = None
         self.author = str(self.file).split("/")[-1].split("_")[0]
 
         # Hook state
@@ -41,9 +42,24 @@ class SteeringRunner:
         self.steering_vector = None
 
     def _load_steering_vector(self):
-        self.steering_vector = torch.load(
+        loaded = torch.load(
             self.file, map_location=self.steering_location, weights_only=True
         )
+        if not isinstance(loaded, dict):
+            raise ValueError(
+                f"{self.file} is a single tensor (old format). Re-run "
+                "extract_vectors.py so each layer has its own vector."
+            )
+        self._all_vectors = loaded
+        self._select_vector()
+
+    def _select_vector(self):
+        if self.layer_idx not in self._all_vectors:
+            raise KeyError(
+                f"No vector for layer {self.layer_idx}. "
+                f"Available: {sorted(self._all_vectors)}"
+            )
+        self.steering_vector = self._all_vectors[self.layer_idx]
 
     def _steering_hook(self, module, input, output):
         return output + self.coefficient * self.steering_vector
@@ -69,8 +85,9 @@ class SteeringRunner:
             self._register_hook()
 
     def set_layer(self, layer_idx):
-        """Switch which layer the steering vector is applied to."""
         self.layer_idx = layer_idx
+        if self._all_vectors is not None:
+            self._select_vector()
         if self._hook_handle is not None:
             self._register_hook()
 
@@ -80,6 +97,7 @@ class SteeringRunner:
         self.file = file_path
         self.author = str(self.file).split("/")[-1].split("_")[0]
         self.steering_vector = None
+        self._all_vectors = None
 
     def run_model_with_hook(self, return_output=False, **generate_kwargs):
         if self.steering_vector is None:

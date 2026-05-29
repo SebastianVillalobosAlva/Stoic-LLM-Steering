@@ -100,9 +100,6 @@ class LoRATrainer:
         print(f"✅ LoRA adapter saved to {author_output_dir}")
 
     def train_all_authors(self, device="cpu"):
-        """Train LoRA adapters for all three philosophers"""
-        authors = ["marcus_aurelius", "seneca", "epictetus"]
-        for author in authors:
+        for author in ["marcus_aurelius", "seneca", "epictetus"]:
             self.train_author(author, device=device)
-            self.train_author(author)
             print(f"\n{'='*70}\n")
