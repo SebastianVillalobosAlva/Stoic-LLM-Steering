@@ -232,11 +232,15 @@ class StoicJudge:
             "avg_steered": avg_steered,
             "avg_unsteered": avg_unsteered,
             "avg_deltas": avg_deltas,
+            "content": self._content_score(avg_deltas),
             "metadata": metadata or {},
             "timestamp": datetime.now().isoformat(),
         }
 
         return result
+
+    def _content_score(self, avg_deltas):
+        return (avg_deltas["philosophical_depth"] + avg_deltas["stoic_alignment"]) / 2
 
     def save_results(self, results: Dict, filename: Optional[str] = None) -> Path:
         """Save evaluation results to JSON."""

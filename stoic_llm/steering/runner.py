@@ -112,13 +112,7 @@ class SteeringRunner:
                 print("-" * 70)
 
             inputs = self.tokenizer(prompt, return_tensors="pt")
-            outputs = self.model.generate(
-                **inputs,
-                max_new_tokens=self.max_tokens,
-                do_sample=self.do_sample,
-                temperature=self.temperature,
-                **generate_kwargs,
-            )
+            outputs = self.model.generate(**inputs, **generate_kwargs)
             generated = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
 
             if return_output:

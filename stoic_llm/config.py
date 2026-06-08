@@ -1,7 +1,16 @@
 from pathlib import Path
+from typing import Any
 
 # Project Root
 PROJECT_ROOT = Path(__file__).parent.parent
+
+# Generation Config
+GEN_KWARGS: dict[str, Any] = dict(
+    max_new_tokens=100,
+    do_sample=False,
+    repetition_penalty=1.3,
+    no_repeat_ngram_size=3,
+)
 
 # Model Config
 DEVICE = "cpu"
