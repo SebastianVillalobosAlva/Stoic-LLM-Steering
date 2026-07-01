@@ -1,6 +1,7 @@
 import json
 import time
 import os
+from google import genai
 from pathlib import Path
 from typing import Dict, List, Optional
 from datetime import datetime
@@ -44,47 +45,66 @@ class StoicJudge:
     """
 
     def __init__(
-        self, api_key: Optional[str] = None, model: str = "claude-sonnet-4-20250514"
+        self,
+        provider: str = "anthropic",
+        api_key: Optional[str] = None,
+        model: Optional[str] = None,
     ):
-        self.api_key = api_key or os.environ.get("ANTHROPIC_API_KEY")
-        if not self.api_key:
-            raise ValueError(
-                "No API key found. Set ANTHROPIC_API_KEY env var or pass api_key."
+        self.provider = provider.lower()
+
+        if self.provider == "anthropic":
+            self.api_key = api_key or os.environ.get("ANTHROPIC_API_KEY")
+            if not self.api_key:
+                raise ValueError("No ANTHROPIC_API_KEY found.")
+            self.client = anthropic.Anthropic(api_key=self.api_key)
+            self.model = model or "claude-sonnet-4-20250514"
+
+        # __init__ gemini branch
+        elif self.provider == "gemini":
+            self.api_key = (
+                api_key
+                or os.environ.get("GEMINI_API_KEY")
+                or os.environ.get("GOOGLE_API_KEY")
             )
-        self.client = anthropic.Anthropic(api_key=self.api_key)
-        self.model = model
+            if not self.api_key:
+                raise ValueError("No GEMINI_API_KEY / GOOGLE_API_KEY found.")
+            self.client = genai.Client(api_key=self.api_key)
+            self.model = model or "gemini-2.5-flash"
+
+        else:
+            raise ValueError(
+                f"Unknown provider: {provider!r}. Use 'anthropic' or 'gemini'."
+            )
 
     def score(self, text: str, prompt: str = "") -> Dict:
-        """
-        Score a single text output against the Stoic rubric.
-
-        Args:
-            text: The generated text to evaluate
-            prompt: The prompt that produced the text (for context)
-
-        Returns:
-            Dict with scores per dimension and reasoning
-        """
         user_message = f"{STOIC_RUBRIC}\n\n"
         if prompt:
             user_message += f"PROMPT: {prompt}\n\n"
         user_message += f"TEXT TO EVALUATE:\n{text}"
 
-        message = self.client.messages.create(
-            model=self.model,
-            max_tokens=300,
-            messages=[{"role": "user", "content": user_message}],
-        )
+        if self.provider == "anthropic":
+            message = self.client.messages.create(
+                model=self.model,
+                max_tokens=300,
+                messages=[{"role": "user", "content": user_message}],
+            )
+            response_text = message.content[0].text
 
-        response_text = message.content[0].text
+        # score gemini branch
+        elif self.provider == "gemini":
+            response = self.client.models.generate_content(
+                model=self.model,
+                contents=user_message,
+                config={"response_mime_type": "application/json"},
+            )
+            response_text = response.text
 
+        # ---- everything below is unchanged, provider-agnostic ----
         try:
             scores = json.loads(response_text)
         except json.JSONDecodeError:
-            # Try to extract JSON from response
             scores = _extract_json(response_text)
 
-        # Compute aggregate score
         dimensions = [
             "philosophical_depth",
             "stoic_alignment",
@@ -93,7 +113,6 @@ class StoicJudge:
         ]
         valid_scores = [scores.get(d, 0) for d in dimensions]
         scores["aggregate"] = sum(valid_scores) / len(valid_scores)
-
         return scores
 
     def evaluate_batch(
@@ -257,21 +276,39 @@ class StoicJudge:
         return output_path
 
 
-# =========================================================================
 # Helpers
-# =========================================================================
 
 
 def _extract_json(text: str) -> Dict:
-    """Try to extract JSON from a response that might have extra text."""
+    """Extract a JSON score object from a model response that may wrap it in
+    markdown fences, prose, or span multiple lines.
+
+    Tries, in order: strip ```json fences and parse; greedy brace match with
+    DOTALL. On total failure, returns a zero-dict with the raw text in
+    'reasoning' AND prints a visible warning — silent zeros would corrupt
+    aggregate/content scores without any signal that parsing failed.
+    """
     import re
 
-    match = re.search(r"\{[^}]+\}", text)
+    # 1. Strip markdown code fences (```json ... ``` or ``` ... ```)
+    fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
+    if fenced:
+        try:
+            return json.loads(fenced.group(1))
+        except json.JSONDecodeError:
+            pass
+
+    # 2. Greedy match of outermost braces, across newlines (DOTALL).
+    #    Greedy {.*} grabs the largest {...} span, handling nested/multiline.
+    match = re.search(r"\{.*\}", text, re.DOTALL)
     if match:
         try:
             return json.loads(match.group())
         except json.JSONDecodeError:
             pass
+
+    # 3. Total failure — make it LOUD, don't silently return zeros.
+    print(f"⚠ JSON PARSE FAILED — scoring as zeros. Raw response:\n{text[:300]}\n")
     return {
         "philosophical_depth": 0,
         "stoic_alignment": 0,
