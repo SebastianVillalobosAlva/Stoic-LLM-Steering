@@ -1,0 +1,121 @@
+{
+  "eval_type": "seed_candidates",
+  "author": "marcus_aurelius",
+  "n_seeds": 5,
+  "vary": "judge",
+  "runs": [
+    {
+      "eval_type": "seed",
+      "author": "marcus_aurelius",
+      "layer": 20,
+      "coefficient": 0.11,
+      "n_seeds": 5,
+      "vary": "judge",
+      "content_scores": [
+        0.125,
+        0.0,
+        0.125,
+        0.08333333333333333,
+        0.0
+      ],
+      "aggregate_scores": [
+        2.0,
+        2.0208333333333335,
+        2.0416666666666665,
+        1.9375,
+        2.0208333333333335
+      ],
+      "content_mean": 0.06666666666666667,
+      "content_std": 0.06319062870042959,
+      "aggregate_mean": 2.004166666666667,
+      "aggregate_std": 0.04007371679514863,
+      "content_ci_excludes_zero": true,
+      "timestamp": "2026-06-08T16:01:40.581209"
+    },
+    {
+      "eval_type": "seed",
+      "author": "marcus_aurelius",
+      "layer": 26,
+      "coefficient": 0.11,
+      "n_seeds": 5,
+      "vary": "judge",
+      "content_scores": [
+        0.0,
+        0.16666666666666666,
+        0.041666666666666664,
+        0.041666666666666664,
+        -0.125
+      ],
+      "aggregate_scores": [
+        1.9583333333333333,
+        1.9166666666666667,
+        1.9166666666666667,
+        1.9375,
+        1.9583333333333333
+      ],
+      "content_mean": 0.024999999999999998,
+      "content_std": 0.10458250331675945,
+      "aggregate_mean": 1.9375,
+      "aggregate_std": 0.02083333333333326,
+      "content_ci_excludes_zero": false,
+      "timestamp": "2026-06-08T15:44:28.490742"
+    },
+    {
+      "eval_type": "seed",
+      "author": "marcus_aurelius",
+      "layer": 16,
+      "coefficient": 0.11,
+      "n_seeds": 5,
+      "vary": "judge",
+      "content_scores": [
+        0.041666666666666664,
+        0.041666666666666664,
+        -0.20833333333333331,
+        -0.08333333333333333,
+        -0.20833333333333331
+      ],
+      "aggregate_scores": [
+        1.6666666666666667,
+        1.7916666666666667,
+        1.6458333333333333,
+        1.6458333333333333,
+        1.6875
+      ],
+      "content_mean": -0.08333333333333333,
+      "content_std": 0.12499999999999999,
+      "aggregate_mean": 1.6875,
+      "aggregate_std": 0.060739082237971934,
+      "content_ci_excludes_zero": false,
+      "timestamp": "2026-06-08T15:52:53.726735"
+    }
+  ],
+  "best": {
+    "eval_type": "seed",
+    "author": "marcus_aurelius",
+    "layer": 20,
+    "coefficient": 0.11,
+    "n_seeds": 5,
+    "vary": "judge",
+    "content_scores": [
+      0.125,
+      0.0,
+      0.125,
+      0.08333333333333333,
+      0.0
+    ],
+    "aggregate_scores": [
+      2.0,
+      2.0208333333333335,
+      2.0416666666666665,
+      1.9375,
+      2.0208333333333335
+    ],
+    "content_mean": 0.06666666666666667,
+    "content_std": 0.06319062870042959,
+    "aggregate_mean": 2.004166666666667,
+    "aggregate_std": 0.04007371679514863,
+    "content_ci_excludes_zero": true,
+    "timestamp": "2026-06-08T16:01:40.581209"
+  },
+  "timestamp": "2026-06-08T16:01:40.582907"
+}
