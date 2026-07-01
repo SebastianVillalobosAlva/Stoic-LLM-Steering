@@ -78,13 +78,33 @@ for d in [
 ]:
     d.mkdir(parents=True, exist_ok=True)
 
-NEUTRAL_PAIR_PROMPT = """Below is a philosophical passage from {author_name}. Rewrite it as modern conventional advice about the SAME topic, but using mainstream reasoning — not Stoic philosophy.
+NEUTRAL_PAIR_PROMPT = """Below is a philosophical passage from {author_name}. Your job is to give advice about the SAME situation, but reasoning from a worldview that genuinely DISAGREES with Stoicism — not Stoicism in plainer words.
 
-Rules:
-- Same topic, DIFFERENT reasoning (e.g. if the passage says "ignore insults because others' opinions aren't in your control", the rewrite might say "stand up for yourself and set boundaries")
-- No Stoic concepts: no dichotomy of control, no "according to nature", no indifference to externals, no virtue as sole good
-- Use casual modern tone, like advice from a friend or self-help blog
-- Similar length to the original
+Pick a competing framework and argue from it, e.g.:
+- Ambition/achievement: pursue status, wealth, and winning; external success IS what matters
+- Hedonism: maximize pleasure and comfort; avoid discomfort rather than accept it
+- Assertiveness/self-advocacy: change your circumstances, push back, demand more
+- Emotional expression: feel and express anger/desire fully rather than governing them
+
+Hard requirements:
+- Reach a recommendation a Stoic would REJECT. The conclusion itself must differ, not just the wording.
+- FORBIDDEN (these are Stoic ideas — do not endorse any of them, even casually): accepting what you can't control, focusing on what's "up to you", indifference to externals (reputation, money, body, outcomes), virtue/character as the main good, "this won't matter in the long run", inner tranquility over external change, others' opinions don't matter.
+- Do NOT use a calm, detached, or "wise" self-help tone. Write as someone who actively wants the external thing — the promotion, the win, the pleasure, the apology owed to them.
+
+FAILURE CONDITION: If your rewrite could be summarized the same way as the original passage, you have failed. The original and your rewrite must give OPPOSITE life advice, not the same advice in different words.
+- Output ONLY the advice itself. No headers, no preamble, no labeling which framework you are using, no meta-commentary. Start directly with the advice and write it as continuous prose.
 
 Passage:
 {stoic_text}"""
+
+
+# NEUTRAL_PAIR_PROMPT = """Below is a philosophical passage from {author_name}. Rewrite it as modern conventional advice about the SAME topic, but using mainstream reasoning — not Stoic philosophy.
+
+# Rules:
+# - Same topic, DIFFERENT reasoning (e.g. if the passage says "ignore insults because others' opinions aren't in your control", the rewrite might say "stand up for yourself and set boundaries")
+# - No Stoic concepts: no dichotomy of control, no "according to nature", no indifference to externals, no virtue as sole good
+# - Use casual modern tone, like advice from a friend or self-help blog
+# - Similar length to the original
+
+# Passage:
+# {stoic_text}"""

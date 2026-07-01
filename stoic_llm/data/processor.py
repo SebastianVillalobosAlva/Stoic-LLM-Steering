@@ -1,3 +1,4 @@
+import re
 import json
 from pathlib import Path
 from stoic_llm.config import CHUNKED_DIR, PROCESSED_DIR
@@ -31,6 +32,8 @@ class TextProcessor:
         # Read file
         with open(file_path, "r", encoding="utf-8") as f:
             text = f.read()
+
+        text = re.sub(r"\[\d+\]", "", text)
 
         # Split by paragraphs
         paragraphs = text.split("\n\n")

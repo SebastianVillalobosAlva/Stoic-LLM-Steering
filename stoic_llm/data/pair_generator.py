@@ -1,4 +1,5 @@
 import json
+import re
 import random
 import time
 import anthropic
@@ -20,51 +21,84 @@ class NeutralPairCreator:
             chunks = json.load(f)
         return chunks
 
-    def _is_bibliography_religious(self, text):
-        """Check if chunk is likely a citation or bibliography"""
+    def _is_non_philosophical(self, text):
+        """Flag chunks that are citations or biographical/editorial prose ABOUT
+        the author rather than philosophy BY the author.
+
+        NOTE: religious-vocabulary filtering removed — for a Stoic corpus,
+        'God/gods/divine/Providence/nature' are core philosophical vocabulary,
+        not contamination. Filtering on them amputates real Meditations content
+        (e.g. Book II opening). Only biographical/editorial markers remain.
+        """
         biblio_markers = [
             "pp.",
             "Vol.",
-            "ed.",
-            "Trans.",
-            "Chapter",
-            "Chap.",
             "ISBN",
             "Published",
+            "published",
             "Editor",
             "Reprinted",
+            "translation",
+            "emendation",
+            "corrupt",
+            "Casaubon",
         ]
-        religious_markers = [
-            "God",
-            "gods",
-            "divine",
-            "Providence",
-            "Lord",
-            "Allah",
-            "Prophet",
-            "Holy",
-            "Qur'an",
-            "Bible",
-            "scripture",
-            "prayer",
-            "worship",
-            "salvation",
+        biographical_markers = [
+            "was born",
+            "his death",
+            "his life",
+            "his daily life",
+            "we meet with",
+            "translator",
+            "preface",
+            "biography",
+            "the author",
+            "his reign",
+            "Faustina",
+            "Commodus",
+            "Hadrian",
+            "A.D.",
+            "B.C.",
+            "born in",
+            "died in",
+            "rhetorician",
+            "bestseller",
+            "vernacular",
+            "founder of",
+            "Cyprus",
+            "present century",
         ]
-        marker_count = sum(1 for m in biblio_markers if m in text)
-        religious_count = sum(1 for m in religious_markers if m in text)
-        return marker_count >= 2 or religious_count >= 2
+
+        # Citation pattern: "Word, 1933." / "New York, 1955" — city/publisher + year.
+        # Catches bibliography entries regardless of length.
+        has_citation = bool(re.search(r",\s+\d{4}\b", text))
+
+        # "pp. 153-162" page ranges
+        has_pages = bool(re.search(r"pp\.\s*\d+", text))
+
+        biblio_count = sum(1 for m in biblio_markers if m in text)
+        biographical_count = sum(1 for m in biographical_markers if m in text)
+
+        surname = self.author_name.split()[-1]
+        names_self = surname in text
+
+        return (
+            biblio_count >= 2
+            or biographical_count >= 2
+            or (names_self and biographical_count >= 1)
+        )
 
     def filter_chunks_by_length(self, chunks, min_chars=300, max_chars=1000):
-        """Keep chunks within character count range"""
+        """Keep chunks within character count range, excluding non-philosophical text."""
         return [
             c
             for c in chunks
             if min_chars <= len(c["text"]) <= max_chars
-            and not self._is_bibliography_religious(c["text"])
+            and not self._is_non_philosophical(c["text"])
         ]
 
     def generate_neutral_text(
-        self, stoic_text, max_tokens=500, model="claude-sonnet-4-20250514"
+        self, stoic_text, max_tokens=1000, model="claude-sonnet-4-20250514"
     ):
         """Generate neutral version using Claude API with contrastive prompt"""
         prompt = NEUTRAL_PAIR_PROMPT.format(
@@ -85,7 +119,7 @@ class NeutralPairCreator:
             json.dump({"pairs": pairs}, f, indent=2)
         print(f"Saved {len(pairs)} pairs to {out}")
 
-    def create_pairs(self, num_pairs=100, min_chars=300, max_chars=1000):
+    def create_pairs(self, num_pairs=100, min_chars=300, max_chars=1000, seed=613):
         """Generate N pairs and save to file"""
         chunks = self.read_chunks()
         filtered = self.filter_chunks_by_length(
@@ -93,6 +127,7 @@ class NeutralPairCreator:
         )
 
         if len(filtered) > num_pairs:
+            random.seed(seed)
             to_process = random.sample(filtered, num_pairs)
         else:
             to_process = filtered
