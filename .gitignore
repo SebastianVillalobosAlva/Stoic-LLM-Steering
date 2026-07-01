@@ -7,3 +7,7 @@ __pycache__/
 .env
 .DS_Store
 data/raw/
+data/steering_vectors/*.pt
+data/processed/**/*.txt
+__pycache__/
+.env
