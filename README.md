@@ -24,6 +24,8 @@ Three results anchor the project:
 
 The most defensible result is a **behavioral-outcome-controlled circuit comparison** (Experiments 5 & 6, via ModelLens): same Stoic-flavored output, different internal path. CAA injects into mid-MLPs and is partially compensated away before the decision forms; LoRA's changes are distributed with dominant output-layer effects that reach it. This is exactly why the decision-level split (Exp 10/11) falls out the way it does — mechanism → prediction → behavioral confirmation.
 
+> **Caveat:** the circuit analyses were run on the earlier configurations (pre-cleaning vectors at L8; original adapters); the prediction was registered before Exp 11 ran, but the paper-grade circuit re-run on the current clean configs (content-relevant patching metric) is pending.
+
 | CAA circuit (Exp 5) | LoRA circuit (Exp 6) |
 |---|---|
 | ![CAA circuit](CAA.png) | ![LoRA circuit](LoRA.png) |
@@ -95,3 +97,7 @@ stoic-llm/
 **Sebastian Villalobos**
 - GitHub: [@SebastianVillalobosAlva](https://github.com/SebastianVillalobosAlva)
 - LinkedIn: [Sebastian Villalobos Alva](https://www.linkedin.com/in/sebastian-villalobos-alva/)
+
+## License
+
+[MIT](LICENSE)
