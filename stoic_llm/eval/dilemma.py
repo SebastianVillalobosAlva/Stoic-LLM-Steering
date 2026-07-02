@@ -18,7 +18,8 @@ or:
 
 Place the dilemma set at: data/config/dilemmas_v2.json (canonical; dilemmas_v1.json is the failed-calibration record)
 Steering vectors expected as {layer: tensor} dicts (post-Exp-8 format)
-at: data/steering_vectors/{author}_clean.pt
+at: data/steering_vectors/{author}_steering_{model_size}.pt (as written by
+scripts/extract_vectors.py, e.g. epictetus_steering_3B.pt)
 """
 
 from __future__ import annotations
@@ -174,9 +175,9 @@ class DilemmaEval:
         """Run baseline once, then each philosopher's steered condition.
 
         configs example:
-            {"marcus":    {"layer": 26, "coeff": 0.11, "vector_file": "marcus_clean.pt"},
-             "seneca":    {"layer": 4,  "coeff": 0.11, "vector_file": "seneca_clean.pt"},
-             "epictetus": {"layer": 8,  "coeff": 0.11, "vector_file": "epictetus_clean.pt"}}
+            {"marcus":    {"layer": 26, "coeff": 0.11, "vector_file": "marcus_aurelius_steering_3B.pt"},
+             "seneca":    {"layer": 4,  "coeff": 0.11, "vector_file": "seneca_steering_3B.pt"},
+             "epictetus": {"layer": 8,  "coeff": 0.11, "vector_file": "epictetus_steering_3B.pt"}}
 
         vector_file should load to a {layer: tensor} dict (Exp-8+ format)
         or a single tensor.
