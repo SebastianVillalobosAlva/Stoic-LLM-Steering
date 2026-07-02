@@ -1,3 +1,6 @@
+# LEGACY: one-off scratch inspector hardcoded to a pre-Exp-8 buggy-
+# extraction sweep file (see results/README.md). Retained for the record;
+# not a general-purpose results viewer.
 import json
 
 with open("results/sweeps/full_marcus_aurelius_20260517_014516.json") as f:

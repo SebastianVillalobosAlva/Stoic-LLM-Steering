@@ -1,3 +1,6 @@
+# LEGACY: superseded by scripts/generate_pairs.py (the real N=63/53
+# controlled-quantity generator). This was a 5-pair Marcus-only smoke test;
+# retained for the record.
 import os
 from stoic_llm.data.pair_generator import NeutralPairCreator
 from stoic_llm.config import CHUNKED_DIR  # wherever the chunked source texts live

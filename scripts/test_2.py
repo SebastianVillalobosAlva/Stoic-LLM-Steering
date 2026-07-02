@@ -1,3 +1,7 @@
+# LEGACY (Exp 9 prep): one-off migration, task complete. Produced the
+# current neutral_pairs.json (N=53) from neutral_pairs_63.json for Marcus
+# and Seneca. Retained for the record of how N=53 was derived; rerunning
+# would overwrite the current clean pair files.
 """
 scripts/trim_pairs.py — sample 53 pairs from Marcus & Seneca's neutral_pairs.json
 """

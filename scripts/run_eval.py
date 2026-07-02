@@ -1,3 +1,7 @@
+# LEGACY (Exp 3/3b): superseded by scripts/run_seed_eval.py (content) and
+# scripts/run_dilemma_eval.py (decision); retained for the record. The
+# hardcoded configs below (all-layer-8 on 3B; L10/L12/L14 on 1B) are the
+# superseded picks Experiment 8 invalidated — do not treat as current.
 """
 scripts/run_eval.py — Stoic LLM evaluation runner
 

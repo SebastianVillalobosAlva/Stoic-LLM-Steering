@@ -1,3 +1,8 @@
+# LEGACY (Exp 4): superseded by scripts/run_lora_dilemma_eval.py (decision-
+# level, clean adapters). LoRARunner resolves adapters at
+# models/{model_size}/{author}/, which holds the OLD contaminated-data
+# adapters (May), NOT the current clean ones (models/lora_{author}_clean/).
+# Retained for the record; do not run expecting current results.
 import sys
 from stoic_llm.model import ModelLoader
 from stoic_llm.lora.runner import LoRARunner
