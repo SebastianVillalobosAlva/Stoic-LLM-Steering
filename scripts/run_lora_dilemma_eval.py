@@ -8,6 +8,7 @@ Run from the repo root so the relative model paths resolve:
     python scripts/run_lora_dilemma_eval.py
 """
 
+import argparse
 import os
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -23,8 +24,19 @@ ADAPTERS = {
 
 
 def main() -> None:
-    base, tok = ModelLoader("3B").load()
-    ev = LoRADilemmaEval(base, tok)
+    parser = argparse.ArgumentParser(description="LoRA forced-choice dilemma eval.")
+    parser.add_argument(
+        "--model",
+        choices=["1B", "3B"],
+        default="3B",
+        help="Base model size (default: 3B; clean adapters are 3B).",
+    )
+    args = parser.parse_args()
+
+    base, tok = ModelLoader(args.model).load()
+    # model_size is threaded to _merged so the per-adapter fresh base matches
+    # the baseline base above.
+    ev = LoRADilemmaEval(base, tok, model_size=args.model)
 
     results = ev.run_all_lora(ADAPTERS)
 

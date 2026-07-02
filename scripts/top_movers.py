@@ -1,7 +1,7 @@
 """Print Seneca's biggest-moving dilemmas, largest first.
 
 Usage:
-    python scripts/top_movers.py results/dilemmas/lora/dilemma_eval_<timestamp>.json data/config/dilemmas.json
+    python scripts/top_movers.py results/dilemmas-v2/lora/dilemma_eval_<timestamp>.json data/config/dilemmas_v2.json
 """
 
 import json

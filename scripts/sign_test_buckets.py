@@ -2,8 +2,8 @@
 
 Usage:
     python scripts/sign_test_buckets.py \
-        results/dilemmas/lora/dilemma_eval_<timestamp>.json \
-        data/config/dilemmas.json
+        results/dilemmas-v2/lora/dilemma_eval_<timestamp>.json \
+        data/config/dilemmas_v2.json
 """
 
 import json
