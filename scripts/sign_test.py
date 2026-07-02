@@ -1,6 +1,6 @@
 """Sign test on per-item dilemma deltas. Reads the saved Exp 11 results JSON.
 
-Usage: python scripts/sign_test.py results/dilemmas/lora/dilemma_eval_<timestamp>.json
+Usage: python scripts/sign_test.py results/dilemmas-v2/lora/dilemma_eval_<timestamp>.json
 """
 
 import json

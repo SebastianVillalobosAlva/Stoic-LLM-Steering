@@ -1,6 +1,28 @@
 # Stoic LLM — Results Tracker
 
-**Last updated:** June 8, 2026
+**Last updated:** July 1, 2026
+
+---
+
+## Current State of the Evidence (read this first)
+
+Eleven experiments, one question: can Stoic reasoning be steered into an LLM — and at what depth does each method actually operate? Effects are measured at three levels: **style** (judge-scored register), **content** (judge-scored reasoning in prose), and **decision** (judge-free forced choice).
+
+| Level | CAA (activation steering) | LoRA (weight adaptation, clean data) |
+|---|---|---|
+| Style / register | Robust (Exp 3b: +1.0–1.6) | Robust, stronger (Exp 4: +1.6–2.8) |
+| Content / prose | Strong with clean pairs (Exp 9: +0.408 to +0.767, independent judge) | Not re-scored on clean adapters |
+| **Decision / choice** | **None, at any coefficient up to 1.5** (Exp 10) | **Structured effects** (Exp 11): Seneca heavy-tailed shift; Marcus passivity prior; Epictetus null |
+
+**The three headline results:**
+
+1. **Pair quality is the determining variable for CAA content** (Exp 9). Controlled single-variable result: swapping contaminated for clean contrastive pairs flipped nulls to strong positives (Epictetus L8: −0.100 → +0.767, independent Gemini judge).
+2. **CAA is a register direction, not a decision direction** (Exp 10). Calibrated forced-choice instrument (baseline 0.542), flat at every coefficient to the edge of incoherence. Three instruments converge on this boundary.
+3. **LoRA reaches the decision layer where CAA does not** (Exp 11) — as the circuit topology (Exp 5 vs 6) predicted: CAA's mid-MLP injection is compensated away; LoRA's output-layer rewiring is not. But what LoRA installs is not uniform Stoic decision-making: Marcus = broad passivity prior (accepting 18+/4−, p=0.004; active flat), Seneca = heavy-tailed minority-of-items effect (t=2.39, sign test n.s.), Epictetus = null (smallest corpus).
+
+**Open confounds (deliberately carried, documented in situ):** CAA contrastive objective vs LoRA continued-pretraining objective (method + objective jointly); corpus size perfectly confounded with philosopher identity; possible Senecan-idiom lexical echo in dilemma option wording (Exp 11 Amendment 2 — next experiment).
+
+**Canonical configs:** Llama-3.2-3B; clean CAA vectors at Marcus L26 / Seneca L4 / Epictetus L8, coeff 0.11; clean LoRA adapters `lora_{author}_clean` (r=8, α=32, q+v, 3 epochs); dilemma set v2 (40 items, baseline 0.542).
 
 ---
 
@@ -155,7 +177,7 @@
 
 ---
 
-### Experiment 3b: 3B Eval at Optimal Configs
+## Experiment 3b: 3B Eval at Optimal Configs
 
 **Date:** May 25, 2026
 **Model:** Llama-3.2-3B
@@ -181,7 +203,7 @@
 
 ---
 
-### Experiment 4: CAA vs LoRA Comparison (3B)
+## Experiment 4: CAA vs LoRA Comparison (3B)
 
 **Date:** May 27, 2026
 **Model:** Llama-3.2-3B
@@ -219,7 +241,7 @@
 
 ---
 
-### Experiment 5: Bridge Analysis — ModelLens × Stoic LLM (3B)
+## Experiment 5: Bridge Analysis — ModelLens × Stoic LLM (3B)
 
 **Date:** May 25, 2026
 **Model:** Llama-3.2-3B
@@ -277,7 +299,7 @@ All three philosophers route through the same components:
 
 ---
 
-### Experiment 6: Bridge Analysis — ModelLens × LoRA (3B)
+## Experiment 6: Bridge Analysis — ModelLens × LoRA (3B)
 
 **Date:** May 27, 2026
 **Model:** Llama-3.2-3B with LoRA adapters (merged via merge_and_unload)
@@ -328,16 +350,18 @@ No single injection point. Changes are distributed with biggest effects at bound
 
 ---
 
-### Experiment 7: Safety evaluation (planned)
+## Experiment 7: Safety evaluation (planned)
 - JailbreakBench or equivalent adversarial prompts
 - Compare refusal rates: base vs Stoic-steered
 - Temperature stability: does steering hold at high temps?
 
 > Reframing note (post Exp 8): since CAA reliably moves *style* but not *reasoning*, the original "does Stoic steering improve refusal robustness" framing may return a null. Consider reframing as: "does a steering vector that only shifts register affect safety behavior at all?" A clean null is itself a reportable result. Run a generic (non-philosophical) steering-vector baseline so any effect is attributable to the philosophy, not to adding any vector.
 
+> **Status update (July 1):** still queued. Post Exp 10/11, the sharpest framing is now two-armed: (a) CAA arm — "does a register-only vector affect refusal behavior at all?" (clean null expected and reportable); (b) LoRA arm — "does an adapter that reaches decisions also shift refusal robustness?" Run with a generic-vector / generic-text-adapter baseline so any effect is attributable to the philosophy.
+
 ---
 
-### Experiment 8: Seed-Averaged Content Validation (3B)
+## Experiment 8: Seed-Averaged Content Validation (3B)
 
 **Date:** June 8, 2026
 **Model:** Llama-3.2-3B
@@ -396,36 +420,14 @@ No single injection point. Changes are distributed with biggest effects at bound
 
 #### Next Step
 
+> **Status: DONE.** The forced-choice dilemma eval was built and run as Experiment 10; it resolved the discrimination decisively (CAA content positives do not translate to decision shifts — see Exp 10 synthesis). The seeds/effect-size follow-up was superseded by the clean-pairs re-test (Exp 9).
+
 - **Forced-choice dilemma eval** (lower-noise, style-independent) to discriminate: is the Seneca/Epictetus content positive real, or a judge-scoring artifact? This is the validation gate's decisive instrument.
 - If real, Seneca/Epictetus best layers need more seeds (or more prompts/eval) to shrink std and pin effect size.
 
 ---
 
-## API Credit Usage
-
-| Run | Cost | Remaining |
-|---|---|---|
-| 100+ pair generation (258 pairs) | ~$1.09 | ~$1.41 |
-| 100+ pair eval (3 philosophers × 12 prompts) | ~$0.60 | ~$0.81 |
-| 3B sweep — original, buggy extraction (3 philosophers × full grid) | ~$5.00 | ~$3.81 |
-| 3B eval (3 philosophers × 12 prompts) | ~$0.60 | ~$3.21 |
-| LoRA eval (3 philosophers × 12 prompts) | ~$0.60 | ~$2.61 |
-| *(subtotal — May runs)* | *~$7.89* | *~$2.61* |
-| 3B re-sweep — corrected extraction + content selection (Jun 8) | ~$5.00 (est) | — |
-| Seed-eval smoke test (1 call) | ~$0.02 (est) | — |
-| Seed eval — 3 philosophers × 3 layers × 5 judge seeds (Jun 8) | ~$8–9 (est) | — |
-| Top-up (Jun 8) | +$10.00 | — |
-
-**Notes:**
-- June 8 costs are estimates — reconcile against the actual Anthropic console billing and update.
-- Bridge analyses (ModelLens) cost nothing — all local compute.
-- `vary="judge"` seed eval re-runs only the judge, not generation (generation runs once per layer), so its cost scales with judge calls, not generations.
- 
--------
-
-# New Steering Vectors
-
-### Experiment 9: Clean-Data Re-test — Pair Quality as the Determining Variable (3B)
+## Experiment 9: Clean-Data Re-test — Pair Quality as the Determining Variable (3B)
 
 **Date:** June 8, 2026
 **Model:** Llama-3.2-3B
@@ -502,7 +504,215 @@ The original null was a data-quality artifact. With clean, reasoning-isolating c
 
 #### Next Steps
 
-- **Forced-choice dilemma eval** at each best layer (M:26, S:4, E:8) — the style-independent test of whether the effect is *reasoning* vs *Stoic-flavored prose*.
-- **Data-efficiency sweep** (the quality-over-quantity thesis): vary pair count (e.g. 15 / 30 / 53 / 100) on one philosopher to map where the effect saturates. Tests "few clean pairs suffice."
-- **Re-run LoRA on the clean pairs** for an equal-footing CAA-vs-LoRA circuit-topology comparison (the publishable anchor), so both methods use clean data.
-- **More seeds / paired significance test** on the three headline configs before any external claim.
+- **Forced-choice dilemma eval** at each best layer (M:26, S:4, E:8) — the style-independent test of whether the effect is *reasoning* vs *Stoic-flavored prose*. **[DONE — Exp 10. Result: no decision-level effect from CAA at any coefficient.]**
+- **Data-efficiency sweep** (the quality-over-quantity thesis): vary pair count (e.g. 15 / 30 / 53 / 100) on one philosopher to map where the effect saturates. Tests "few clean pairs suffice." **[PENDING]**
+- **Re-run LoRA on the clean pairs** for an equal-footing CAA-vs-LoRA circuit-topology comparison (the publishable anchor), so both methods use clean data. **[DONE — clean adapters trained (Exp 11 header); behavioral comparison complete (Exp 11); clean-adapter circuit re-analysis via ModelLens still PENDING.]**
+- **More seeds / paired significance test** on the three headline configs before any external claim. **[PENDING for Exp 9 content configs; done for the decision-level results (Exp 11 + amendments).]**
+
+---
+
+## Experiment 10: Forced-Choice Dilemma Evaluation (Decision-Level Test)
+
+**Date:** June 24, 2026
+**Model:** Llama-3.2-3B
+**Method:** Judge-free, generation-free forced-choice probe. Each dilemma presents a situation with two options (one Stoic-consistent, one a defensible non-Stoic alternative) labeled A/B. Measure `P(stoic) = softmax over the two label tokens {A,B}` on the next token from a single forward pass. Every item is run in BOTH label orders and averaged, which cancels positional/label bias exactly. Steering applied via the same forward hook as `SteeringRunner` (MLP output at layer L).
+**Purpose:** The validation gate's decisive instrument. Exp 8/9 tested *content* via an LLM judge on open-ended prose; this tests whether steering shifts an actual *decision*, with no judge in the loop and no dependence on style.
+**Configs:** Marcus L26, Seneca L4, Epictetus L8 (the Exp 9 clean-pairs best layers), coeff 0.11.
+**Cost:** $0 — all local CPU forward passes, no API calls.
+
+---
+
+#### 10a — Dilemma set v1 (FAILED CALIBRATION — ceiling effect)
+
+First dilemma set paired the Stoic option against a non-Stoic option that *described bad behavior from the outside* (e.g. "stew about it for a week"). Any instruction-adjacent model rejects those regardless of philosophy.
+
+| | Baseline mean P(stoic) | Result |
+|---|---|---|
+| v1 set | **0.881** | Ceiling effect — no headroom to measure |
+
+Steered deltas (v1): Marcus +0.000 (t=1.14), Seneca +0.004 (t=6.19), Epictetus +0.001 (t=2.97).
+
+> **The v1 deltas are uninterpretable**, NOT a null. Baseline 0.881 means the model already maxes the Stoic option; the test measured "prefers sensible-sounding advice," which was saturated. Seneca's t=6.19 on a +0.004 move is still useful information — it proves the **instrument is precise** (resolves sub-percent effects); the target was the problem, not the ruler.
+
+#### 10b — Dilemma set v2 (calibrated, competing-values)
+
+Rebuilt so the non-Stoic option is *genuinely good advice* drawn from values that compete with Stoicism: healthy emotional expression, self-advocacy, legitimate ambition, self-care/boundaries, persistence, attachment. 40 items, 23 accepting / 17 active stance.
+
+| | Baseline mean P(stoic) | Gate |
+|---|---|---|
+| v2 set | **0.542** | PASS (target 0.35–0.65 with spread) |
+
+**Steered results, coeff 0.11:**
+
+| Philosopher | ΔP(stoic) | Δlog-odds | t(lo) | accepting (ΔP) | active (ΔP) |
+|---|---|---|---|---|---|
+| Marcus | −0.000 | +0.000 | 0.35 | −0.000 | +0.000 |
+| Seneca | +0.000 | +0.006 | 0.83 | +0.001 | −0.001 |
+| Epictetus | −0.001 | −0.002 | −0.71 | −0.001 | −0.001 |
+
+All three flat. Every t under 1. Both stance buckets flat for all three. **Clean null at a calibrated baseline** — unlike v1, this null is real.
+
+#### 10c — Epictetus coefficient sweep (forecloses understeering objection)
+
+Epictetus chosen as the highest-signal probe (strongest Exp 9 content effect +0.767; historically needed the highest coefficient). Generation-free, so high coefficients are safe — only the option logits need to move.
+
+| Coeff | P(stoic) | ΔP | Δlog-odds | t(lo) |
+|---|---|---|---|---|
+| 0.11 | 0.541 | −0.001 | −0.002 | −0.71 |
+| 0.20 | 0.541 | −0.001 | −0.002 | −0.34 |
+| 0.40 | 0.540 | −0.002 | −0.006 | −0.48 |
+| 0.80 | 0.537 | −0.005 | −0.022 | −0.83 |
+| 1.50 | 0.530 | −0.011 | −0.063 | −1.16 |
+
+---
+
+#### Key Findings
+
+1. **CAA does not move decisions at any strength.** Even the strongest-signal vector, pushed to coeff 1.5 (edge of incoherence), produces no shift toward the Stoic option. The understeering objection is foreclosed.
+
+2. **The drift is monotonic and slightly NEGATIVE, not random.** P(stoic) slides 0.541 → 0.530 as coefficient rises, with Δlog-odds growing steadily more negative and |t| increasing. The smooth, dose-responsive shape rules out degeneration (which would scatter P toward 0.5 erratically) — the A/B logits still track the options; steering just pushes the wrong way, weakly. Not significant (t never clears 1.2), but directionally against the hypothesis.
+
+3. **The instrument is validated.** Same harness resolved a +0.004 effect at t=6.19 in v1. It reads ~0 here because there is ~0 to read, not from lack of sensitivity.
+
+#### Cross-Instrument Synthesis (the headline)
+
+> **Extended by Exp 11:** this table characterizes CAA alone; the two-method version (CAA vs LoRA) in Exp 11 supersedes it as the current synthesis, and Exp 11's Amendment 1 revises the LoRA column's strength.
+
+Three independent instruments now converge on the same boundary for the Stoic CAA direction:
+
+| Level | Instrument | Result |
+|---|---|---|
+| **Style / register** | Exp 3b (judge, Style Auth.) | Robust: +1.0 to +1.6 |
+| **Content / reasoning** | Exp 8/9 (judge, content score) | Weak, philosopher-dependent, wide error bars (Exp 9 clean: Marcus L26 +0.408, Epictetus L8 +0.767) |
+| **Decision / choice** | Exp 10 (judge-free, forced choice) | None at any coefficient; slightly negative |
+
+> **The Stoic CAA direction is a register direction, not a decision direction.** It changes how the model *talks*, weakly/unreliably shifts how it *reasons* in prose, and does not change what it *chooses*. Two judge-free instruments and one judge-based instrument agree. This is a stronger, more defensible claim than any single positive result — a clean characterization of the limits of activation steering.
+
+#### Caveats
+
+- A flat CAA sweep does not yet imply *no method* reaches decisions — that requires the LoRA eval (below). Do not generalize "CAA is register-only" to "the philosophy is style-only" until LoRA is tested.
+- The slight negative drift is below significance; report it as "no movement toward Stoic (if anything, marginally against)," not as a real anti-Stoic effect.
+- Forced-choice A/B is a mildly unnatural probe for a base model; the calibrated 0.542 baseline with per-item spread is what licenses trust in the deltas.
+
+#### Next Step
+
+> **Status: DONE — Exp 11.** The prediction resolved in the interesting direction: LoRA moves decisions where CAA doesn't, with structure (see Exp 11 + amendments).
+
+- **LoRA dilemma eval (the thesis test).** Run this exact harness on the merged LoRA models. Exp 6 predicts a possible split: LoRA's strongest causal effect sits at the output layer (L27 MLP; "learns→knows" shift L16–25) where decisions form, while CAA's circuit lives in mid-MLPs and is partially compensated away (Exp 5 L14–24 resistance). **If LoRA moves decisions where CAA doesn't, the circuit topology predicts the behavioral split** — a mechanism plus a behavioral consequence. If LoRA is also flat, the decision-level null is general at 3B and the safety-mechanism claim retires to "register intervention" rather than relocating to LoRA.
+
+---
+
+## Experiment 11: LoRA Dilemma Evaluation — Decision-Level Test, Clean-Data Adapters
+
+**Date:** June 30, 2026
+**Model:** Llama-3.2-3B base + clean-data LoRA adapters (merged via merge_and_unload, fresh base per adapter)
+**Method:** Identical harness to Exp 10 (forced-choice, judge-free, both label orders averaged, same 40-item v2 dilemma set, same PROMPT_TEMPLATE). The only change vs the CAA condition: no steering hook — the adapter weights carry the intervention. Baseline computed on the unmodified base; **identical baseline basis as the CAA run (0.542, reproduced exactly)**.
+**Adapters:** Retrained on Exp-9-cleaned chunked text (Colab T4), recipe held identical to Exp 4 (r=8, alpha=32, q_proj+v_proj, 3 epochs) so the only variable vs the old adapters is clean data. Training corpus sizes: Marcus 437 chunks (*Meditations*), Seneca 540 (*Moral Letters*), Epictetus 123 (*Enchiridion* only).
+**Integrity:** Reuse-the-base merging was caught mutating the base in an aborted first run (PEFT `peft_config` stacking warning); rerun with fresh-base-per-adapter. Base integrity check: start 0.542 | end 0.542 | drift 0.0000 — clean.
+**Cost:** $0 — local CPU forward passes; adapter training on free Colab T4.
+
+#### Results (vs base baseline P(stoic) = 0.542)
+
+| Philosopher | ΔP(stoic) | Δlog-odds | t(lo) | accepting (ΔP) | active (ΔP) | Read |
+|---|---|---|---|---|---|---|
+| **Seneca** | **+0.061** | **+0.308** | **2.39** | **+0.078** | **+0.039** | **Decision shift — both buckets positive** |
+| Marcus | +0.031 | +0.161 | 2.18 | +0.065 | −0.011 | Passivity pattern — accepting only, active negative |
+| Epictetus | +0.000 | +0.003 | 0.18 | +0.005 | −0.005 | Flat |
+
+#### Key Findings
+
+1. **LoRA reaches the decision where CAA does not.** On the identical instrument where CAA was flat at every coefficient up to 1.5 (Exp 10c), LoRA moves the choice. Seneca: Δlog-odds +0.308, t=2.39, positive in BOTH stance buckets — the pre-registered signature of a reasoning shift rather than a passivity prior.
+
+2. **The stance bucketing caught a confound that would otherwise read as a second success.** Marcus's t=2.18 looks comparable to Seneca's, but the buckets split (+0.065 accepting / −0.011 active): the Marcus adapter shifts the model toward calm/accepting options, not toward Stoic choices as such. Reported as a passivity-pattern result, not a decision shift.
+
+3. **Decision movement orders exactly with training corpus size.** Seneca (540 chunks) > Marcus (437) > Epictetus (123, Enchiridion only, no Discourses). Three points with philosopher identity fully confounded with corpus size — recorded as a **hypothesis, not a claim**: an Epictetus adapter retrained on Enchiridion + Discourses should move if data volume is the driver. Notably, Epictetus had the *strongest* judge-scored content effect under CAA (Exp 9, +0.767) and shows *nothing* at the decision level under LoRA — content-in-prose and decision-shift are dissociable.
+
+4. **The Exp 5/6 circuit prediction is confirmed at the behavioral level.** CAA's mid-MLP injection (Exp 5: L9-13 processing, L14-24 compensation) never reaches the choice; LoRA's distributed rewiring with dominant output-layer effects (Exp 6: L27 MLP, "learns→knows" shift L16-25) does. Mechanism → prediction → behavioral confirmation.
+
+#### Cross-Method Synthesis (updates the Exp 10 table)
+
+| Level | Instrument | CAA | LoRA (clean) |
+|---|---|---|---|
+| Style / register | Judge, Style Auth. (Exp 3b/4) | Robust (+1.0–1.6) | Robust, stronger (+1.6–2.8) |
+| Content / prose reasoning | Judge, content score (Exp 8/9) | Weak, philosopher-dependent | (not re-scored on clean adapters) |
+| **Decision / choice** | **Judge-free forced choice (Exp 10/11)** | **None at any coefficient** | **Seneca: yes (both buckets). Marcus: passivity only. Epictetus: none.** |
+
+> **Headline:** Same behavioral target, same 40 dilemmas, same 0.542 baseline. Activation steering (CAA) moves register but not choice at any strength; weight-level adaptation (LoRA) can move choice — and where it does, the effect ordering tracks training data volume, and the circuit topology (Exp 5 vs 6) predicted the split.
+
+#### Caveats (do not overclaim)
+
+- **Statistics:** n=40 items, t=2.39 ≈ p≈0.02 uncorrected; three philosophers tested, so Seneca survives multiple-comparisons correction only marginally. Forward passes are deterministic — variance is across items, so firming this up requires **more dilemmas**, not more seeds. Sign test over per-item deltas (in the saved JSON) is the cheap distribution-free companion; run before writing up.
+- **Objective confound (structural, carried from Exp 4/6):** CAA uses the contrastive direction (Stoic − neutral); LoRA is continued pretraining on Stoic text only. The CAA-vs-LoRA gap is therefore method + objective jointly. A contrastive-objective LoRA variant is the isolation experiment if a reviewer pushes.
+- **Corpus-size hypothesis is confounded:** philosopher identity and corpus size covary perfectly across the three adapters. The Epictetus full-corpus retrain is the discriminating experiment.
+- Forced-choice A/B remains a mildly unnatural probe for a base model; the calibrated 0.542 baseline (reproduced across CAA and LoRA runs) is what licenses the deltas.
+
+#### Next Steps
+
+1. **Sign test on Seneca's per-item deltas** (from results JSON) — distribution-free robustness check, zero cost.
+2. **Expand the dilemma set** (40 → 80+) to shrink item-level error; this is the only route to tighter CIs on a deterministic probe.
+3. **Epictetus full-corpus retrain** (Enchiridion + Discourses) — discriminates the corpus-size hypothesis.
+4. **(Reviewer-proofing, lower priority)** Contrastive-objective LoRA variant to isolate method from objective.
+5. Fold into the paper: Exp 5/6 circuit graphs → prediction → Exp 10/11 behavioral split as the narrative spine.
+
+---
+
+#### Amendment (July 1, 2026): Sign Tests and Bucket Localization
+
+Distribution-free follow-up on the per-item deltas (overall sign test + per-concept/per-stance breakdown). The two tests disagree in an instructive way, and the claim strength is revised accordingly.
+
+**Overall sign tests (items moved +/− of 40):** Marcus 27/13 (p=0.039, uncorrected — does not survive 3-way correction), Seneca 25/15 (p=0.15, n.s.), Epictetus 17/23 (n.s., tilt negative).
+
+**Marcus — the passivity characterization is now the statistically strongest result in the run.** Accepting-stance items: 18+/4−, p=0.004, mean Δlo +0.331. Active-stance items: 9/9, mean −0.048. The concept buckets that light up (indifference_externals 6+/0−, amor_fati, dichotomy_of_control) are the accepting-dominant concepts — the concept pattern is the stance pattern relabeled. **Revised claim: the Meditations adapter installs a broad acceptance/passivity prior, not Stoic decision-making.** Robust, precisely characterized, and a cautionary result about what "philosophical" fine-tuning actually installs.
+
+**Seneca — the effect is heavy-tailed, NOT concept-localized.** Seven of eight concept means are positive with no dominant bucket; magnitudes are large where counts are mixed (amor_fati: 3+/2− yet mean +0.748). Active items split 9/9 by sign but retain a positive mean (+0.200) — the ups are bigger than the downs. The t-test (2.39) saw the magnitudes; the sign test (25/40) saw the weak direction bias; both are right. **Revised claim: the Letters adapter produces large decision shifts on a minority of items scattered across concepts, rather than a uniform nudge.** Whether the tail is systematic (shared item features) or fragile (idiosyncratic) is not determinable at n=40.
+
+**Epictetus — null at every resolution** (overall, per-concept, per-stance). Full-corpus retrain hypothesis unchanged.
+
+**Revised headline (supersedes the Exp 11 headline above):** The CAA/LoRA asymmetry stands — CAA moved nothing on any test at any coefficient; LoRA produces real, structured decision-level effects. But no LoRA adapter clears both parametric and distribution-free significance for a *Stoic reasoning* shift: Marcus's effect is a passivity prior (stance-dissociated), Seneca's is heavy-tailed magnitude without breadth, Epictetus is null. The defensible sentence: **weight-level adaptation reaches the decision layer in ways activation steering does not — but what it installs is not yet uniform Stoic decision-making.**
+
+**Revised next steps (supersede items 1–2 above):**
+1. **Qualitative read of Seneca's top ~10 movers** (largest |Δlo| in the JSON, zero cost): heavy-tailed effects usually share a feature the concept labels miss (wording, proximity to the Letters' actual subject matter — wealth, status, grief). Shared feature → v3 design input; no pattern → v3 becomes a straight replication test of a fragile tail.
+2. **Expand the dilemma set uniformly** (not concept-oversampled — there are no hot concepts) to 80+; at n=40 "concentrated real effect" vs "lucky subset" is not distinguishable.
+3. Multiple-comparisons discipline going forward: all bucket p-values here are post-hoc on 8-way slices of n=40 and are treated as hypothesis-generating only.
+
+---
+
+#### Amendment 2 (July 1, 2026): Qualitative Read of Seneca's Top Movers — Two Rival Mechanisms
+
+Amendment 1's next-step 1 executed: the 10 largest |Δlog-odds| items for Seneca were read against their dilemma texts. The tail is **not random** — 8 of 10 large movers are positive and cluster on plausible features — but two rival mechanisms fit it:
+
+**Hypothesis A — topic proximity.** The big movers sit on the *Moral Letters'* home turf: aging/bodily decline (fate_05, +2.24 — Seneca's letters on old age), loss of a valued possession (ext_02, +1.38 — the grief consolations), declining indulgence (self_01, +1.55 — letters on luxury), status envy at a peer's promotion (ext_04, +1.06 — his ambition theme), fear before a committed task (emot_03, +1.30). Prediction: the adapter moves decisions most on subject matter dense in its training text.
+
+**Hypothesis B — lexical echo (the subtler style confound).** Some top movers' *Stoic option wording* contains Seneca's own signature idiom: ext_02's option says the possession "was only ever **on loan**" — near-verbatim Senecan metaphor (fortune lends and reclaims); fate_02's "play the part well" is the classical role metaphor. If the adapter raises the probability of Seneca-sounding language, the choice moves *wherever the option happens to sound Senecan* — a register effect reaching the decision through the option's phrasing, i.e. the style confound relocated inside the forced-choice instrument itself. The option texts were not controlled for idiom.
+
+Two negative movers noted: ctrl_03 (grave prognosis, −1.29) and self_04 (unearned praise, −1.08); ctrl_03 is *also* core Letters territory (illness), which cuts slightly against a pure topic story.
+
+**Discriminating experiments (pre-registered before further looks at the data):**
+1. **Cheap first check:** judge-score each of the 40 v2 Stoic options for Stoic/Senecan idiom (1–5) and correlate with Seneca's per-item Δlog-odds. Strong correlation → Hypothesis B live, phrasing axis mandatory in v3. Cost: ~40 judge calls.
+2. **v3 dilemma set as a 2×2:** (Letters-core topic vs off-topic) × (plain-modern vs Stoic-idiom option phrasing), same situation and decision within phrasing pairs. Topic proximity predicts movement tracks the topic axis; lexical echo predicts it tracks the phrasing axis. Plain-worded, off-topic Stoic options still moving would be the strongest available reasoning claim.
+
+**Status of the decision-level claim pending these:** "LoRA reaches the decision layer" stands (the CAA/LoRA asymmetry is unaffected); "what it installs" remains open between *topic-conditional decision shift* and *idiom-mediated register effect*.
+
+---
+
+## API Credit Usage
+
+| Run | Cost | Remaining |
+|---|---|---|
+| 100+ pair generation (258 pairs) | ~$1.09 | ~$1.41 |
+| 100+ pair eval (3 philosophers × 12 prompts) | ~$0.60 | ~$0.81 |
+| 3B sweep — original, buggy extraction (3 philosophers × full grid) | ~$5.00 | ~$3.81 |
+| 3B eval (3 philosophers × 12 prompts) | ~$0.60 | ~$3.21 |
+| LoRA eval (3 philosophers × 12 prompts) | ~$0.60 | ~$2.61 |
+| *(subtotal — May runs)* | *~$7.89* | *~$2.61* |
+| 3B re-sweep — corrected extraction + content selection (Jun 8) | ~$5.00 (est) | — |
+| Seed-eval smoke test (1 call) | ~$0.02 (est) | — |
+| Seed eval — 3 philosophers × 3 layers × 5 judge seeds (Jun 8) | ~$8–9 (est) | — |
+| Top-up (Jun 8) | +$10.00 | — |
+| Dilemma evals — Exp 10 (CAA v1, v2, coeff sweep) | $0 (local) | — |
+| LoRA clean retrain (Colab T4) + dilemma eval — Exp 11 | $0 (free T4 + local) | — |
+
+**Notes:**
+- June 8 costs are estimates — reconcile against the actual Anthropic console billing and update.
+- Bridge analyses (ModelLens) cost nothing — all local compute.
+- `vary="judge"` seed eval re-runs only the judge, not generation (generation runs once per layer), so its cost scales with judge calls, not generations.

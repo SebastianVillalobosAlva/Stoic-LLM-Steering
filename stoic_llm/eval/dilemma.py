@@ -16,13 +16,14 @@ or:
     results = ev.run_all(configs)   # configs per philosopher
     ev.save_results(results)
 
-Place the dilemma set at: data/config/dilemmas.json
+Place the dilemma set at: data/config/dilemmas_v2.json (canonical; dilemmas_v1.json is the failed-calibration record)
 Steering vectors expected as {layer: tensor} dicts (post-Exp-8 format)
 at: data/steering_vectors/{author}_clean.pt
 """
 
 from __future__ import annotations
 
+import gc
 import json
 import math
 import time
@@ -32,7 +33,7 @@ from peft import PeftModel
 import torch
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]  # adjust if placed elsewhere
-DILEMMAS_PATH = PROJECT_ROOT / "data" / "config" / "dilemma-set-v2.json"
+DILEMMAS_PATH = PROJECT_ROOT / "data" / "config" / "dilemmas_v2.json"
 VECTORS_DIR = PROJECT_ROOT / "data" / "steering_vectors"
 RESULTS_DIR = PROJECT_ROOT / "results" / "dilemmas-v2"
 
@@ -347,12 +348,16 @@ Usage:
 class LoRADilemmaEval(DilemmaEval):
     """Dilemma eval for LoRA adapters (merged weights, no hook)."""
 
-    def __init__(self, base_model, tokenizer, dilemmas_path=None):
+    def __init__(self, base_model, tokenizer, dilemmas_path=None, model_size: str = "3B"):
         # Keep a handle to the pristine base so we can swap adapters in/out.
         kwargs = {"dilemmas_path": dilemmas_path} if dilemmas_path else {}
         super().__init__(base_model, tokenizer, **kwargs)
         self._base_model = base_model
         self._base_state = "base"  # which model is currently in self.model
+        # Size of the fresh base _merged reloads per adapter; must match the
+        # base passed in above, or the baseline and merged runs use different
+        # models.
+        self._model_size = model_size
 
     # ---- override: "steered" = merged adapter, no hook ----
     @torch.no_grad()
@@ -370,7 +375,7 @@ class LoRADilemmaEval(DilemmaEval):
         from stoic_llm.model import ModelLoader
         from peft import PeftModel
 
-        base = ModelLoader("3B").load()[0]  # fresh base, no prior adapters
+        base = ModelLoader(self._model_size).load()[0]  # fresh base, no prior adapters
         merged = PeftModel.from_pretrained(base, str(adapter_dir)).merge_and_unload()
         merged.config.use_cache = True
         return merged
@@ -405,10 +410,13 @@ class LoRADilemmaEval(DilemmaEval):
             try:
                 steered = self.eval_condition_lora(merged)
             finally:
-                # merge_and_unload mutates a copy; drop it and reclaim memory.
-                # NOTE: confirm self._base_model is still pristine after this
-                # (see caution in the chat). If not, reload base per author.
+                # _merged loads a FRESH base per author, so the merge never
+                # touches self._base_model or self.model — no adapter stacking.
+                # Drop the merged copy and reclaim memory. This runs on CPU
+                # (M4), so gc.collect() is what actually frees it;
+                # torch.cuda.empty_cache() is a no-op here, kept only for GPU.
                 del merged
+                gc.collect()
                 if torch.cuda.is_available():
                     torch.cuda.empty_cache()
 
