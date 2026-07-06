@@ -118,6 +118,26 @@ All ±1σ intervals include zero. **Verdict: the CAA content effect at coeff 0.1
 is a decoding-asymmetry artifact, full stop** — it does not exist under matched
 greedy or matched sampled decoding.
 
+### The style/register claim collapses too
+
+Exp 3b's stylistic-authenticity deltas — flagged in the tracker as "the robust,
+valid result" — were re-tested the same way (canonical clean configs, matched
+decoding both regimes, n=5 seeds, pre-registered survives-if->2σ rule):
+
+| Author | Exp 3b style (asymmetric) | Matched greedy | Matched sampled |
+|---|---|---|---|
+| Marcus | +1.00 | −0.150 ± 0.181 | −0.033 ± 0.139 |
+| Seneca | +1.42 | −0.100 ± 0.091 | −0.017 ± 0.260 |
+| Epictetus | +1.58 | +0.050 ± 0.126 | −0.017 ± 0.124 |
+
+Nothing survives. The "style moves robustly" signal was the judge scoring short
+sampled snippets as more aphoristic than 100-token greedy prose — the same
+artifact. **Under fair measurement, CAA at the canonical coefficient moves
+nothing at any of the three levels (style, content, decisions).** Caveat: tested
+at c=0.11 (canonical); the tracker's Exp 3b configs (all-L8, c=0.08–0.15) and
+higher coefficients were not re-swept under matched decoding.
+(Record: `stoic-llm` repo, `results/style_validation/style_20260705_212411.json`.)
+
 ---
 
 ## Experiments contaminated by this one bug
@@ -169,8 +189,10 @@ code's history; what is frozen now is steered-sampled / baseline-greedy.)
 
 ## Bottom line
 
-The Exp 3/3b/8/9 CAA "content effect" and the CAA arm of Exp 4 are a single
-decoding-asymmetry artifact (sampled+truncated steered vs greedy+long baseline),
-introduced by `run_model_with_hook` dropping `do_sample`/`max_new_tokens`. The
-decision-level results (Exp 10/11), the LoRA content deltas (Exp 4 LoRA arm), and
-the circuit-topology comparison (Exp 5/6) are **not** affected by it.
+The Exp 3/3b/8/9 CAA judge-scored effects — **both content and style** — and the
+CAA arm of Exp 4 are a single decoding-asymmetry artifact (sampled+truncated
+steered vs greedy+long baseline), introduced by `run_model_with_hook` dropping
+`do_sample`/`max_new_tokens`. Under matched decoding, CAA at the canonical
+coefficient moves nothing at any level. The decision-level results (Exp 10/11),
+the LoRA content deltas (Exp 4 LoRA arm), and the circuit-topology comparison
+(Exp 5/6) are **not** affected by it.
