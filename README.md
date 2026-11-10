@@ -1,5 +1,11 @@
 # Stoic LLM Steering
 
+> **Superseded: this repository is a frozen record of Experiments 1 to 11. Current results live in [Stoic-Steering](https://github.com/SebastianVillalobosAlva/Stoic-Steering).**
+> The findings below are kept as they were written, and several no longer hold:
+>
+> - **The CAA style and content effects were a decoding artifact.** Steered text was sampled and cut to about 13 tokens while baselines were greedy at 100 tokens. Under matched decoding, both effects are null. See [`LEGACY.md`](LEGACY.md) and [measurement-artifact.md](https://github.com/SebastianVillalobosAlva/Stoic-Steering/blob/main/docs/measurement-artifact.md).
+> - **The LoRA decision result was narrowed.** A pre-registered test on 100 dilemmas showed that Seneca's shift follows Seneca's phrasing (lexical echo), not the reasoning in the dilemma. See [claim-revision-v4.md](https://github.com/SebastianVillalobosAlva/Stoic-Steering/blob/main/docs/claim-revision-v4.md).
+
 **Can philosophical (Stoic) reasoning be steered into an LLM — and at what depth does each method actually operate?** This project compares two interventions — **CAA activation steering** vs **LoRA fine-tuning** — on Llama-3.2-3B, and measures their effects at three levels: **style** (how the model writes), **content** (how it reasons in prose), and **decision** (what it actually chooses). The companion project [**ModelLens**](https://github.com/SebastianVillalobosAlva/ModelLens) supplies the circuit analysis that explains the behavioral split.
 
 > Full experiment-by-experiment record: [`Stoic LLM - Results Tracker.md`](Stoic%20LLM%20-%20Results%20Tracker.md).
